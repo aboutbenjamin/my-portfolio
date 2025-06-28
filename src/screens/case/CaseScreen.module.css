@@ -30,6 +30,7 @@
   transition: opacity 0.8s cubic-bezier(0.77, 0, 0.18, 1);
   pointer-events: none;
   z-index: 1;
+  box-shadow: inset 20px -200px 200px -20px var(--color-background);
 }
 
 .overlay-visible {

@@ -1,0 +1,18 @@
+:root {
+  --color-background: #fff;
+  --color-foreground: #1a0d0d;
+  --color-primary: #80f4ff;
+  --color-secondary: #f04cff;
+  --color-accent: #ffb347;
+  --color-muted: #f6f6f6;
+  --color-border: #e0e0e0;
+  --color-overlay: rgba(0, 0, 0, 0.05);
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
