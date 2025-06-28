@@ -17,33 +17,6 @@ body {
   min-height: 100vh;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  position: relative;
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 10vh;
-  max-width: 1920px;
-  pointer-events: none;
-  z-index: 0;
-  background: radial-gradient(
-    ellipse at center top,
-    rgba(128, 244, 255, 0.3) 0%,
-    rgba(240, 76, 255, 0.3) 40%,
-    rgba(255, 255, 255, 1) 70%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  opacity: 0.45;
-}
-
-body > * {
-  position: relative;
-  z-index: 1;
 }
 
 h1 {
@@ -69,4 +42,33 @@ h1 {
     font-size: 5rem;
     line-height: 5.5rem;
   }
+}
+
+.home-body {
+  position: relative;
+}
+
+.home-body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 10vh;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(
+    ellipse at center top,
+    rgba(128, 244, 255, 0.3) 0%,
+    rgba(240, 76, 255, 0.3) 40%,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  opacity: 0.45;
+}
+
+.home-body > * {
+  position: relative;
+  z-index: 1;
 }

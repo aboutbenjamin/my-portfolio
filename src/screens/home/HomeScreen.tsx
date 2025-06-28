@@ -1,8 +1,16 @@
+import { useEffect } from "react";
 import Case from "../../components/case/Case";
 import { CASES } from "../../constansts/cases";
 import styles from "./Home.module.css";
 
 function HomeScreen() {
+  useEffect(() => {
+    document.body.classList.add("home-body");
+    return () => {
+      document.body.classList.remove("home-body");
+    };
+  }, []);
+
   return (
     <main className={styles["main-container"]}>
       <section className={styles["home-title"]}>
