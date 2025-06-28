@@ -1,7 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, useRef, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import Case from "../../components/case/Case";
 import { CASES } from "../../constansts/cases";
-import styles from "./Home.module.css";
+import styles from "./HomeScreen.module.css";
+import { useTransitionContext } from "../../hooks/use-transition";
 
 function HomeScreen() {
   useEffect(() => {
@@ -10,6 +12,29 @@ function HomeScreen() {
       document.body.classList.remove("home-body");
     };
   }, []);
+
+  const imgRefs = useRef<(HTMLImageElement | null)[]>([]);
+  const { setTransitionData } = useTransitionContext();
+  const navigate = useNavigate();
+
+  const handleCaseClick = useCallback(
+    (id: number) => {
+      const img = imgRefs.current[id];
+      if (img) {
+        const rect = img.getBoundingClientRect();
+        setTransitionData({ id, rect });
+      }
+      navigate(`/case/${id}`);
+    },
+    [setTransitionData, navigate]
+  );
+
+  const getImgRef = useCallback(
+    (idx: number) => (el: HTMLImageElement | null) => {
+      imgRefs.current[idx] = el;
+    },
+    []
+  );
 
   return (
     <main className={styles["main-container"]}>
@@ -21,18 +46,33 @@ function HomeScreen() {
         </h1>
       </section>
       <section className={styles["cases-section"]}>
-        <h1>Cases</h1>
+        <h2>Cases</h2>
         <div className={styles["cases-grid"]}>
           <div className={styles["cases-col-left"]}>
-            <Case title={CASES[0].title} tags={CASES[0].tags} image={CASES[0].image} />
-            <Case title={CASES[1].title} tags={CASES[1].tags} image={CASES[1].image} />
-            <Case title={CASES[2].title} tags={CASES[2].tags} image={CASES[2].image} />
-            <Case title={CASES[3].title} tags={CASES[3].tags} image={CASES[3].image} />
+            {CASES.slice(0, 4).map((c, idx) => (
+              <Case
+                key={idx}
+                id={idx}
+                title={c.title}
+                tags={c.tags}
+                image={c.image}
+                imgRef={getImgRef(idx)}
+                onClick={() => handleCaseClick(idx)}
+              />
+            ))}
           </div>
           <div className={styles["cases-col-right"]}>
-            <Case title={CASES[4].title} tags={CASES[4].tags} image={CASES[4].image} />
-            <Case title={CASES[5].title} tags={CASES[5].tags} image={CASES[5].image} />
-            <Case title={CASES[6].title} tags={CASES[6].tags} image={CASES[6].image} />
+            {CASES.slice(4).map((c, idx) => (
+              <Case
+                key={idx + 4}
+                id={idx + 4}
+                title={c.title}
+                tags={c.tags}
+                image={c.image}
+                imgRef={getImgRef(idx + 4)}
+                onClick={() => handleCaseClick(idx + 4)}
+              />
+            ))}
           </div>
         </div>
       </section>

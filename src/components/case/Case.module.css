@@ -1,17 +1,17 @@
-.case-root {
+.caseRoot {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.case-figure {
+.caseFigure {
   aspect-ratio: 51/64;
   overflow: hidden;
   position: relative;
   margin: 0;
 }
 
-.case-image {
+.caseImage {
   position: absolute;
   top: 0;
   left: 0;
@@ -23,14 +23,14 @@
   transition: transform 0.5s, opacity 0.5s;
 }
 
-.case-root:hover .case-image,
-.case-root:focus-within .case-image,
-.case-root:active .case-image {
+.caseRoot:hover .caseImage,
+.caseRoot:focus-within .caseImage,
+.caseRoot:active .caseImage {
   transform: scale(1);
   opacity: 0.9;
 }
 
-.case-title {
+.caseTitle {
   margin-bottom: 0.5rem;
   font-family: var(--font-heading, inherit);
   font-size: 1.125rem;
@@ -38,19 +38,19 @@
 }
 
 @media (min-width: 1280px) {
-  .case-title {
+  .caseTitle {
     margin-bottom: 1rem;
     font-size: 2rem;
   }
 }
 
 @media (min-width: 1920px) {
-  .case-title {
+  .caseTitle {
     font-size: 2.5rem;
   }
 }
 
-.case-tags {
+.caseTags {
   display: flex;
   flex-wrap: wrap;
   gap: 0 1.25rem;
@@ -61,7 +61,7 @@
 }
 
 @media (min-width: 1536px) {
-  .case-tags {
+  .caseTags {
     font-size: 1.125rem;
   }
 }
