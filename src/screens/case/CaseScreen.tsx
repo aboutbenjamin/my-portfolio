@@ -5,6 +5,10 @@ import { useTransitionContext } from "../../hooks/use-transition";
 import styles from "./CaseScreen.module.css";
 
 function CaseScreen() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { id } = useParams();
   const caseId = Number(id);
   const validCase =
@@ -12,11 +16,13 @@ function CaseScreen() {
   const caseData = validCase ? CASES[caseId] : null;
   const imgRef = useRef<HTMLImageElement>(null);
   const { transitionData } = useTransitionContext();
-  const [showOverlay, setShowOverlay] = useState(false);
+  const [showHeaderContent, setShowHeaderContent] = useState(false);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setShowOverlay(true), 1000);
-    return () => clearTimeout(timeout);
+    const timeout = setTimeout(() => setShowHeaderContent(true), 1000);
+    return () => {
+      clearTimeout(timeout);
+    };
   }, []);
 
   useEffect(() => {
@@ -79,12 +85,14 @@ function CaseScreen() {
           />
           <div
             className={`${styles.overlay} ${
-              showOverlay ? styles["overlay-visible"] : ""
+              showHeaderContent ? styles["overlay-visible"] : ""
             }`}
             aria-hidden="true"
           />
         </div>
-        <h1>{caseData.title}</h1>
+        {showHeaderContent && (
+          <h1 className={styles["case-title-animated"]}>{caseData.title}</h1>
+        )}
       </header>
       <section className={styles["content-container"]}>
         Content that needs to be beneath the image
