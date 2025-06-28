@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import { CASES } from "../../constansts/cases";
 import { useTransitionContext } from "../../hooks/use-transition";
@@ -12,6 +12,12 @@ function CaseScreen() {
   const caseData = validCase ? CASES[caseId] : null;
   const imgRef = useRef<HTMLImageElement>(null);
   const { transitionData } = useTransitionContext();
+  const [showOverlay, setShowOverlay] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setShowOverlay(true), 1000);
+    return () => clearTimeout(timeout);
+  }, []);
 
   useEffect(() => {
     if (transitionData.id === caseId && transitionData.rect && imgRef.current) {
@@ -62,15 +68,27 @@ function CaseScreen() {
   return (
     <main>
       <header>
-        <img
-          ref={imgRef}
-          src={new URL(`../../assets/${caseData.image}`, import.meta.url).href}
-          alt={caseData.title}
-          className={styles["case-image-bg"]}
-        />
+        <div className={styles["image-container"]}>
+          <img
+            ref={imgRef}
+            src={
+              new URL(`../../assets/${caseData.image}`, import.meta.url).href
+            }
+            alt={caseData.title}
+            className={styles["case-image-bg"]}
+          />
+          <div
+            className={`${styles.overlay} ${
+              showOverlay ? styles["overlay-visible"] : ""
+            }`}
+            aria-hidden="true"
+          />
+        </div>
         <h1>{caseData.title}</h1>
       </header>
-      <h1>{caseData.title}</h1>
+      <section className={styles["content-container"]}>
+        Content that needs to be beneath the image
+      </section>
     </main>
   );
 }
