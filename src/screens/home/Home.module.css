@@ -1,0 +1,132 @@
+.main-container {
+  position: relative;
+
+  section.home-title {
+    margin: 6rem 0 !important;
+
+    h1 {
+      font-size: 2.875rem;
+      font-weight: 400;
+      letter-spacing: -0.04em;
+      line-height: 1.1em;
+      margin: 0;
+      color: #1a0d0d;
+
+      .love-animate {
+        background: linear-gradient(
+          90deg,
+          #1a0d0d 0%,
+          #80f4ff 33%,
+          #f04cff 66%,
+          #1a0d0d 100%
+        );
+        background-size: 200% 100%;
+        background-position: 0% 0%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: love-gradient-move 4s linear infinite;
+      }
+    }
+  }
+
+  section.cases-section {
+    h1 {
+      margin-bottom: 4rem;
+    }
+
+    .cases-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+
+      .cases-col-left {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        grid-column: 1 / span 1;
+      }
+
+      @media (min-width: 640px) {
+        .cases-col-left {
+          gap: 5rem;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .cases-col-left {
+          grid-column: 1 / 6;
+          gap: 12.5rem;
+        }
+      }
+
+      .cases-col-right {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+      }
+
+      @media (min-width: 640px) {
+        .cases-col-right {
+          padding-top: 10rem;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .cases-col-right {
+          grid-column: 8 / 13;
+          gap: 12.5rem;
+          padding-top: 0;
+        }
+      }
+
+      @media (min-width: 1536px) {
+        .cases-col-right {
+          padding-top: 20rem;
+        }
+      }
+    }
+
+    @media (min-width: 640px) {
+      .cases-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .cases-grid {
+        grid-template-columns: repeat(12, 1fr);
+        gap: 0;
+      }
+    }
+
+    @media (min-width: 1536px) {
+      .cases-grid {
+        gap: 3rem;
+      }
+    }
+  }
+}
+
+@keyframes love-gradient-move {
+  0% {
+    background-position: 0% 0%;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+  40% {
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+  70% {
+    background-position: 100% 0%;
+    -webkit-text-fill-color: #1a0d0d;
+    text-fill-color: #1a0d0d;
+  }
+  100% {
+    background-position: 100% 0%;
+    -webkit-text-fill-color: #1a0d0d;
+    text-fill-color: #1a0d0d;
+  }
+}
