@@ -26,7 +26,7 @@ const Case: React.FC<CaseProps> = ({
   };
 
   return (
-    <div
+    <section
       className={styles.caseLink}
       tabIndex={0}
       role="button"
@@ -54,7 +54,7 @@ const Case: React.FC<CaseProps> = ({
           ))}
         </span>
       </article>
-    </div>
+    </section>
   );
 };
 

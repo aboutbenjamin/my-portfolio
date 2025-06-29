@@ -4,6 +4,8 @@ import { CASES } from "../../constansts/cases";
 import { useTransitionContext } from "../../hooks/use-transition";
 import { CaseMetaInfo } from "./case-meta-into/CaseMetaInfo";
 import { CaseHeader } from "./case-header/CaseHeader";
+import styles from "./CaseScreen.module.css";
+import { CaseProcessDetails } from "./case-process-details/CaseProcessDetails";
 
 function CaseScreen() {
   useEffect(() => {
@@ -84,9 +86,10 @@ function CaseScreen() {
         }}
       />
       {showHeaderContent && (
-        <>
+        <article className={styles["content-container"]}>
           <CaseMetaInfo caseData={caseData} />
-        </>
+          <CaseProcessDetails />
+        </article>
       )}
     </main>
   );

@@ -47,6 +47,12 @@ h1 {
   font-weight: 500;
 }
 
+h2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 500;
+}
+
 @media (min-width: 1536px) {
   h1 {
     font-size: 8rem;

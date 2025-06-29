@@ -45,87 +45,113 @@
   align-items: center;
   text-align: center;
   gap: 2rem;
+}
 
-  h1,
-  span {
-    color: #ffffff;
-  }
+.case-content h1,
+.case-content span {
+  color: #ffffff;
 }
 
 .content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+}
+
+.caseDetailsList {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  font-size: 0.875rem;
+}
+
+.caseDetailsList > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.caseDetailsList dt {
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.caseDetailsList dd {
+  margin: 0;
+  color: #fff;
+}
+
+.caseDetailsList ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.caseDetailsList ul li {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
   .caseDetailsList {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
     font-size: 0.875rem;
-
-    > div {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      padding: 0.5rem 0;
-    }
-
-    dt {
-      font-weight: 600;
-      color: #fff;
-      margin-bottom: 0.25rem;
-    }
-
-    dd {
-      margin: 0;
-      color: #fff;
-    }
-
-    ul {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    ul li {
-      margin: 0;
-      padding: 0;
-    }
   }
 
-  @media (min-width: 1024px) {
-    .caseDetailsList {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 0;
-      font-size: 0.875rem;
-    }
+  .caseDetailsList > div {
+    position: relative;
+    padding: 0 2rem;
+    margin: 0 auto;
+  }
 
-    .caseDetailsList > div {
-      position: relative;
-      padding: 0 2rem;
-      margin: 0 auto;
-    }
+  .caseDetailsList > div:not(:first-child)::before {
+    background-color: #fff;
+    content: "";
+    display: block;
+    height: 80%;
+    left: 0;
+    opacity: 0.2;
+    position: absolute;
+    top: 10%;
+    width: 1px;
+  }
 
-    .caseDetailsList > div:not(:first-child)::before {
-      background-color: #fff;
-      content: "";
-      display: block;
-      height: 80%;
-      left: 0;
-      opacity: 0.2;
-      position: absolute;
-      top: 10%;
-      width: 1px;
-    }
+  .caseDetailsList ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
 
-    .caseDetailsList ul {
-      flex-direction: row;
-      gap: 1rem;
-    }
+  .caseDetailsList ul li {
+    padding: 0;
+    margin: 0;
+  }
+}
 
-    .caseDetailsList ul li {
-      padding: 0;
-      margin: 0;
-    }
+.case-details-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: space-between;
+}
+
+.case-details-left,
+.case-details-right {
+  flex: 1;
+}
+
+.case-details-right {
+  font-size: 22px;
+}
+
+@media (min-width: 1024px) {
+  .case-details-section {
+    flex-direction: row;
   }
 }
