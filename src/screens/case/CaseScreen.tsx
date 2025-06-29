@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import { CASES } from "../../constansts/cases";
 import { useTransitionContext } from "../../hooks/use-transition";
-import styles from "./CaseScreen.module.css";
-import { BackButton } from "../../components/back-button/BackButton";
+import { CaseMetaInfo } from "./case-meta-into/CaseMetaInfo";
+import { CaseHeader } from "./case-header/CaseHeader";
 
 function CaseScreen() {
   useEffect(() => {
@@ -74,67 +74,20 @@ function CaseScreen() {
 
   return (
     <main>
-      <header>
-        {showHeaderContent && <BackButton />}
-        <section className={styles["image-container"]}>
-          <img
-            ref={imgRef}
-            src={
-              new URL(`../../assets/${caseData.image}`, import.meta.url).href
-            }
-            alt={caseData.title}
-            className={styles["case-image-bg"]}
-          />
-          <div
-            className={`${styles.overlay} ${
-              showHeaderContent ? styles["overlay-visible"] : ""
-            }`}
-            aria-hidden="true"
-          />
-        </section>
-      </header>
+      <CaseHeader
+        showHeaderContent={showHeaderContent}
+        imgRef={imgRef}
+        caseData={{
+          image: caseData.image,
+          title: caseData.title,
+          description: caseData.description,
+        }}
+      />
       {showHeaderContent && (
-        <div className={styles["case-content"]}>
-          <h1 className={styles["case-title-animated"]}>
-            {caseData.description}
-          </h1>
-          <span>{caseData.title}</span>
-        </div>
+        <>
+          <CaseMetaInfo caseData={caseData} />
+        </>
       )}
-      <section className={styles["content-container"]}>
-        <dl className={styles.caseDetailsList}>
-          <div>
-            <dt>Client</dt>
-            <dd>{caseData.client}</dd>
-          </div>
-          <div>
-            <dt>Year</dt>
-            <dd>{caseData.startProject}</dd>
-          </div>
-          <div>
-            <dt>Type Case</dt>
-            <dd>
-              <ul>
-                {caseData.tags.map((tag, idx) => (
-                  <li key={`${tag}-${idx}`}>{tag}</li>
-                ))}
-              </ul>
-            </dd>
-          </div>
-          <div>
-            <dt>Reference</dt>
-            <dd>
-              <a
-                href="https://www.website.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                www.website.com
-              </a>
-            </dd>
-          </div>
-        </dl>
-      </section>
     </main>
   );
 }
