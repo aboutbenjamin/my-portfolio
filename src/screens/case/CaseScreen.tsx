@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { CASES } from "../../constansts/cases";
 import { useTransitionContext } from "../../hooks/use-transition";
 import styles from "./CaseScreen.module.css";
+import { BackButton } from "../../components/back-button/BackButton";
 
 function CaseScreen() {
   useEffect(() => {
@@ -74,6 +75,7 @@ function CaseScreen() {
   return (
     <main>
       <header>
+        {showHeaderContent && <BackButton />}
         <div className={styles["image-container"]}>
           <img
             ref={imgRef}
