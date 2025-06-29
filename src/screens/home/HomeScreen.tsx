@@ -4,6 +4,7 @@ import Case from "../../components/case/Case";
 import { CASES } from "../../constansts/cases";
 import styles from "./HomeScreen.module.css";
 import { useTransitionContext } from "../../hooks/use-transition";
+import { Header } from "../../components/header-navigation/Header";
 
 function HomeScreen() {
   useEffect(() => {
@@ -38,6 +39,7 @@ function HomeScreen() {
 
   return (
     <main className={styles["main-container"]}>
+      <Header />
       <section className={styles["home-title"]}>
         <h1>
           Hi, I am Benjamin and I am a strategic product designer and engineer.{" "}
