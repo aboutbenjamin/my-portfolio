@@ -76,7 +76,7 @@ function CaseScreen() {
     <main>
       <header>
         {showHeaderContent && <BackButton />}
-        <div className={styles["image-container"]}>
+        <section className={styles["image-container"]}>
           <img
             ref={imgRef}
             src={
@@ -91,13 +91,49 @@ function CaseScreen() {
             }`}
             aria-hidden="true"
           />
-        </div>
-        {showHeaderContent && (
-          <h1 className={styles["case-title-animated"]}>{caseData.title}</h1>
-        )}
+        </section>
       </header>
+      {showHeaderContent && (
+        <div className={styles["case-content"]}>
+          <h1 className={styles["case-title-animated"]}>
+            {caseData.description}
+          </h1>
+          <span>{caseData.title}</span>
+        </div>
+      )}
       <section className={styles["content-container"]}>
-        Content that needs to be beneath the image
+        <dl className={styles.caseDetailsList}>
+          <div>
+            <dt>Client</dt>
+            <dd>{caseData.client}</dd>
+          </div>
+          <div>
+            <dt>Year</dt>
+            <dd>{caseData.startProject}</dd>
+          </div>
+          <div>
+            <dt>Type Case</dt>
+            <dd>
+              <ul>
+                {caseData.tags.map((tag, idx) => (
+                  <li key={`${tag}-${idx}`}>{tag}</li>
+                ))}
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>Reference</dt>
+            <dd>
+              <a
+                href="https://www.website.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                www.website.com
+              </a>
+            </dd>
+          </div>
+        </dl>
       </section>
     </main>
   );
