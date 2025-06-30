@@ -5,7 +5,8 @@ import { useTransitionContext } from "../../hooks/use-transition";
 import { CaseMetaInfo } from "./case-meta-into/CaseMetaInfo";
 import { CaseHeader } from "./case-header/CaseHeader";
 import styles from "./CaseScreen.module.css";
-import { CaseProcessDetails } from "./case-process-details/CaseProcessDetails";
+import { CaseChallengeDetails } from "./case-challenge-details/CaseChallengeDetails";
+import { CaseMediaDisplay } from "./case-media-display/CaseMediaDisplay";
 
 function CaseScreen() {
   useEffect(() => {
@@ -18,6 +19,7 @@ function CaseScreen() {
     Number.isFinite(caseId) && caseId >= 0 && caseId < CASES.length;
   const caseData = validCase ? CASES[caseId] : null;
   const imgRef = useRef<HTMLImageElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const { transitionData } = useTransitionContext();
   const [showHeaderContent, setShowHeaderContent] = useState(false);
 
@@ -88,7 +90,8 @@ function CaseScreen() {
       {showHeaderContent && (
         <article className={styles["content-container"]}>
           <CaseMetaInfo caseData={caseData} />
-          <CaseProcessDetails />
+          <CaseChallengeDetails />
+          <CaseMediaDisplay caseData={caseData} videoRef={videoRef} />
         </article>
       )}
     </main>

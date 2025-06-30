@@ -6,6 +6,8 @@ export type CaseData = {
   description: string;
   client: string;
   startProject: string;
+  mediaType: "image" | "video";
+  mediaSrc: string;
 };
 
 export const CASES: CaseData[] = [
@@ -17,6 +19,8 @@ export const CASES: CaseData[] = [
     description: "A cutting-edge web app built with React and TypeScript.",
     client: "Acme Corp",
     startProject: "2022",
+    mediaType: "video",
+    mediaSrc: "TF-before-after.mp4",
   },
   {
     id: 2,
@@ -26,6 +30,8 @@ export const CASES: CaseData[] = [
     description: "A scalable e-commerce platform for modern businesses.",
     client: "Shoply",
     startProject: "2021",
+    mediaType: "video",
+    mediaSrc: "TF-before-after.mp4",
   },
   {
     id: 3,
@@ -35,6 +41,8 @@ export const CASES: CaseData[] = [
     description: "A cross-platform mobile app for iOS and Android.",
     client: "MobileX",
     startProject: "2023",
+    mediaType: "image",
+    mediaSrc: "test.png",
   },
   {
     id: 4,
@@ -44,6 +52,8 @@ export const CASES: CaseData[] = [
     description: "A robust design system for consistent UI/UX.",
     client: "DesignPro",
     startProject: "2020",
+    mediaType: "image",
+    mediaSrc: "test.png",
   },
   {
     id: 5,
@@ -53,6 +63,8 @@ export const CASES: CaseData[] = [
     description: "A SaaS analytics dashboard with rich data visualizations.",
     client: "Insightful",
     startProject: "2022",
+    mediaType: "image",
+    mediaSrc: "test.png",
   },
   {
     id: 6,
@@ -62,6 +74,8 @@ export const CASES: CaseData[] = [
     description: "A fast marketing site optimized for SEO.",
     client: "Marketly",
     startProject: "2021",
+    mediaType: "image",
+    mediaSrc: "test.png",
   },
   {
     id: 7,
@@ -71,17 +85,19 @@ export const CASES: CaseData[] = [
     description: "An AI-powered chatbot for customer support.",
     client: "Botify",
     startProject: "2023",
+    mediaType: "image",
+    mediaSrc: "test.png",
   },
 ];
 
-export type ProcessDetail = {
+export type ChallengeDetail = {
   id: number;
   label: string;
   title: string;
   description: string;
 };
 
-export const PROCESS_DETAILS: ProcessDetail[] = [
+export const CHALLENGE_DETAILS: ChallengeDetail[] = [
   {
     id: 1,
     label: "Project Details",
