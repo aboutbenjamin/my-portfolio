@@ -9,6 +9,7 @@ export type CaseData = {
   startProject: string;
   mediaType: "image" | "video";
   mediaSrc: string;
+  results?: string;
 };
 
 export const CASES: CaseData[] = [
@@ -23,6 +24,7 @@ export const CASES: CaseData[] = [
     startProject: "2022",
     mediaType: "video",
     mediaSrc: "TF-before-after.mp4",
+    results: "Increased user engagement by 40% and reduced load times by 60%.",
   },
   {
     id: 2,
@@ -35,6 +37,7 @@ export const CASES: CaseData[] = [
     startProject: "2021",
     mediaType: "video",
     mediaSrc: "TF-before-after.mp4",
+    results: "Boosted conversion rate by 25% and improved SEO rankings.",
   },
   {
     id: 3,
@@ -46,6 +49,7 @@ export const CASES: CaseData[] = [
     startProject: "2023",
     mediaType: "image",
     mediaSrc: "test.png",
+    results: "Achieved 50,000+ downloads in the first month.",
   },
   {
     id: 4,
@@ -57,6 +61,7 @@ export const CASES: CaseData[] = [
     startProject: "2020",
     mediaType: "image",
     mediaSrc: "test.png",
+    results: "Reduced design-to-development handoff time by 30%.",
   },
   {
     id: 5,
@@ -68,6 +73,7 @@ export const CASES: CaseData[] = [
     startProject: "2022",
     mediaType: "image",
     mediaSrc: "test.png",
+    results: "Enabled data-driven decisions, increasing revenue by 15%.",
   },
   {
     id: 6,
@@ -79,6 +85,7 @@ export const CASES: CaseData[] = [
     startProject: "2021",
     mediaType: "image",
     mediaSrc: "test.png",
+    results: "Increased organic traffic by 70% within three months.",
   },
   {
     id: 7,
@@ -90,6 +97,7 @@ export const CASES: CaseData[] = [
     startProject: "2023",
     mediaType: "image",
     mediaSrc: "test.png",
+    results: "Handled 80% of common inquiries, reducing response time by 90%.",
   },
 ];
 

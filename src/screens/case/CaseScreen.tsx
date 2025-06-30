@@ -9,6 +9,7 @@ import { CaseChallengeDetails } from "./case-challenge-details/CaseChallengeDeta
 import { CaseMediaDisplay } from "./case-media-display/CaseMediaDisplay";
 import { CaseSolutionDetails } from "./case-solution-details/CaseSolutionDetails";
 import { ImageGridSection } from "./case-images-section/CaseImageGridSection";
+import { CaseResultsDetails } from "./case-results-details/CaseResultsDetails";
 
 function CaseScreen() {
   useEffect(() => {
@@ -99,6 +100,7 @@ function CaseScreen() {
           <CaseMediaDisplay caseData={caseData} videoRef={videoRef} />
           <CaseSolutionDetails />
           <ImageGridSection images={caseData.images ?? []} />
+          <CaseResultsDetails />
         </article>
       )}
     </main>
