@@ -25,7 +25,7 @@ export type Theme = {
 export const lightTheme: Theme = {
   colors: {
     background: "#fff",
-    foreground: "#1a0d0d",
+    foreground: "#0E0E0E",
     primary: "#80f4ff",
     secondary: "#f04cff",
     accent: "#ffb347",
@@ -33,7 +33,7 @@ export const lightTheme: Theme = {
     border: "#e0e0e0",
     overlay: "rgba(0,0,0,0.05)",
     contactCardBg: "#f6f6f6",
-    contactCardText: "#1a0d0d",
+    contactCardText: "#0E0E0E",
   },
   spacing: {
     xs: "0.5rem",
@@ -46,7 +46,7 @@ export const lightTheme: Theme = {
 
 export const darkTheme: Theme = {
   colors: {
-    background: "#18181b",
+    background: "#0E0E0E",
     foreground: "#f4f4f5",
     primary: "#80f4ff",
     secondary: "#f04cff",

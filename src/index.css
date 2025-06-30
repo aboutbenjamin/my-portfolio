@@ -45,6 +45,11 @@ p {
   padding: 0;
 }
 
+a {
+  color: var(--color-foreground);
+  text-decoration: none;
+}
+
 h1 {
   letter-spacing: -0.025em;
   font-weight: 500;

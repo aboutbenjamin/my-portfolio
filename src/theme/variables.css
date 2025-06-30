@@ -1,6 +1,6 @@
 :root {
   --color-background: #fff;
-  --color-foreground: #1a0d0d;
+  --color-foreground: #0e0e0e;
   --color-primary: #80f4ff;
   --color-secondary: #f04cff;
   --color-accent: #ffb347;
@@ -8,7 +8,7 @@
   --color-border: #e0e0e0;
   --color-overlay: rgba(0, 0, 0, 0.05);
   --color-contact-card-bg: #f6f6f6;
-  --color-contact-card-text: #1a0d0d;
+  --color-contact-card-text: #0e0e0e;
 
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;

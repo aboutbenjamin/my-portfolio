@@ -7,7 +7,7 @@ type CaseMetaInfoProps = {
 
 export function CaseMetaInfo({ caseData }: CaseMetaInfoProps) {
   return (
-    <section className={styles["content-meta-info"]}>
+    <section>
       <dl className={styles.caseDetailsList}>
         <div>
           <dt>Client</dt>
