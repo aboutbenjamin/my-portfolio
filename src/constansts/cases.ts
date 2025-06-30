@@ -3,6 +3,7 @@ export type CaseData = {
   title: string;
   tags: string[];
   image: string;
+  images?: string[];
   description: string;
   client: string;
   startProject: string;
@@ -16,6 +17,7 @@ export const CASES: CaseData[] = [
     title: "Awesome Project",
     tags: ["React", "TypeScript", "UI/UX"],
     image: "test.png",
+    images: ["test.png", "test2.png"],
     description: "A cutting-edge web app built with React and TypeScript.",
     client: "Acme Corp",
     startProject: "2022",
@@ -27,6 +29,7 @@ export const CASES: CaseData[] = [
     title: "E-Commerce Platform",
     tags: ["Next.js", "Commerce", "API"],
     image: "test.png",
+    images: ["test.png"],
     description: "A scalable e-commerce platform for modern businesses.",
     client: "Shoply",
     startProject: "2021",
