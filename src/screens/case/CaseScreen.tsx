@@ -51,6 +51,9 @@ function CaseScreen() {
 
       img.style.visibility = "hidden";
 
+      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+      floatingImg.offsetWidth;
+
       requestAnimationFrame(() => {
         floatingImg.style.left = "0px";
         floatingImg.style.top = "0px";
