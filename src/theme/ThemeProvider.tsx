@@ -27,7 +27,8 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     localStorage.setItem("theme", mode);
     const theme = mode === "dark" ? darkTheme : lightTheme;
     for (const [key, value] of Object.entries(theme.colors)) {
-      document.documentElement.style.setProperty(`--color-${key}`, value);
+      const cssVar = `--color-${key.replace(/([A-Z])/g, "-$1").toLowerCase()}`;
+      document.documentElement.style.setProperty(cssVar, value);
     }
     for (const [key, value] of Object.entries(theme.spacing)) {
       document.documentElement.style.setProperty(`--spacing-${key}`, value);

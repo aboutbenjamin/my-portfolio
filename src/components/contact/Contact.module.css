@@ -7,7 +7,7 @@
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
-  color: var(--color-foreground, #fff);
+  color: var(--color-foreground);
 }
 
 @media (min-width: 1536px) {
@@ -18,8 +18,8 @@
 }
 
 .contactCard {
-  background: var(--color-contact-card-bg, #23232a);
-  color: var(--color-contact-card-text, #fff);
+  background: var(--color-contact-card-bg);
+  color: var(--color-contact-card-text);
   border-radius: 1.5rem;
   padding: 2rem;
   display: flex;
@@ -58,13 +58,13 @@
 }
 
 .name {
-  color: #fff;
+  color: var(--color-contact-card-text);
   font-size: 1.125rem;
   font-weight: 500;
 }
 
 .role {
-  color: #b3b3b3;
+  color: var(--color-foreground);
   font-size: 1rem;
 }
 
@@ -88,8 +88,8 @@
   height: 3rem;
   padding: 0 2rem;
   border-radius: 9999px;
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff;
+  background: var(--color-border);
+  color: var(--color-foreground);
   font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
@@ -99,8 +99,8 @@
 
 .actionBtn:hover,
 .actionBtn:focus {
-  background: #fff;
-  color: #18181b;
+  background: var(--color-background);
+  color: var(--color-foreground);
 }
 
 .formWrapper {
@@ -121,8 +121,8 @@
   width: 100%;
   background: transparent;
   border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  color: #fff;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-contact-card-text);
   font-size: 1rem;
   padding: 0.75rem 0;
   outline: none;
@@ -131,12 +131,12 @@
 
 .input::placeholder,
 .textarea::placeholder {
-  color: #b3b3b3;
+  color: var(--color-foreground);
 }
 
 .input:focus,
 .textarea:focus {
-  border-bottom: 1px solid var(--color-primary, #80f4ff);
+  border-bottom: 1px solid var(--color-primary);
 }
 
 .textarea {
@@ -156,8 +156,8 @@
   width: 12rem;
   height: 3.5rem;
   border-radius: 9999px;
-  background: var(--color-primary, #80f4ff);
-  color: #18181b;
+  background: var(--color-primary);
+  color: #1a0d0d;
   font-size: 1rem;
   font-weight: 600;
   border: none;
@@ -167,7 +167,7 @@
 
 .submitBtn:hover,
 .submitBtn:focus {
-  background: #5fd8e6;
+  background: var(--color-secondary);
 }
 
 .formGrid {
