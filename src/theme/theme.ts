@@ -10,6 +10,8 @@ export type Theme = {
     muted: string;
     border: string;
     overlay: string;
+    contactCardBg: string;
+    contactCardText: string;
   };
   spacing: {
     xs: string;
@@ -30,6 +32,8 @@ export const lightTheme: Theme = {
     muted: "#f6f6f6",
     border: "#e0e0e0",
     overlay: "rgba(0,0,0,0.05)",
+    contactCardBg: "#f6f6f6",
+    contactCardText: "#1a0d0d",
   },
   spacing: {
     xs: "0.5rem",
@@ -50,6 +54,8 @@ export const darkTheme: Theme = {
     muted: "#23232a",
     border: "#33334d",
     overlay: "rgba(0,0,0,0.7)",
+    contactCardBg: "#23232a",
+    contactCardText: "#fff",
   },
   spacing: {
     xs: "0.5rem",

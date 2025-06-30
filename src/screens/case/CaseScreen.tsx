@@ -10,6 +10,7 @@ import { CaseMediaDisplay } from "./case-media-display/CaseMediaDisplay";
 import { CaseSolutionDetails } from "./case-solution-details/CaseSolutionDetails";
 import { ImageGridSection } from "./case-images-section/CaseImageGridSection";
 import { CaseResultsDetails } from "./case-results-details/CaseResultsDetails";
+import { Contact } from "../../components/contact/Contact";
 
 function CaseScreen() {
   useEffect(() => {
@@ -101,6 +102,7 @@ function CaseScreen() {
           <CaseSolutionDetails />
           <ImageGridSection images={caseData.images ?? []} />
           <CaseResultsDetails />
+          <Contact />
         </article>
       )}
     </main>
