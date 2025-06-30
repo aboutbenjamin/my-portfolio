@@ -7,6 +7,7 @@ import { CaseHeader } from "./case-header/CaseHeader";
 import styles from "./CaseScreen.module.css";
 import { CaseChallengeDetails } from "./case-challenge-details/CaseChallengeDetails";
 import { CaseMediaDisplay } from "./case-media-display/CaseMediaDisplay";
+import { CaseSolutionDetails } from "./case-solution-details/CaseSolutionDetails";
 
 function CaseScreen() {
   useEffect(() => {
@@ -92,6 +93,7 @@ function CaseScreen() {
           <CaseMetaInfo caseData={caseData} />
           <CaseChallengeDetails />
           <CaseMediaDisplay caseData={caseData} videoRef={videoRef} />
+          <CaseSolutionDetails />
         </article>
       )}
     </main>
