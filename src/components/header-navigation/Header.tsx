@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
 import styles from "./Header.module.css";
-import { Icon } from "../icons/Icon";
 import { useTheme } from "../../theme/use-theme";
+import { ThemeToggleButton } from "../theme-toggle-button/ThemeToggleButton";
+import { IconButton } from "../icon-button/IconButton";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const { mode } = useTheme();
+
+  const barsColor = mode === "dark" ? "#fff" : "#000";
 
   useEffect(() => {
     const onScroll = () => {
@@ -22,13 +25,19 @@ export function Header() {
 
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
-      <div className={styles.left}>
-        <Icon name="bars" />
+      <div>
+        <IconButton
+          icon="bars"
+          iconColor={barsColor}
+          aria-label="Open navigation"
+        />
       </div>
-      <div className={styles.center}>
+      <div>
         <img src={logoSrc} alt="Logo" className={styles.logo} />
       </div>
-      <div className={styles.right} />
+      <div>
+        <ThemeToggleButton />
+      </div>
     </header>
   );
 }
