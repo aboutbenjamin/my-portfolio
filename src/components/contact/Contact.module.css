@@ -1,7 +1,5 @@
 .heading {
   font-family: var(--font-heading, inherit);
-  font-size: 1.25rem;
-  font-weight: 600;
   margin-bottom: 1.5rem;
   color: var(--color-foreground);
 }
@@ -194,4 +192,13 @@
     flex-direction: row;
     gap: 2rem;
   }
+}
+
+.ellipsis {
+  display: inline-block;
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
 }

@@ -67,13 +67,13 @@ export function HorizontalScrollGallery() {
   if (!images.length) return null;
 
   return (
-    <div className={styles.stickyWrapper}>
+    <section className={styles.stickyWrapper}>
       <div className={styles.outer} ref={containerRef}>
         <div className={styles.stickyInner}>
           <div className={styles.galleryWrapper}>
             <div className={styles.galleryScroller} ref={scrollerRef}>
               {images.map((img, i) => (
-                <div className={styles.galleryItem} key={img || i}>
+                <figure className={styles.galleryItem} key={img || i}>
                   <img
                     src={
                       new URL(`../../../assets/${img}`, import.meta.url).href
@@ -81,12 +81,12 @@ export function HorizontalScrollGallery() {
                     alt={`Gallery ${i + 1}`}
                     className={styles.galleryImg}
                   />
-                </div>
+                </figure>
               ))}
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

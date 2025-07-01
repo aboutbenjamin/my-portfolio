@@ -2,11 +2,18 @@ import styles from "./Contact.module.css";
 
 export function Contact() {
   return (
-    <div className={styles.contactWrapper}>
-      <div className={styles.heading}>Want to know more about this case?</div>
-      <div className={styles.contactCard}>
-        <div className={styles.headingWrapper}>
-          <div className={styles.profile}>
+    <section
+      className={styles.contactWrapper}
+      aria-labelledby="contact-wrapper"
+    >
+      <header>
+        <h2 id="contact-heading" className={styles.heading}>
+          Want to know more about this case?
+        </h2>
+      </header>
+      <article className={styles.contactCard}>
+        <header className={styles.headingWrapper}>
+          <figure className={styles.profile}>
             <img
               src={
                 new URL(
@@ -15,24 +22,14 @@ export function Contact() {
                 ).href
               }
               className={styles.avatar}
+              alt="Benjamin Ziahi"
             />
-            <div>
-              <h4 className={styles.name}>Benjamin Ziahi</h4>
+            <figcaption>
+              <h3 className={styles.name}>Benjamin Ziahi</h3>
               <p className={styles.role}>Product Engineer</p>
-            </div>
-          </div>
-          <div className={styles.actions}>
-            <a href="tel:0612345678" className={styles.actionBtn}>
-              0612345678
-            </a>
-            <a
-              href="mailto:first.lastname@outlook.com"
-              className={styles.actionBtn}
-            >
-              first.lastname@outlook.com
-            </a>
-          </div>
-        </div>
+            </figcaption>
+          </figure>
+        </header>
         <div className={styles.formWrapper}>
           <form
             action="https://formbold.com/s/3LnXQ"
@@ -48,6 +45,7 @@ export function Contact() {
                   placeholder="Naam"
                   required
                   className={styles.input}
+                  aria-label="Naam"
                 />
                 <input
                   type="text"
@@ -55,6 +53,7 @@ export function Contact() {
                   placeholder="Bedrijfsnaam"
                   required
                   className={styles.input}
+                  aria-label="Bedrijfsnaam"
                 />
               </div>
               <div className={styles.row}>
@@ -64,12 +63,14 @@ export function Contact() {
                   placeholder="E-mailadres"
                   required
                   className={styles.input}
+                  aria-label="E-mailadres"
                 />
                 <input
                   type="tel"
                   name="phone"
                   placeholder="Telefoonnummer"
                   className={styles.input}
+                  aria-label="Telefoonnummer"
                 />
               </div>
               <div>
@@ -78,6 +79,7 @@ export function Contact() {
                   placeholder="Bericht"
                   className={styles.textarea}
                   rows={4}
+                  aria-label="Bericht"
                 />
                 <input type="hidden" name="tags" />
               </div>
@@ -89,7 +91,7 @@ export function Contact() {
             </div>
           </form>
         </div>
-      </div>
-    </div>
+      </article>
+    </section>
   );
 }
