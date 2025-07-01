@@ -1,14 +1,14 @@
 import styles from "../CaseScreen.module.css";
-import { RESULTS_DETAILS } from "../../../constansts/cases";
+import { CONCLUSION_DETAILS } from "../../../constansts/cases";
 import { useParams } from "react-router-dom";
 
-export function CaseResultsDetails() {
+export function CaseConclusionDetails() {
   const { id } = useParams();
   const caseId = Number(id);
   const details =
-    Number.isFinite(caseId) && caseId >= 0 && caseId < RESULTS_DETAILS.length
-      ? RESULTS_DETAILS[caseId]
-      : RESULTS_DETAILS[0];
+    Number.isFinite(caseId) && caseId >= 0 && caseId < CONCLUSION_DETAILS.length
+      ? CONCLUSION_DETAILS[caseId]
+      : CONCLUSION_DETAILS[0];
 
   return (
     <section className={styles["case-details-section"]}>

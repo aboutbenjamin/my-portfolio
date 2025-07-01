@@ -5,7 +5,7 @@ type Props = {
   altTexts?: string[];
 };
 
-export function ImageGridSection({ images, altTexts }: Props) {
+export function CaseImageGridSection({ images, altTexts }: Props) {
   return (
     <section className={styles.imageGridSection}>
       {images.map((img, idx) => (

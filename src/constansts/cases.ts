@@ -9,7 +9,8 @@ export type CaseData = {
   startProject: string;
   mediaType: "image" | "video";
   mediaSrc: string;
-  results?: string;
+  about?: string;
+  conclustion?: string;
 };
 
 export const CASES: CaseData[] = [
@@ -24,7 +25,6 @@ export const CASES: CaseData[] = [
     startProject: "2022",
     mediaType: "video",
     mediaSrc: "TF-before-after.mp4",
-    results: "Increased user engagement by 40% and reduced load times by 60%.",
   },
   {
     id: 2,
@@ -37,7 +37,6 @@ export const CASES: CaseData[] = [
     startProject: "2021",
     mediaType: "video",
     mediaSrc: "TF-before-after.mp4",
-    results: "Boosted conversion rate by 25% and improved SEO rankings.",
   },
   {
     id: 3,
@@ -49,7 +48,6 @@ export const CASES: CaseData[] = [
     startProject: "2023",
     mediaType: "image",
     mediaSrc: "test.png",
-    results: "Achieved 50,000+ downloads in the first month.",
   },
   {
     id: 4,
@@ -61,7 +59,6 @@ export const CASES: CaseData[] = [
     startProject: "2020",
     mediaType: "image",
     mediaSrc: "test.png",
-    results: "Reduced design-to-development handoff time by 30%.",
   },
   {
     id: 5,
@@ -73,7 +70,6 @@ export const CASES: CaseData[] = [
     startProject: "2022",
     mediaType: "image",
     mediaSrc: "test.png",
-    results: "Enabled data-driven decisions, increasing revenue by 15%.",
   },
   {
     id: 6,
@@ -85,7 +81,6 @@ export const CASES: CaseData[] = [
     startProject: "2021",
     mediaType: "image",
     mediaSrc: "test.png",
-    results: "Increased organic traffic by 70% within three months.",
   },
   {
     id: 7,
@@ -97,18 +92,17 @@ export const CASES: CaseData[] = [
     startProject: "2023",
     mediaType: "image",
     mediaSrc: "test.png",
-    results: "Handled 80% of common inquiries, reducing response time by 90%.",
   },
 ];
 
-export type ChallengeSolutionDetail = {
+export type CaseDetails = {
   id: number;
   label: string;
   title: string;
   description: string;
 };
 
-export const CHALLENGE_DETAILS: ChallengeSolutionDetail[] = [
+export const ABOUT_DETAILS: CaseDetails[] = [
   {
     id: 1,
     label: "Project Details",
@@ -160,7 +154,163 @@ export const CHALLENGE_DETAILS: ChallengeSolutionDetail[] = [
   },
 ];
 
-export const SOLUTION_DETAILS: ChallengeSolutionDetail[] = [
+export const CHALLENGE_DETAILS: CaseDetails[] = [
+  {
+    id: 1,
+    label: "Project Details",
+    title: "A deep dive into the design and engineering process",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet dictum, urna erat dictum velit, nec laoreet enim lacus a velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti. Etiam nec velit nec libero pretium pharetra. In hac habitasse platea dictumst. Morbi euismod, urna in cursus faucibus, massa arcu facilisis enim, vitae cursus erat purus non urna.",
+  },
+  {
+    id: 2,
+    label: "Platform Insights",
+    title: "Building a scalable e-commerce experience",
+    description:
+      "This project focused on designing a robust e-commerce platform. We implemented a modular architecture, seamless API integrations, and a user-centric checkout flow to maximize conversions and performance.",
+  },
+  {
+    id: 3,
+    label: "Mobile Innovation",
+    title: "Delivering cross-platform mobile excellence",
+    description:
+      "The mobile app was engineered for both iOS and Android, leveraging React Native for rapid development. Emphasis was placed on intuitive navigation, offline support, and native performance.",
+  },
+  {
+    id: 4,
+    label: "Design System",
+    title: "Establishing a unified design language",
+    description:
+      "We created a comprehensive design system in Figma, defining tokens, components, and accessibility standards. This ensured consistency and efficiency across all product surfaces.",
+  },
+  {
+    id: 5,
+    label: "Analytics Engineering",
+    title: "Visualizing data for actionable insights",
+    description:
+      "Our analytics dashboard utilized D3.js for interactive data visualizations. The SaaS platform enabled real-time reporting and customizable metrics for business users.",
+  },
+  {
+    id: 6,
+    label: "Marketing Optimization",
+    title: "Crafting a high-performance marketing site",
+    description:
+      "The marketing site was built with Gatsby and Contentful, optimized for SEO and fast load times. Content workflows empowered the marketing team to iterate quickly.",
+  },
+  {
+    id: 7,
+    label: "AI Integration",
+    title: "Empowering support with AI chatbots",
+    description:
+      "We integrated OpenAI-powered chatbots to automate customer support. The Node.js backend handled real-time messaging, intent recognition, and seamless handoff to human agents.",
+  },
+];
+
+export const SOLUTION_DETAILS: CaseDetails[] = [
+  {
+    id: 1,
+    label: "Solution Overview",
+    title: "How we solved the challenge",
+    description:
+      "Detailed explanation of the solution implemented for this project.",
+  },
+  {
+    id: 2,
+    label: "E-Commerce Solution",
+    title: "Optimized checkout and scalable backend",
+    description:
+      "Implemented a seamless checkout and scalable backend for high traffic.",
+  },
+  {
+    id: 3,
+    label: "Mobile Innovation",
+    title: "Delivering cross-platform mobile excellence",
+    description:
+      "The mobile app was engineered for both iOS and Android, leveraging React Native for rapid development. Emphasis was placed on intuitive navigation, offline support, and native performance.",
+  },
+  {
+    id: 4,
+    label: "Design System",
+    title: "Establishing a unified design language",
+    description:
+      "We created a comprehensive design system in Figma, defining tokens, components, and accessibility standards. This ensured consistency and efficiency across all product surfaces.",
+  },
+  {
+    id: 5,
+    label: "Analytics Engineering",
+    title: "Visualizing data for actionable insights",
+    description:
+      "Our analytics dashboard utilized D3.js for interactive data visualizations. The SaaS platform enabled real-time reporting and customizable metrics for business users.",
+  },
+  {
+    id: 6,
+    label: "Marketing Optimization",
+    title: "Crafting a high-performance marketing site",
+    description:
+      "The marketing site was built with Gatsby and Contentful, optimized for SEO and fast load times. Content workflows empowered the marketing team to iterate quickly.",
+  },
+  {
+    id: 7,
+    label: "AI Integration",
+    title: "Empowering support with AI chatbots",
+    description:
+      "We integrated OpenAI-powered chatbots to automate customer support. The Node.js backend handled real-time messaging, intent recognition, and seamless handoff to human agents.",
+  },
+];
+
+export const RESULTS_DETAILS: CaseDetails[] = [
+  {
+    id: 1,
+    label: "Solution Overview",
+    title: "How we solved the challenge",
+    description:
+      "Detailed explanation of the solution implemented for this project.",
+  },
+  {
+    id: 2,
+    label: "E-Commerce Solution",
+    title: "Optimized checkout and scalable backend",
+    description:
+      "Implemented a seamless checkout and scalable backend for high traffic.",
+  },
+  {
+    id: 3,
+    label: "Mobile Innovation",
+    title: "Delivering cross-platform mobile excellence",
+    description:
+      "The mobile app was engineered for both iOS and Android, leveraging React Native for rapid development. Emphasis was placed on intuitive navigation, offline support, and native performance.",
+  },
+  {
+    id: 4,
+    label: "Design System",
+    title: "Establishing a unified design language",
+    description:
+      "We created a comprehensive design system in Figma, defining tokens, components, and accessibility standards. This ensured consistency and efficiency across all product surfaces.",
+  },
+  {
+    id: 5,
+    label: "Analytics Engineering",
+    title: "Visualizing data for actionable insights",
+    description:
+      "Our analytics dashboard utilized D3.js for interactive data visualizations. The SaaS platform enabled real-time reporting and customizable metrics for business users.",
+  },
+  {
+    id: 6,
+    label: "Marketing Optimization",
+    title: "Crafting a high-performance marketing site",
+    description:
+      "The marketing site was built with Gatsby and Contentful, optimized for SEO and fast load times. Content workflows empowered the marketing team to iterate quickly.",
+  },
+  {
+    id: 7,
+    label: "AI Integration",
+    title: "Empowering support with AI chatbots",
+    description:
+      "We integrated OpenAI-powered chatbots to automate customer support. The Node.js backend handled real-time messaging, intent recognition, and seamless handoff to human agents.",
+  },
+];
+
+export const CONCLUSION_DETAILS: CaseDetails[] = [
   {
     id: 1,
     label: "Solution Overview",

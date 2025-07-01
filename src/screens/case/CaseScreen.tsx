@@ -8,9 +8,11 @@ import styles from "./CaseScreen.module.css";
 import { CaseChallengeDetails } from "./case-challenge-details/CaseChallengeDetails";
 import { CaseMediaDisplay } from "./case-media-display/CaseMediaDisplay";
 import { CaseSolutionDetails } from "./case-solution-details/CaseSolutionDetails";
-import { ImageGridSection } from "./case-images-section/CaseImageGridSection";
+import { CaseImageGridSection } from "./case-images-section/CaseImageGridSection";
 import { CaseResultsDetails } from "./case-results-details/CaseResultsDetails";
 import { Contact } from "../../components/contact/Contact";
+import { CaseAboutDetails } from "./case-about-details/CaseAboutDetails";
+import { CaseConclusionDetails } from "./case-conclusion-details/CaseConclusionDetails";
 
 function CaseScreen() {
   useEffect(() => {
@@ -97,10 +99,14 @@ function CaseScreen() {
       {showHeaderContent && (
         <article className={styles["content-container"]}>
           <CaseMetaInfo caseData={caseData} />
-          <CaseChallengeDetails />
+          <CaseAboutDetails />
           <CaseMediaDisplay caseData={caseData} videoRef={videoRef} />
+          <CaseChallengeDetails />
+          <CaseImageGridSection images={caseData.images ?? []} />
           <CaseSolutionDetails />
-          <ImageGridSection images={caseData.images ?? []} />
+          {/* Slider */}
+          <CaseConclusionDetails />
+          <CaseImageGridSection images={caseData.images ?? []} />
           <CaseResultsDetails />
           <Contact />
         </article>
