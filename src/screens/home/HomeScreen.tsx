@@ -51,28 +51,22 @@ function HomeScreen() {
         <h2>Cases</h2>
         <div className={styles["cases-grid"]}>
           <div className={styles["cases-col-left"]}>
-            {CASES.slice(0, 4).map((c, idx) => (
+            {CASES.filter((_, idx) => idx % 2 === 0).map((c, i) => (
               <Case
-                key={idx}
-                id={idx}
-                title={c.title}
-                tags={c.tags}
-                image={c.image}
-                imgRef={getImgRef(idx)}
-                onClick={() => handleCaseClick(idx)}
+                key={i * 2}
+                caseData={c}
+                imgRef={getImgRef(i * 2)}
+                onClick={() => handleCaseClick(i * 2)}
               />
             ))}
           </div>
           <div className={styles["cases-col-right"]}>
-            {CASES.slice(4).map((c, idx) => (
+            {CASES.filter((_, idx) => idx % 2 === 1).map((c, i) => (
               <Case
-                key={idx + 4}
-                id={idx + 4}
-                title={c.title}
-                tags={c.tags}
-                image={c.image}
-                imgRef={getImgRef(idx + 4)}
-                onClick={() => handleCaseClick(idx + 4)}
+                key={i * 2 + 1}
+                caseData={c}
+                imgRef={getImgRef(i * 2 + 1)}
+                onClick={() => handleCaseClick(i * 2 + 1)}
               />
             ))}
           </div>

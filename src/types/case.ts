@@ -12,6 +12,7 @@ export type CaseData = {
   images?: string[];
   description: string;
   client: string;
+  website?: string;
   startProject: string;
   mediaType: "image" | "video";
   mediaSrc: string;

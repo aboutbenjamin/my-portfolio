@@ -1,14 +1,11 @@
 import { BackButton } from "../../../components/back-button/BackButton";
+import type { CaseData } from "../../../types/case";
 import styles from "./CaseHeader.module.css";
 
 type CaseHeaderProps = {
   showHeaderContent: boolean;
   imgRef: React.RefObject<HTMLImageElement | null>;
-  caseData: {
-    image: string;
-    title: string;
-    description: string;
-  };
+  caseData: CaseData;
 };
 
 export function CaseHeader({
@@ -39,10 +36,8 @@ export function CaseHeader({
       </header>
       {showHeaderContent && (
         <div className={styles["case-content"]}>
-          <h1 className={styles["case-title-animated"]}>
-            {caseData.description}
-          </h1>
-          <span>{caseData.title}</span>
+          <h1 className={styles["case-title-animated"]}>{caseData.title}</h1>
+          <span>{caseData.client}</span>
         </div>
       )}
     </>

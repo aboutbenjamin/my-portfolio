@@ -17,14 +17,18 @@
   font-weight: 600;
   color: var(--color-foreground);
   margin-bottom: 0.25rem;
+  opacity: 0.5;
+  font-size: 1rem;
 }
 
 .metaInfoList dd {
+  font-size: 1rem;
   margin: 0;
   color: var(--color-foreground);
 }
 
 .metaInfoList ul {
+  width: max-content;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -65,7 +69,6 @@
 
   .metaInfoList ul {
     flex-direction: row;
-    gap: 1rem;
   }
 
   .metaInfoList ul li {

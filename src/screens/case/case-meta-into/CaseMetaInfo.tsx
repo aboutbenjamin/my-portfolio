@@ -22,7 +22,10 @@ export function CaseMetaInfo({ caseData }: CaseMetaInfoProps) {
           <dd>
             <ul>
               {caseData.tags.map((tag, idx) => (
-                <li key={`${tag}-${idx}`}>{tag}</li>
+                <li key={`${tag}-${idx}`}>
+                  {tag}
+                  {idx < caseData.tags.length - 1 && <span>,</span>}
+                </li>
               ))}
             </ul>
           </dd>
@@ -35,7 +38,7 @@ export function CaseMetaInfo({ caseData }: CaseMetaInfoProps) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              www.website.com
+              {caseData.website}
             </a>
           </dd>
         </div>

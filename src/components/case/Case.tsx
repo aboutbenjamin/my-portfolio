@@ -1,23 +1,16 @@
 import React from "react";
 import styles from "./Case.module.css";
+import type { CaseData } from "../../types/case";
 
 type CaseProps = {
-  title: string;
-  tags: string[];
-  image: string;
-  id: number;
+  caseData: CaseData;
   onClick?: () => void;
   imgRef?: React.Ref<HTMLImageElement>;
 };
 
-const Case: React.FC<CaseProps> = ({
-  title,
-  tags,
-  image,
-  id,
-  onClick,
-  imgRef,
-}) => {
+const Case: React.FC<CaseProps> = ({ caseData, onClick, imgRef }) => {
+  const { title, client, image, id } = caseData;
+
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
@@ -49,9 +42,7 @@ const Case: React.FC<CaseProps> = ({
         </figure>
         <h3 className={styles.caseTitle}>{title}</h3>
         <span className={styles.caseTags}>
-          {tags.map((tag) => (
-            <span key={tag}>{tag}</span>
-          ))}
+          <span key={caseData.client}>{client}</span>
         </span>
       </article>
     </section>

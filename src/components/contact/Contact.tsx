@@ -81,7 +81,6 @@ export function Contact() {
                   rows={4}
                   aria-label="Bericht"
                 />
-                <input type="hidden" name="tags" />
               </div>
             </div>
             <div className={styles.submitRow}>

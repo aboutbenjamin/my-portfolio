@@ -91,11 +91,7 @@ function CaseScreen() {
       <CaseHeader
         showHeaderContent={showHeaderContent}
         imgRef={imgRef}
-        caseData={{
-          image: caseData.image,
-          title: caseData.title,
-          description: caseData.description,
-        }}
+        caseData={caseData}
       />
       {showHeaderContent && (
         <article className={styles["content-container"]}>

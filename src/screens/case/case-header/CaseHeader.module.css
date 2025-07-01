@@ -48,7 +48,12 @@
   gap: 2rem;
 }
 
-.case-content h1,
-.case-content span {
+.case-content h1 {
   color: #ffffff;
+}
+
+.case-content span {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: rgba(255, 255, 255, 0.5);
 }
