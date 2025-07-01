@@ -1,4 +1,4 @@
-import type { CaseData } from "../../../constansts/cases";
+import type { CaseData } from "../../../types/case";
 import styles from "./CaseMetaInfo.module.css";
 
 type CaseMetaInfoProps = {

@@ -1,11 +1,8 @@
 import { useMemo } from "react";
 import styles from "./CaseResultsDetails.module.css";
-import {
-  CASES,
-  RESULTS_DETAILS,
-  type CaseResultCard,
-} from "../../../constansts/cases";
+import { CASES, RESULTS_DETAILS } from "../../../constansts/cases";
 import { useParams } from "react-router-dom";
+import type { CaseResultCard } from "../../../types/case";
 
 export function CaseResultsDetails() {
   const { id } = useParams<{ id?: string }>();
