@@ -1,3 +1,9 @@
+export type CaseResultCard = {
+  value: string;
+  label: string;
+  delay: number;
+};
+
 export type CaseData = {
   id: number;
   title: string;
@@ -12,6 +18,7 @@ export type CaseData = {
   about?: string;
   conclustion?: string;
   scrollGalleryImages?: string[];
+  results?: CaseResultCard[];
 };
 
 export const CASES: CaseData[] = [
@@ -27,6 +34,15 @@ export const CASES: CaseData[] = [
     mediaType: "video",
     mediaSrc: "TF-before-after.mp4",
     scrollGalleryImages: ["test.png", "test2.png", "test.png", "test2.png"],
+    results: [
+      { value: "350k", label: "Freelancers verbonden", delay: 100 },
+      { value: "20 jaar", label: "Ervaring", delay: 150 },
+      {
+        value: "22 members",
+        label: "Blended team constructie van",
+        delay: 200,
+      },
+    ],
   },
   {
     id: 2,
@@ -40,6 +56,11 @@ export const CASES: CaseData[] = [
     mediaType: "video",
     mediaSrc: "TF-before-after.mp4",
     scrollGalleryImages: ["test2.png", "test.png"],
+    results: [
+      { value: "150k", label: "Producten opgelijst", delay: 100 },
+      { value: "10x", label: "Snellere laadtijd", delay: 150 },
+      { value: "5 sterren", label: "Klantbeoordeling", delay: 200 },
+    ],
   },
   {
     id: 3,
@@ -52,6 +73,11 @@ export const CASES: CaseData[] = [
     mediaType: "image",
     mediaSrc: "test.png",
     scrollGalleryImages: ["test.png", "test2.png"],
+    results: [
+      { value: "100k+", label: "Downloads", delay: 100 },
+      { value: "4.8", label: "Gemiddelde beoordeling", delay: 150 },
+      { value: "50+", label: "Functies", delay: 200 },
+    ],
   },
   {
     id: 4,
@@ -64,6 +90,11 @@ export const CASES: CaseData[] = [
     mediaType: "image",
     mediaSrc: "test.png",
     scrollGalleryImages: ["test.png", "test2.png"],
+    results: [
+      { value: "200+", label: "Componenten gemaakt", delay: 100 },
+      { value: "95%", label: "Toegankelijkheidsscore", delay: 150 },
+      { value: "30%", label: "Snellere ontwerptijd", delay: 200 },
+    ],
   },
   {
     id: 5,
@@ -76,6 +107,11 @@ export const CASES: CaseData[] = [
     mediaType: "image",
     mediaSrc: "test.png",
     scrollGalleryImages: ["test.png", "test2.png"],
+    results: [
+      { value: "1M+", label: "Data punten geanalyseerd", delay: 100 },
+      { value: "10+", label: "Interactieve rapporten", delay: 150 },
+      { value: "24/7", label: "Realtime gegevensmonitoring", delay: 200 },
+    ],
   },
   {
     id: 6,
@@ -88,6 +124,11 @@ export const CASES: CaseData[] = [
     mediaType: "image",
     mediaSrc: "test.png",
     scrollGalleryImages: ["test.png", "test2.png"],
+    results: [
+      { value: "500%", label: "Verhoogde laadsnelheid", delay: 100 },
+      { value: "300%", label: "Groei in organisch verkeer", delay: 150 },
+      { value: "2 uur", label: "Tijd bespaard per week", delay: 200 },
+    ],
   },
   {
     id: 7,
@@ -100,6 +141,11 @@ export const CASES: CaseData[] = [
     mediaType: "image",
     mediaSrc: "test.png",
     scrollGalleryImages: ["test.png", "test2.png"],
+    results: [
+      { value: "80%", label: "Kostenbesparing", delay: 100 },
+      { value: "90%", label: "Snellere responstijd", delay: 150 },
+      { value: "24/7", label: "Continue ondersteuning", delay: 200 },
+    ],
   },
 ];
 

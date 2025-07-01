@@ -1,24 +1,59 @@
-import styles from "../CaseScreen.module.css";
-import { RESULTS_DETAILS } from "../../../constansts/cases";
+import { useMemo } from "react";
+import styles from "./CaseResultsDetails.module.css";
+import {
+  CASES,
+  RESULTS_DETAILS,
+  type CaseResultCard,
+} from "../../../constansts/cases";
 import { useParams } from "react-router-dom";
 
 export function CaseResultsDetails() {
-  const { id } = useParams();
-  const caseId = Number(id);
-  const details =
-    Number.isFinite(caseId) && caseId >= 0 && caseId < RESULTS_DETAILS.length
-      ? RESULTS_DETAILS[caseId]
-      : RESULTS_DETAILS[0];
+  const { id } = useParams<{ id?: string }>();
+  const caseId = useMemo(() => Number(id), [id]);
+
+  const details = useMemo(
+    () =>
+      Number.isFinite(caseId) && caseId >= 0 && caseId < RESULTS_DETAILS.length
+        ? RESULTS_DETAILS[caseId]
+        : RESULTS_DETAILS[0],
+    [caseId]
+  );
+
+  const caseData = useMemo(
+    () =>
+      Number.isFinite(caseId) && caseId >= 0 && caseId < CASES.length
+        ? CASES[caseId]
+        : CASES[0],
+    [caseId]
+  );
+
+  const resultCards = caseData.results ?? [];
 
   return (
-    <section className={styles["case-details-section"]}>
-      <section className={styles["case-details-left"]}>
-        <p className={styles["case-details-label"]}>{details.label}</p>
-        <h2 className={styles["case-details-title"]}>{details.title}</h2>
-      </section>
-      <section className={styles["case-details-right"]}>
-        <p>{details.description}</p>
-      </section>
+    <section>
+      <header className={styles.resultsGrid}>
+        <p className={styles.resultsLabel} id="results-heading">
+          Results
+        </p>
+        <h2 className={styles.resultsTitle}>{details.title}</h2>
+      </header>
+      <ul className={styles.cardsGrid}>
+        {resultCards.length === 0 ? (
+          <li>
+            <p>No results available.</p>
+          </li>
+        ) : (
+          resultCards.map((card: CaseResultCard) => (
+            <li
+              key={`${card.value}-${card.label}`}
+              className={styles.resultCard}
+            >
+              <span className={styles.resultCardValue}>{card.value}</span>
+              <p className={styles.resultCardLabel}>{card.label}</p>
+            </li>
+          ))
+        )}
+      </ul>
     </section>
   );
 }

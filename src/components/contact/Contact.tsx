@@ -5,29 +5,33 @@ export function Contact() {
     <div className={styles.contactWrapper}>
       <div className={styles.heading}>Want to know more about this case?</div>
       <div className={styles.contactCard}>
-        <div className={styles.profile}>
-          <img
-            src={
-              new URL("../../assets/portfolio-logo-light.png", import.meta.url)
-                .href
-            }
-            className={styles.avatar}
-          />
-          <div>
-            <h4 className={styles.name}>Benjamin Ziahi</h4>
-            <p className={styles.role}>Product Engineer</p>
+        <div className={styles.headingWrapper}>
+          <div className={styles.profile}>
+            <img
+              src={
+                new URL(
+                  "../../assets/portfolio-logo-light.png",
+                  import.meta.url
+                ).href
+              }
+              className={styles.avatar}
+            />
+            <div>
+              <h4 className={styles.name}>Benjamin Ziahi</h4>
+              <p className={styles.role}>Product Engineer</p>
+            </div>
           </div>
-        </div>
-        <div className={styles.actions}>
-          <a href="tel:0612345678" className={styles.actionBtn}>
-            0612345678
-          </a>
-          <a
-            href="mailto:first.lastname@outlook.com"
-            className={styles.actionBtn}
-          >
-            first.lastname@outlook.com
-          </a>
+          <div className={styles.actions}>
+            <a href="tel:0612345678" className={styles.actionBtn}>
+              0612345678
+            </a>
+            <a
+              href="mailto:first.lastname@outlook.com"
+              className={styles.actionBtn}
+            >
+              first.lastname@outlook.com
+            </a>
+          </div>
         </div>
         <div className={styles.formWrapper}>
           <form
