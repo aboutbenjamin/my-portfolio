@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import styles from "../CaseScreen.module.css";
+import styles from "./CaseMediaDisplay.module.css";
 import type { CaseData } from "../../../constansts/cases";
 
 type CaseMediaDisplayProps = {

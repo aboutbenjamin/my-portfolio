@@ -1,5 +1,5 @@
 import { BackButton } from "../../../components/back-button/BackButton";
-import styles from "../CaseScreen.module.css";
+import styles from "./CaseHeader.module.css";
 
 type CaseHeaderProps = {
   showHeaderContent: boolean;

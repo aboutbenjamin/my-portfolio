@@ -1,5 +1,5 @@
 import type { CaseData } from "../../../constansts/cases";
-import styles from "../CaseScreen.module.css";
+import styles from "./CaseMetaInfo.module.css";
 
 type CaseMetaInfoProps = {
   caseData: CaseData;
@@ -8,7 +8,7 @@ type CaseMetaInfoProps = {
 export function CaseMetaInfo({ caseData }: CaseMetaInfoProps) {
   return (
     <section>
-      <dl className={styles.caseDetailsList}>
+      <dl className={styles.metaInfoList}>
         <div>
           <dt>Client</dt>
           <dd>{caseData.client}</dd>

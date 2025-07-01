@@ -1,0 +1,23 @@
+.case-media-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.case-media-section figure {
+  margin: 0;
+}
+
+.case-image-media {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.video-element {
+  width: 100%;
+  height: auto;
+  display: block;
+}
