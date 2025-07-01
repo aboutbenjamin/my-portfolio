@@ -50,26 +50,22 @@ function HomeScreen() {
       <section className={styles["cases-section"]}>
         <h2>Cases</h2>
         <div className={styles["cases-grid"]}>
-          <div className={styles["cases-col-left"]}>
-            {CASES.filter((_, idx) => idx % 2 === 0).map((c, i) => (
+          {CASES.map((c, idx) => (
+            <div
+              key={idx}
+              className={
+                idx % 2 === 0
+                  ? styles["cases-col-left"]
+                  : styles["cases-col-right"]
+              }
+            >
               <Case
-                key={i * 2}
                 caseData={c}
-                imgRef={getImgRef(i * 2)}
-                onClick={() => handleCaseClick(i * 2)}
+                imgRef={getImgRef(idx)}
+                onClick={() => handleCaseClick(idx)}
               />
-            ))}
-          </div>
-          <div className={styles["cases-col-right"]}>
-            {CASES.filter((_, idx) => idx % 2 === 1).map((c, i) => (
-              <Case
-                key={i * 2 + 1}
-                caseData={c}
-                imgRef={getImgRef(i * 2 + 1)}
-                onClick={() => handleCaseClick(i * 2 + 1)}
-              />
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </section>
     </main>

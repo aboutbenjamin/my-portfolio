@@ -81,7 +81,7 @@ export const CASES: CaseData[] = [
     tags: ["Figma", "Design Tokens", "Accessibility"],
     image: "test.png",
     description: "A robust design system for consistent UI/UX.",
-    client: "WCAG",
+    client: "Termynen",
     startProject: "2020",
     mediaType: "image",
     mediaSrc: "test.png",
