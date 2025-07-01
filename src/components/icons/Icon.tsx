@@ -1,5 +1,3 @@
-import React from "react";
-
 type IconName = "left-arrow" | "bars" | "sun" | "moon";
 
 type IconProps = {
