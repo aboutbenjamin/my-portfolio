@@ -4,13 +4,6 @@
   gap: 1rem;
 }
 
-@media (min-width: 1024px) {
-  .imageGridSection {
-    flex-direction: row;
-    gap: 5rem;
-  }
-}
-
 .imageGridFigure {
   position: relative;
   width: 100%;
@@ -24,4 +17,11 @@
   object-fit: cover;
   object-position: 50% 50%;
   display: block;
+}
+
+@media (min-width: 1024px) {
+  .imageGridSection {
+    flex-direction: row;
+    gap: 5rem;
+  }
 }
