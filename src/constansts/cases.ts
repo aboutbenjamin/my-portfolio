@@ -11,6 +11,7 @@ export type CaseData = {
   mediaSrc: string;
   about?: string;
   conclustion?: string;
+  scrollGalleryImages?: string[];
 };
 
 export const CASES: CaseData[] = [
@@ -25,6 +26,7 @@ export const CASES: CaseData[] = [
     startProject: "2022",
     mediaType: "video",
     mediaSrc: "TF-before-after.mp4",
+    scrollGalleryImages: ["test.png", "test2.png", "test.png", "test2.png"],
   },
   {
     id: 2,
@@ -37,6 +39,7 @@ export const CASES: CaseData[] = [
     startProject: "2021",
     mediaType: "video",
     mediaSrc: "TF-before-after.mp4",
+    scrollGalleryImages: ["test2.png", "test.png"],
   },
   {
     id: 3,
@@ -48,6 +51,7 @@ export const CASES: CaseData[] = [
     startProject: "2023",
     mediaType: "image",
     mediaSrc: "test.png",
+    scrollGalleryImages: ["test.png", "test2.png"],
   },
   {
     id: 4,
@@ -59,6 +63,7 @@ export const CASES: CaseData[] = [
     startProject: "2020",
     mediaType: "image",
     mediaSrc: "test.png",
+    scrollGalleryImages: ["test.png", "test2.png"],
   },
   {
     id: 5,
@@ -70,6 +75,7 @@ export const CASES: CaseData[] = [
     startProject: "2022",
     mediaType: "image",
     mediaSrc: "test.png",
+    scrollGalleryImages: ["test.png", "test2.png"],
   },
   {
     id: 6,
@@ -81,6 +87,7 @@ export const CASES: CaseData[] = [
     startProject: "2021",
     mediaType: "image",
     mediaSrc: "test.png",
+    scrollGalleryImages: ["test.png", "test2.png"],
   },
   {
     id: 7,
@@ -92,6 +99,7 @@ export const CASES: CaseData[] = [
     startProject: "2023",
     mediaType: "image",
     mediaSrc: "test.png",
+    scrollGalleryImages: ["test.png", "test2.png"],
   },
 ];
 

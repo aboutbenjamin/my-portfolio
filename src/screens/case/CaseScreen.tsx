@@ -13,6 +13,7 @@ import { CaseResultsDetails } from "./case-results-details/CaseResultsDetails";
 import { Contact } from "../../components/contact/Contact";
 import { CaseAboutDetails } from "./case-about-details/CaseAboutDetails";
 import { CaseConclusionDetails } from "./case-conclusion-details/CaseConclusionDetails";
+import { HorizontalScrollGallery } from "./case-horizontal-scroll-gallery/HorizontalScrollGallery";
 
 function CaseScreen() {
   useEffect(() => {
@@ -104,7 +105,7 @@ function CaseScreen() {
           <CaseChallengeDetails />
           <CaseImageGridSection images={caseData.images ?? []} />
           <CaseSolutionDetails />
-          {/* Slider */}
+          <HorizontalScrollGallery />
           <CaseConclusionDetails />
           <CaseImageGridSection images={caseData.images ?? []} />
           <CaseResultsDetails />
