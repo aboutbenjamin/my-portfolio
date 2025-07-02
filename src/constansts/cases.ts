@@ -3,13 +3,14 @@ import type { CaseData } from "../types/case";
 export const CASES: CaseData[] = [
   {
     id: 1,
-    title: "Awesome Project",
-    tags: ["React", "TypeScript", "UI/UX"],
-    image: "test.png",
-    images: ["test.png", "test2.png"],
+    title: "Enhancing customer experience with AI search",
+    tags: ["Design", "Development", "Mobile"],
+    image: "cover-vdf.png",
+    images: ["cover-vdf.png"],
     description: "A cutting-edge web app built with React and TypeScript.",
     client: "Vodafone",
-    startProject: "2022",
+    website: "Vodafone app",
+    startProject: "2025",
     mediaType: "video",
     mediaSrc: "TF-before-after.mp4",
     scrollGalleryImages: ["test.png", "test2.png", "test.png", "test2.png"],
@@ -95,7 +96,7 @@ export const CASES: CaseData[] = [
   {
     id: 6,
     title:
-      "Logistieke processen optimaliseren met branchegerichte ERP-oplossingen.",
+      "Optimizing logistical processes with industry-specific ERP solutions.",
     tags: ["Design", "Development", "SaaS", "Rapid Prototyping"],
     image: "cover-tf.png",
     images: {
@@ -103,7 +104,7 @@ export const CASES: CaseData[] = [
       secondSection: ["tf-image-grid-3.png", "tf-image-grid-4.png"],
     },
     description: "A cross-platform mobile app for iOS and Android.",
-    client: "TroubleFree",
+    client: "Troublefree",
     website: "troublefree.nl",
     startProject: "2018",
     mediaType: "video",
