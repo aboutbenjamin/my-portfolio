@@ -9,7 +9,12 @@ export type CaseData = {
   title: string;
   tags: string[];
   image: string;
-  images?: string[];
+  images?:
+    | string[]
+    | {
+        firstSection: string[];
+        secondSection: string[];
+      };
   description: string;
   client: string;
   website?: string;

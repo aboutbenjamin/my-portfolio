@@ -8,7 +8,7 @@ import styles from "./CaseScreen.module.css";
 import { CaseChallengeDetails } from "./case-challenge-details/CaseChallengeDetails";
 import { CaseMediaDisplay } from "./case-media-display/CaseMediaDisplay";
 import { CaseSolutionDetails } from "./case-solution-details/CaseSolutionDetails";
-import { CaseImageGridSection } from "./case-images-section/CaseImageGridSection";
+import { CaseImageSection } from "./case-images-section/CaseImageSection";
 import { CaseResultsDetails } from "./case-results-details/CaseResultsDetails";
 import { Contact } from "../../components/contact/Contact";
 import { CaseAboutDetails } from "./case-about-details/CaseAboutDetails";
@@ -99,11 +99,23 @@ function CaseScreen() {
           <CaseAboutDetails />
           <CaseMediaDisplay caseData={caseData} videoRef={videoRef} />
           <CaseChallengeDetails />
-          <CaseImageGridSection images={caseData.images ?? []} />
+          <CaseImageSection
+            images={
+              Array.isArray(caseData.images)
+                ? caseData.images
+                : caseData.images?.firstSection ?? []
+            }
+          />
           <CaseSolutionDetails />
           <HorizontalScrollGallery />
           <CaseConclusionDetails />
-          <CaseImageGridSection images={caseData.images ?? []} />
+          <CaseImageSection
+            images={
+              Array.isArray(caseData.images)
+                ? caseData.images
+                : caseData.images?.secondSection ?? []
+            }
+          />
           <CaseResultsDetails />
           <Contact />
         </article>

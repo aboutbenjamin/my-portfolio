@@ -1,11 +1,11 @@
-import styles from "./CaseImageGridSection.module.css";
+import styles from "./CaseImageSection.module.css";
 
 type Props = {
   images: string[];
   altTexts?: string[];
 };
 
-export function CaseImageGridSection({ images, altTexts }: Props) {
+export function CaseImageSection({ images, altTexts }: Props) {
   return (
     <section className={styles.imageGridSection}>
       {images.map((img, idx) => (
