@@ -96,8 +96,12 @@ function CaseScreen() {
       {showHeaderContent && (
         <article className={styles["content-container"]}>
           <CaseMetaInfo caseData={caseData} />
-          <CaseAboutDetails />
-          <CaseMediaDisplay caseData={caseData} videoRef={videoRef} />
+          {caseData.mediaType && caseData.mediaSrc && (
+            <>
+              <CaseAboutDetails />
+              <CaseMediaDisplay caseData={caseData} videoRef={videoRef} />
+            </>
+          )}
           <CaseChallengeDetails />
           <CaseImageSection
             images={
