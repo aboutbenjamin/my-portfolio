@@ -33,15 +33,17 @@ export const CASES: CaseData[] = [
   },
   {
     id: 2,
-    title: "E-Commerce Platform",
-    tags: ["Next.js", "Commerce", "API"],
-    image: "test.png",
+    title:
+      "Empowering customers with a seamless outage and maintenance status experience.",
+    tags: ["Design", "Development", "Web", "Mobile"],
+    image: "cover-ziggo.png",
     images: ["test.png"],
     description: "A scalable e-commerce platform for modern businesses.",
     client: "Ziggo",
-    startProject: "2021",
+    website: "ziggo.nl",
+    startProject: "2024",
     mediaType: "video",
-    mediaSrc: "TF-before-after.mp4",
+    mediaSrc: "ziggo-before-after.mp4",
     scrollGalleryImages: ["test2.png", "test.png"],
     results: [
       { value: "150k", label: "Producten opgelijst", delay: 100 },
@@ -109,6 +111,7 @@ export const CASES: CaseData[] = [
     images: {
       firstSection: ["tf-image-grid-1.png", "tf-image-grid-2.png"],
       secondSection: ["tf-image-grid-3.png", "tf-image-grid-4.png"],
+      thirdSection: ["tf-full-image.png"],
     },
     description: "A cross-platform mobile app for iOS and Android.",
     client: "Troublefree",

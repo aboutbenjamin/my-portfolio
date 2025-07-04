@@ -121,6 +121,13 @@ function CaseScreen() {
             }
           />
           <CaseResultsDetails />
+          <CaseImageSection
+            images={
+              Array.isArray(caseData.images)
+                ? caseData.images
+                : caseData.images?.thirdSection ?? []
+            }
+          />
           <Contact />
         </article>
       )}

@@ -13,7 +13,8 @@ export type CaseData = {
     | string[]
     | {
         firstSection: string[];
-        secondSection: string[];
+        secondSection?: string[];
+        thirdSection?: string[];
       };
   description: string;
   client: string;
