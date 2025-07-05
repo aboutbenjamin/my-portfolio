@@ -14,8 +14,8 @@ export const CASES: CaseData[] = [
     client: "Vodafone",
     website: "Vodafone app",
     startProject: "2025",
-    mediaType: "",
-    mediaSrc: "",
+    mediaType: "image",
+    mediaSrc: "vdf-image-top.png",
     scrollGalleryImages: [
       "vdf-horizontal-scroll-1.png",
       "vdf-horizontal-scroll-2.png",
@@ -37,14 +37,22 @@ export const CASES: CaseData[] = [
       "Empowering customers with a seamless outage and maintenance status experience.",
     tags: ["Design", "Development", "Web", "Mobile"],
     image: "cover-ziggo.png",
-    images: ["test.png"],
+    images: {
+      firstSection: ["zg-image-top.png"],
+      secondSection: ["zg-image-grid-1.png"],
+    },
     description: "A scalable e-commerce platform for modern businesses.",
     client: "Ziggo",
     website: "ziggo.nl",
     startProject: "2024",
     mediaType: "video",
     mediaSrc: "ziggo-before-after.mp4",
-    scrollGalleryImages: ["test2.png", "test.png"],
+    scrollGalleryImages: [
+      "zg-horizontal-scroll-1.png",
+      "zg-horizontal-scroll-2.png",
+      "zg-horizontal-scroll-3.png",
+      "zg-horizontal-scroll-4.png",
+    ],
     results: [
       { value: "150k", label: "Producten opgelijst", delay: 100 },
       { value: "10x", label: "Snellere laadtijd", delay: 150 },
@@ -53,23 +61,6 @@ export const CASES: CaseData[] = [
   },
   {
     id: 3,
-    title: "Analytics Dashboard",
-    tags: ["D3.js", "Data Viz", "SaaS"],
-    image: "test.png",
-    description: "A SaaS analytics dashboard with rich data visualizations.",
-    client: "Puntie",
-    startProject: "2022",
-    mediaType: "image",
-    mediaSrc: "test.png",
-    scrollGalleryImages: ["test.png", "test2.png"],
-    results: [
-      { value: "1M+", label: "Data punten geanalyseerd", delay: 100 },
-      { value: "10+", label: "Interactieve rapporten", delay: 150 },
-      { value: "24/7", label: "Realtime gegevensmonitoring", delay: 200 },
-    ],
-  },
-  {
-    id: 4,
     title: "Design System",
     tags: ["Figma", "Design Tokens", "Accessibility"],
     image: "test.png",
@@ -86,7 +77,7 @@ export const CASES: CaseData[] = [
     ],
   },
   {
-    id: 5,
+    id: 4,
     title: "Design System",
     tags: ["Figma", "Design Tokens", "Accessibility"],
     image: "test.png",
@@ -103,7 +94,7 @@ export const CASES: CaseData[] = [
     ],
   },
   {
-    id: 6,
+    id: 5,
     title:
       "Optimizing logistical processes with industry-specific ERP solutions.",
     tags: ["Design", "Development", "SaaS", "Rapid Prototyping"],
@@ -132,7 +123,7 @@ export const CASES: CaseData[] = [
     ],
   },
   {
-    id: 7,
+    id: 6,
     title: "Marketing Site",
     tags: ["Gatsby", "SEO", "Contentful"],
     image: "test.png",
@@ -149,7 +140,7 @@ export const CASES: CaseData[] = [
     ],
   },
   {
-    id: 8,
+    id: 7,
     title: "AI Chatbot",
     tags: ["OpenAI", "Chatbot", "Node.js"],
     image: "test.png",
@@ -166,7 +157,7 @@ export const CASES: CaseData[] = [
     ],
   },
   {
-    id: 9,
+    id: 8,
     title: "AI Chatbot",
     tags: ["OpenAI", "Chatbot", "Node.js"],
     image: "test.png",
@@ -183,7 +174,7 @@ export const CASES: CaseData[] = [
     ],
   },
   {
-    id: 10,
+    id: 9,
     title: "AI Chatbot",
     tags: ["OpenAI", "Chatbot", "Node.js"],
     image: "test.png",
