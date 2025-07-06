@@ -25,8 +25,8 @@ export const CASES: CaseData[] = [
       { value: "+", label: "Placeholder", delay: 100 },
       { value: "+", label: "Placeholder", delay: 150 },
       {
-        value: "22 members",
-        label: "Blended team constructie van",
+        value: "+",
+        label: "+",
         delay: 200,
       },
     ],
