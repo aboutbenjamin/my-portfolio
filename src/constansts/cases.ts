@@ -62,7 +62,7 @@ export const CASES: CaseData[] = [
   {
     id: 3,
     title: "Supporting Compliance and Usability with Accessible Web Solutions",
-    tags: ["Figma", "Design Tokens", "Accessibility"],
+    tags: ["Accessibility", "WCAG", "EAA"],
     image: "cover-wcag.png",
     images: {
       firstSection: ["wcag-image-grid-1.png", "wcag-image-grid-2.png"],
@@ -71,6 +71,7 @@ export const CASES: CaseData[] = [
     },
     description: "A robust design system for consistent UI/UX.",
     client: "ilionx",
+    website: "ilionx.nl",
     startProject: "2023",
     mediaType: "image",
     mediaSrc: "wcag-full-image.png",
@@ -89,13 +90,14 @@ export const CASES: CaseData[] = [
   {
     id: 4,
     title: "Helping people Stay on Track with Intelligent Installment Insights",
-    tags: ["Figma", "Design Tokens", "Accessibility"],
+    tags: ["Design", "Development", "Mobile"],
     image: "cover-termynen.png",
     images: {
       firstSection: ["termynen-full-image.png"],
     },
     description: "A robust design system for consistent UI/UX.",
     client: "Termynen",
+    website: "termynen.com",
     startProject: "2022",
     mediaType: "image",
     mediaSrc: "",
@@ -138,7 +140,7 @@ export const CASES: CaseData[] = [
   {
     id: 6,
     title: "Coming Soon",
-    tags: ["Gatsby", "SEO", "Contentful"],
+    tags: ["-", "-", "-"],
     image: "test.png",
     description: "",
     client: "Beach Clean",
@@ -155,7 +157,7 @@ export const CASES: CaseData[] = [
   {
     id: 7,
     title: "Coming Soon",
-    tags: ["OpenAI", "Chatbot", "Node.js"],
+    tags: ["-", "-", "-"],
     image: "test.png",
     description: "",
     client: "Freeluencer",
@@ -172,7 +174,7 @@ export const CASES: CaseData[] = [
   {
     id: 8,
     title: "Coming Soon",
-    tags: ["OpenAI", "Chatbot", "Node.js"],
+    tags: ["-", "-", "-"],
     image: "test.png",
     description: "",
     client: "Twill by Maersk",
@@ -189,7 +191,7 @@ export const CASES: CaseData[] = [
   {
     id: 9,
     title: "Coming Soon",
-    tags: ["OpenAI", "Chatbot", "Node.js"],
+    tags: ["-", "-", "-"],
     image: "test.png",
     description: "",
     client: "QPark",
