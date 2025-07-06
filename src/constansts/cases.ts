@@ -137,7 +137,7 @@ export const CASES: CaseData[] = [
   },
   {
     id: 6,
-    title: "",
+    title: "Coming Soon",
     tags: ["Gatsby", "SEO", "Contentful"],
     image: "test.png",
     description: "",
@@ -154,7 +154,7 @@ export const CASES: CaseData[] = [
   },
   {
     id: 7,
-    title: "",
+    title: "Coming Soon",
     tags: ["OpenAI", "Chatbot", "Node.js"],
     image: "test.png",
     description: "",
@@ -171,7 +171,7 @@ export const CASES: CaseData[] = [
   },
   {
     id: 8,
-    title: "",
+    title: "Coming Soon",
     tags: ["OpenAI", "Chatbot", "Node.js"],
     image: "test.png",
     description: "",
@@ -188,7 +188,7 @@ export const CASES: CaseData[] = [
   },
   {
     id: 9,
-    title: "",
+    title: "Coming Soon",
     tags: ["OpenAI", "Chatbot", "Node.js"],
     image: "test.png",
     description: "",
