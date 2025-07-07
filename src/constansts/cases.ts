@@ -63,9 +63,21 @@ export const CASES: CaseData[] = [
       "zg-horizontal-scroll-4.png",
     ],
     results: [
-      { value: "+", label: "Placeholder", delay: 100 },
-      { value: "+", label: "Placeholder", delay: 150 },
-      { value: "+", label: "Placeholder", delay: 200 },
+      {
+        value: "+3.5M",
+        label: "Unique users per month using the outage checker",
+        delay: 100,
+      },
+      {
+        value: "28%",
+        label: "Reduction in customer support requests about outages",
+        delay: 150,
+      },
+      {
+        value: "+500K",
+        label: "Push notifications sent via native app integration",
+        delay: 200,
+      },
     ],
   },
   {
@@ -234,8 +246,9 @@ export const ABOUT_DETAILS: CaseDetails[] = [
   {
     id: 2,
     label: "About",
-    title: "Coming Soon",
-    description: "Placeholder text for project details.",
+    title: "Improving Transparency with the Ziggo Storingschecker",
+    description:
+      "The Ziggo storingschecker project was initiated to give customers clear, real-time insights into outages and maintenance work affecting their services. By allowing users to enter their postal code and address, the tool provides accurate status updates on disruptions in their area. Our goal was to create a more accessible, user-friendly experience that reassures users and reduces unnecessary customer service contact.",
   },
   {
     id: 3,
@@ -280,8 +293,9 @@ export const CHALLENGE_DETAILS: CaseDetails[] = [
   {
     id: 2,
     label: "Challenge",
-    title: "Coming Soon",
-    description: "Placeholder text for the challenge details.",
+    title: "Understanding and Resolving Key User Frustrations",
+    description:
+      "Users previously experienced confusion and dissatisfaction due to a lack of transparency regarding service outages. The existing tools were limited in functionality, often failing to communicate the scope or resolution status of service disruptions. There was also a need for better accessibility, clarity in iconography, and more granular insight into the individual components of each Ziggo product, such as routers, cables, or third-party services like Netflix and HBO.",
   },
   {
     id: 3,
@@ -326,8 +340,9 @@ export const SOLUTION_DETAILS: CaseDetails[] = [
   {
     id: 2,
     label: "Solution",
-    title: "Coming Soon",
-    description: "Placeholder text for the solution details.",
+    title: "Building a User-Centric, Data-Rich Experience",
+    description:
+      "We developed a new, intuitive web-based and in-app storingschecker with several key features:A visual history bar displaying the number of outages or maintenance events in the past 90 days to demonstrate reliability over time. A legend explaining each icon (e.g., checkmark for operational, warning sign for degradation) for improved accessibility. A comprehensive list of Ziggo services and their specific components (e.g., modem, Wi-Fi signal, streaming services) with real-time status updates. A clearly displayed current outage or maintenance section with a “Help me solve it” button to guide users toward self-resolution or support. A future maintenance overview so users are aware of upcoming service interruptions.Native app integration to deliver consistent, real-time updates across platforms.",
   },
   {
     id: 3,
@@ -372,8 +387,9 @@ export const CONCLUSION_DETAILS: CaseDetails[] = [
   {
     id: 2,
     label: "Conclusion",
-    title: "Coming Soon",
-    description: "Placeholder text for the conclusion details.",
+    title: "Empowering Users with Clarity and Control",
+    description:
+      "The Ziggo storingschecker project successfully bridged the gap between technical backend data and customer-facing clarity. By prioritizing transparency, accessibility, and detailed service-level insights, we’ve equipped users with the tools they need to feel informed and in control. This transformation not only meets modern digital expectations but strengthens Ziggo’s relationship with its customers through honest, proactive communication.",
   },
   {
     id: 3,
@@ -417,8 +433,8 @@ export const RESULTS_DETAILS: CaseDetails[] = [
   {
     id: 2,
     label: "Results",
-    title: "Coming Soon",
-    description: "Placeholder text for the results details.",
+    title: "Enhanced Trust and Reduced Support Load",
+    description: "",
   },
   {
     id: 3,
