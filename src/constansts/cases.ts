@@ -103,9 +103,22 @@ export const CASES: CaseData[] = [
       "wcag-scroll-4.png",
     ],
     results: [
-      { value: "+", label: "Placeholder", delay: 100 },
-      { value: "+", label: "Placeholder", delay: 150 },
-      { value: "+", label: "Placeholder", delay: 200 },
+      {
+        value: "86%",
+        label:
+          "Faster onboarding to accessibility best practices reported by teams",
+        delay: 100,
+      },
+      {
+        value: "12",
+        label: "Client teams actively using the accessibility toolkit",
+        delay: 150,
+      },
+      {
+        value: "44",
+        label: "WCAG guidelines translated into practical design mockups",
+        delay: 200,
+      },
     ],
   },
   {
@@ -253,8 +266,9 @@ export const ABOUT_DETAILS: CaseDetails[] = [
   {
     id: 3,
     label: "About",
-    title: "Coming Soon",
-    description: "Placeholder text for project details.",
+    title: "Accessibility at the Core",
+    description:
+      "In collaboration with clients, ilionx launched a strategic initiative focused on digital accessibility, driven by the principles of the Web Content Accessibility Guidelines (WCAG) and the European Accessibility Act (EAA). The project aimed to raise awareness about the legal and usability risks of inaccessible applications and offer practical, design-first solutions that integrate accessibility from the ground up.",
   },
   {
     id: 4,
@@ -300,8 +314,9 @@ export const CHALLENGE_DETAILS: CaseDetails[] = [
   {
     id: 3,
     label: "Challenge",
-    title: "Coming Soon",
-    description: "Placeholder text for the challenge details.",
+    title: "Turning Guidelines into Action",
+    description:
+      "One of the main challenges was translating the often abstract and technical WCAG criteria into actionable insights that designers, developers, and product owners could easily understand and implement. The goal was to bridge the gap between legal compliance and user-centered design by visually representing each WCAG point through annotated mockups and real-time wireframes.",
   },
   {
     id: 4,
@@ -342,13 +357,14 @@ export const SOLUTION_DETAILS: CaseDetails[] = [
     label: "Solution",
     title: "Building a User-Centric, Data-Rich Experience",
     description:
-      "We developed a new, intuitive web-based and in-app storingschecker with several key features:A visual history bar displaying the number of outages or maintenance events in the past 90 days to demonstrate reliability over time. A legend explaining each icon (e.g., checkmark for operational, warning sign for degradation) for improved accessibility. A comprehensive list of Ziggo services and their specific components (e.g., modem, Wi-Fi signal, streaming services) with real-time status updates. A clearly displayed current outage or maintenance section with a “Help me solve it” button to guide users toward self-resolution or support. A future maintenance overview so users are aware of upcoming service interruptions.Native app integration to deliver consistent, real-time updates across platforms.",
+      "We developed a new, intuitive web-based and in-app storingschecker with several key features: A visual history bar displaying the number of outages or maintenance events in the past 90 days to demonstrate reliability over time. A legend explaining each icon (e.g., checkmark for operational, warning sign for degradation) for improved accessibility. A comprehensive list of Ziggo services and their specific components (e.g., modem, Wi-Fi signal, streaming services) with real-time status updates. A clearly displayed current outage or maintenance section with a “Help me solve it” button to guide users toward self-resolution or support. A future maintenance overview so users are aware of upcoming service interruptions.Native app integration to deliver consistent, real-time updates across platforms.",
   },
   {
     id: 3,
     label: "Solution",
-    title: "Coming Soon",
-    description: "Placeholder text for the solution details.",
+    title: "Visual Guidelines & Practical Tools",
+    description:
+      "To address this challenge, we developed a comprehensive toolkit that transforms complex accessibility requirements into intuitive design examples. This included: A series of wireframes and mockups illustrating both poor and optimal practices. Clear notes and contextual explanations for each WCAG guideline. A companion web app acting as a checklist and scan tool for clients to assess the accessibility of their applications. This visual-first approach made accessibility actionable, not abstract.",
   },
   {
     id: 4,
@@ -394,8 +410,9 @@ export const CONCLUSION_DETAILS: CaseDetails[] = [
   {
     id: 3,
     label: "Conclusion",
-    title: "Coming Soon",
-    description: "Placeholder text for the conclusion details.",
+    title: "Designing for Everyone, By Default",
+    description:
+      "By embedding WCAG principles into tangible design tools and workflows, ilionx turned accessibility into a standard practice, not an afterthought. This project not only helped clients mitigate legal risks, but also contributed to more inclusive digital experiences for all users. It showcased the power of clear visual communication in solving complex IT challenges and reinforced ilionx’s role as a strategic accessibility partner.",
   },
   {
     id: 4,
@@ -439,8 +456,8 @@ export const RESULTS_DETAILS: CaseDetails[] = [
   {
     id: 3,
     label: "Results",
-    title: "Coming Soon",
-    description: "Placeholder text for the results details.",
+    title: "Clarity, Adoption, and Accessibility",
+    description: "",
   },
   {
     id: 4,

@@ -15,12 +15,7 @@ export function Contact() {
         <header className={styles.headingWrapper}>
           <figure className={styles.profile}>
             <img
-              src={
-                new URL(
-                  "../../assets/portfolio-logo-light.png",
-                  import.meta.url
-                ).href
-              }
+              src={new URL("../../assets/picture.jpg", import.meta.url).href}
               className={styles.avatar}
               alt="Benjamin Ziahi"
             />
