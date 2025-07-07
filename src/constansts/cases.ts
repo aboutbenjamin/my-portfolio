@@ -22,11 +22,20 @@ export const CASES: CaseData[] = [
       "vdf-horizontal-scroll-3.png",
     ],
     results: [
-      { value: "+", label: "Placeholder", delay: 100 },
-      { value: "+", label: "Placeholder", delay: 150 },
       {
-        value: "+",
-        label: "+",
+        value: "30%",
+        label: "reduction in live contact-support interactions.",
+        delay: 100,
+      },
+      {
+        value: "+2M",
+        label:
+          "customers reported satisfaction with the new search experience.",
+        delay: 150,
+      },
+      {
+        value: "22%",
+        label: "Increased engagement with embedded features.",
         delay: 200,
       },
     ],
@@ -217,31 +226,32 @@ export type CaseDetails = {
 export const ABOUT_DETAILS: CaseDetails[] = [
   {
     id: 1,
-    label: "Project Details",
-    title: "Coming Soon",
-    description: "Placeholder text for project details.",
+    label: "About",
+    title: "Smarter Support with AI-Powered Search",
+    description:
+      "We developed an AI-powered customer assist component integrated into the Vodafone app, enabling users to search and receive accurate answers based on the company’s extensive knowledge base. The solution leverages large language models (LLMs) to interpret user queries, provide contextual responses, and reduce dependency on live customer support. The search interface supports features like autocomplete, expandable results, popular and recent search tags, and actionable widgets (e.g., last invoice). Users can also engage in extended conversations with the AI to clarify or deepen their inquiries.",
   },
   {
     id: 2,
-    label: "Project Details",
+    label: "About",
     title: "Coming Soon",
     description: "Placeholder text for project details.",
   },
   {
     id: 3,
-    label: "Project Details",
+    label: "About",
     title: "Coming Soon",
     description: "Placeholder text for project details.",
   },
   {
     id: 4,
-    label: "Project Details",
+    label: "About",
     title: "Coming Soon",
     description: "Placeholder text for project details.",
   },
   {
     id: 5,
-    label: "Project Details",
+    label: "About",
     title: "Coming Soon",
     description: "Placeholder text for project details.",
   },
@@ -263,8 +273,9 @@ export const CHALLENGE_DETAILS: CaseDetails[] = [
   {
     id: 1,
     label: "Challenge",
-    title: "Coming Soon",
-    description: "Placeholder text for the challenge details.",
+    title: "Reducing Pressure on Live Support While Improving Self-Service",
+    description:
+      "Vodafone faced increasing pressure on its customer support teams, with a high volume of inquiries overwhelming traditional contact channels. Users struggled to quickly find relevant information through static help articles, leading to low self-service satisfaction. The challenge was to deliver a more intuitive, conversational, and effective self-help solution that could handle a wide range of user intents and reduce support center strain without compromising on quality or trust.",
   },
   {
     id: 2,
@@ -308,8 +319,9 @@ export const SOLUTION_DETAILS: CaseDetails[] = [
   {
     id: 1,
     label: "Solution",
-    title: "Coming Soon",
-    description: "Placeholder text for the solution details.",
+    title: "Conversational, Intelligent, and Actionable Search Experience",
+    description:
+      "We implemented a dynamic, LLM-powered search results experience embedded within the Vodafone app. Users can search from various entry points (such as the header or service page) and are presented with interactive search cards that display concise, expandable answers. On expansion, users are shown a detailed dialog containing the full response and an option to continue the conversation with the AI for deeper support. Features like autocomplete suggestions, popular/recent searches, and personalized widgets further enhance the user journey. Feedback options allow continuous improvement of result quality.",
   },
   {
     id: 2,
@@ -334,51 +346,6 @@ export const SOLUTION_DETAILS: CaseDetails[] = [
     label: "Solution",
     title: "Coming Soon",
     description: "Placeholder text for the solution details.",
-  },
-  {
-    id: 6,
-    label: "",
-    title: "",
-    description: "",
-  },
-  {
-    id: 7,
-    label: "",
-    title: "",
-    description: "",
-  },
-];
-
-export const RESULTS_DETAILS: CaseDetails[] = [
-  {
-    id: 1,
-    label: "Results",
-    title: "Coming Soon",
-    description: "",
-  },
-  {
-    id: 2,
-    label: "Results",
-    title: "Coming Soon",
-    description: "Placeholder text for the results details.",
-  },
-  {
-    id: 3,
-    label: "Results",
-    title: "Coming Soon",
-    description: "Placeholder text for the results details.",
-  },
-  {
-    id: 4,
-    label: "Results",
-    title: "Coming Soon",
-    description: "Placeholder text for the results details.",
-  },
-  {
-    id: 5,
-    label: "Results",
-    title: "Coming Soon",
-    description: "Placeholder text for the results details.",
   },
   {
     id: 6,
@@ -398,8 +365,9 @@ export const CONCLUSION_DETAILS: CaseDetails[] = [
   {
     id: 1,
     label: "Conclusion",
-    title: "Coming Soon",
-    description: "Placeholder text for the conclusion details.",
+    title: "A Scalable Foundation for AI-Powered Customer Service",
+    description:
+      "The LLM-powered customer assist feature successfully transformed Vodafone’s in-app support experience. It provided users with fast, accurate, and conversational help while reducing pressure on live agents. The intelligent search system has proven to be scalable, user-friendly, and continuously learnable through feedback. This innovation not only improved satisfaction but also laid a foundation for expanding AI-driven support across other customer journeys within the Vodafone ecosystem.",
   },
   {
     id: 2,
@@ -424,6 +392,51 @@ export const CONCLUSION_DETAILS: CaseDetails[] = [
     label: "Conclusion",
     title: "Coming Soon",
     description: "Placeholder text for the conclusion details.",
+  },
+  {
+    id: 6,
+    label: "",
+    title: "",
+    description: "",
+  },
+  {
+    id: 7,
+    label: "",
+    title: "",
+    description: "",
+  },
+];
+
+export const RESULTS_DETAILS: CaseDetails[] = [
+  {
+    id: 1,
+    label: "Results",
+    title: "Increased Satisfaction and Reduced Support Load",
+    description: "",
+  },
+  {
+    id: 2,
+    label: "Results",
+    title: "Coming Soon",
+    description: "Placeholder text for the results details.",
+  },
+  {
+    id: 3,
+    label: "Results",
+    title: "Coming Soon",
+    description: "Placeholder text for the results details.",
+  },
+  {
+    id: 4,
+    label: "Results",
+    title: "Coming Soon",
+    description: "Placeholder text for the results details.",
+  },
+  {
+    id: 5,
+    label: "Results",
+    title: "Coming Soon",
+    description: "Placeholder text for the results details.",
   },
   {
     id: 6,

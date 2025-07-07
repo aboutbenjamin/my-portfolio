@@ -18,8 +18,10 @@
   flex: 1;
 }
 
-.case-details-right {
-  font-size: 22px;
+.case-details-right p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: var(--color-muted);
 }
 
 /* === Responsive: Case Details Section === */
@@ -27,4 +29,15 @@
   .case-details-section {
     flex-direction: row;
   }
+}
+
+.case-details-label {
+  color: var(--color-secondary);
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+[data-theme="dark"] .case-details-label {
+  color: var(--color-primary);
 }
