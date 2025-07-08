@@ -137,9 +137,24 @@ export const CASES: CaseData[] = [
     mediaSrc: "",
     scrollGalleryImages: ["", ""],
     results: [
-      { value: "+", label: "Placeholder", delay: 100 },
-      { value: "+", label: "Placeholder", delay: 150 },
-      { value: "+", label: "Placeholder", delay: 200 },
+      {
+        value: "100%",
+        label:
+          "Custom designed UI, logo, and illustrations crafted to enhance brand identity",
+        delay: 100,
+      },
+      {
+        value: "1",
+        label:
+          "Centralized dashboard for tracking, editing, and managing all installments",
+        delay: 150,
+      },
+      {
+        value: "0",
+        label:
+          "Barriers to usability, smooth navigation and clear visuals prioritized from day one",
+        delay: 200,
+      },
     ],
   },
   {
@@ -166,9 +181,9 @@ export const CASES: CaseData[] = [
       "tf-horizontal-scroll-4.png",
     ],
     results: [
-      { value: "+", label: "Placeholder", delay: 100 },
-      { value: "+", label: "Placeholder", delay: 150 },
-      { value: "+", label: "Placeholder", delay: 200 },
+      { value: "+10", label: "Redesigned modules", delay: 100 },
+      { value: "+55K", label: "Satisfied users", delay: 150 },
+      { value: "+9 years", label: "Experience", delay: 200 },
     ],
   },
   {
@@ -273,14 +288,16 @@ export const ABOUT_DETAILS: CaseDetails[] = [
   {
     id: 4,
     label: "About",
-    title: "Coming Soon",
-    description: "Placeholder text for project details.",
+    title: "A Smarter Way to Track Installments",
+    description:
+      "Termynen is a native mobile app designed to help users manage their monthly installment payments with ease. It provides a centralized view of all active and completed installments, making financial organization simple and intuitive. Users can mark payments as completed, edit details, and access full payment histories once an installment cycle ends. With a user-first approach and carefully designed UI elements, Termynen aims to offer clarity and control in handling recurring financial obligations.",
   },
   {
     id: 5,
     label: "About",
-    title: "Coming Soon",
-    description: "Placeholder text for project details.",
+    title: "Designing at scale that drives enterprise impact",
+    description:
+      "This project presents a collection of enterprise software projects focused on enhancing user experience across various business domains. Featured work includes an Total redesign and rebranding of the software, Ticketing system for time tracking and task management, Tailored component library designed specifically for the software, Interactive dashboard for a clear overview, Order Overview system for managing business transactions, an Order Edit platform enabling dynamic order customization, a mobile app designed for drivers in transportation logistics, a Knowledge Center website aimed at streamlining customer support, and a range of reusable interface components. These projects address key areas such as order management, logistics coordination, customer service, and accessibility, delivering solutions across both web and mobile platforms.",
   },
   {
     id: 6,
@@ -321,14 +338,16 @@ export const CHALLENGE_DETAILS: CaseDetails[] = [
   {
     id: 4,
     label: "Challenge",
-    title: "Coming Soon",
-    description: "Placeholder text for the challenge details.",
+    title: "Tackling Financial Management with Precision",
+    description:
+      "The main challenge was to design a system that could elegantly manage multiple installment schedules while remaining user-friendly and visually appealing. We needed to support different user preferences, some want detailed history, others just a clear monthly reminder. Balancing functionality, simplicity, and visual design on a mobile-native platform was a core focus, especially when handling features like payment tracking, notification timing, and editable installment records.",
   },
   {
     id: 5,
     label: "Challenge",
-    title: "Coming Soon",
-    description: "Placeholder text for the challenge details.",
+    title: "Complex Design architecture Across Multiple Projects",
+    description:
+      "Each project tackled unique and demanding design challenges. These included developing accessible order status displays for color-blind users, solving persistent space constraints in filter systems that previous teams had struggled to address, and rethinking action menus that required managing over 20 possible user actions. The mobile driver interface required intuitive navigation optimized for on-the-go use, while the Knowledge Center involved transforming a scattered information base into a cohesive, searchable support experience. Another critical challenge was enabling greater user control through customizable sidebar navigation.",
   },
   {
     id: 6,
@@ -369,14 +388,16 @@ export const SOLUTION_DETAILS: CaseDetails[] = [
   {
     id: 4,
     label: "Solution",
-    title: "Coming Soon",
-    description: "Placeholder text for the solution details.",
+    title: "Building Functionality with Flexibility",
+    description:
+      "To meet these challenges, we developed a flexible installment management system with core features like payment check-offs, editable item details, and historical tracking after completion (e.g., after 10 months). We implemented optional notification settings, weekly or monthly reminders, to help users stay on track. A clean settings page allows full control over installment preferences, including visual customization. Every element, from the logo to the illustrations, was custom-designed to support a cohesive and branded experience.",
   },
   {
     id: 5,
     label: "Solution",
-    title: "Coming Soon",
-    description: "Placeholder text for the solution details.",
+    title: "Design in motion delivering for complex interfaces",
+    description:
+      "A range of targeted solutions was implemented to meet these challenges. Accessibility was improved through the use of alternative visual indicators beyond color alone. Space optimization was achieved using dropdown-based filter systems. Complex action menus were replaced with a wizard-style popup approach that guided users through tasks. The mobile driver app followed a responsive, mobile-first design with large touch targets to support use in the field. A centralized search function with product-specific filtering brought clarity to the Knowledge Center, while drag-and-drop functionality was introduced in the sidebar to allow users to personalize their workspace. Accordion-style content organization helped structure knowledge articles in a way that’s easy to navigate and digest.",
   },
   {
     id: 6,
@@ -417,14 +438,16 @@ export const CONCLUSION_DETAILS: CaseDetails[] = [
   {
     id: 4,
     label: "Conclusion",
-    title: "Coming Soon",
-    description: "Placeholder text for the conclusion details.",
+    title: "Preparing for Launch with Confidence",
+    description:
+      "With development nearing completion, Termynen is on track for a successful release. The app brings together thoughtful design, smart features, and user customization into a single tool for installment management. The attention to both aesthetics and usability reflects a product built not just to work, but to work beautifully. As it goes live soon, we’re confident Termynen will be a helpful companion for users managing monthly commitments.",
   },
   {
     id: 5,
     label: "Conclusion",
-    title: "Coming Soon",
-    description: "Placeholder text for the conclusion details.",
+    title: "Designing with purpose to create human-centered systems that scale",
+    description:
+      "The design improvements led to a variety of measurable outcomes. Accessibility compliance was significantly enhanced, and user satisfaction scores saw notable increases. Long-standing usability issues were resolved, streamlining user workflows and improving productivity. The redesigned Knowledge Center reduced the workload on support teams by enabling more effective self-service. Drivers benefited from a faster, more intuitive mobile interface, while enterprise stakeholders praised the overall usability and polish of the redesigned systems. User engagement and task completion rates also improved as a direct result of these design interventions.",
   },
   {
     id: 6,
@@ -462,14 +485,14 @@ export const RESULTS_DETAILS: CaseDetails[] = [
   {
     id: 4,
     label: "Results",
-    title: "Coming Soon",
+    title: "Efficient, Intuitive, and Customizable",
     description: "Placeholder text for the results details.",
   },
   {
     id: 5,
     label: "Results",
-    title: "Coming Soon",
-    description: "Placeholder text for the results details.",
+    title: "Achieving through measurable gains and meaningful feedback",
+    description: "",
   },
   {
     id: 6,
