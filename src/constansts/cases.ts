@@ -135,27 +135,8 @@ export const CASES: CaseData[] = [
     startProject: "2022",
     mediaType: "image",
     mediaSrc: "",
-    scrollGalleryImages: ["", ""],
-    results: [
-      {
-        value: "100%",
-        label:
-          "Custom designed UI, logo, and illustrations crafted to enhance brand identity",
-        delay: 100,
-      },
-      {
-        value: "1",
-        label:
-          "Centralized dashboard for tracking, editing, and managing all installments",
-        delay: 150,
-      },
-      {
-        value: "0",
-        label:
-          "Barriers to usability, smooth navigation and clear visuals prioritized from day one",
-        delay: 200,
-      },
-    ],
+    scrollGalleryImages: [],
+    results: [],
   },
   {
     id: 5,
@@ -337,10 +318,10 @@ export const CHALLENGE_DETAILS: CaseDetails[] = [
   },
   {
     id: 4,
-    label: "Challenge",
-    title: "Tackling Financial Management with Precision",
+    label: "About",
+    title: "A Smarter Way to Track Installments",
     description:
-      "The main challenge was to design a system that could elegantly manage multiple installment schedules while remaining user-friendly and visually appealing. We needed to support different user preferences, some want detailed history, others just a clear monthly reminder. Balancing functionality, simplicity, and visual design on a mobile-native platform was a core focus, especially when handling features like payment tracking, notification timing, and editable installment records.",
+      "Termynen is a native mobile app designed to help users manage their monthly installment payments with ease. It provides a centralized view of all active and completed installments, making financial organization simple and intuitive. Users can mark payments as completed, edit details, and access full payment histories once an installment cycle ends. With a user-first approach and carefully designed UI elements, Termynen aims to offer clarity and control in handling recurring financial obligations.",
   },
   {
     id: 5,
@@ -387,10 +368,9 @@ export const SOLUTION_DETAILS: CaseDetails[] = [
   },
   {
     id: 4,
-    label: "Solution",
-    title: "Building Functionality with Flexibility",
-    description:
-      "To meet these challenges, we developed a flexible installment management system with core features like payment check-offs, editable item details, and historical tracking after completion (e.g., after 10 months). We implemented optional notification settings, weekly or monthly reminders, to help users stay on track. A clean settings page allows full control over installment preferences, including visual customization. Every element, from the logo to the illustrations, was custom-designed to support a cohesive and branded experience.",
+    label: "",
+    title: "",
+    description: "",
   },
   {
     id: 5,
@@ -437,10 +417,9 @@ export const CONCLUSION_DETAILS: CaseDetails[] = [
   },
   {
     id: 4,
-    label: "Conclusion",
-    title: "Preparing for Launch with Confidence",
-    description:
-      "With development nearing completion, Termynen is on track for a successful release. The app brings together thoughtful design, smart features, and user customization into a single tool for installment management. The attention to both aesthetics and usability reflects a product built not just to work, but to work beautifully. As it goes live soon, we’re confident Termynen will be a helpful companion for users managing monthly commitments.",
+    label: "",
+    title: "",
+    description: "",
   },
   {
     id: 5,
@@ -484,9 +463,9 @@ export const RESULTS_DETAILS: CaseDetails[] = [
   },
   {
     id: 4,
-    label: "Results",
-    title: "Efficient, Intuitive, and Customizable",
-    description: "Placeholder text for the results details.",
+    label: "",
+    title: "",
+    description: "",
   },
   {
     id: 5,

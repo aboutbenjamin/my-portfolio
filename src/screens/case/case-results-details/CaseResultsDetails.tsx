@@ -30,16 +30,12 @@ export function CaseResultsDetails() {
     <section>
       <header className={styles.resultsGrid}>
         <p className={styles.resultsLabel} id="results-heading">
-          Results
+          {details.label}
         </p>
         <h2 className={styles.resultsTitle}>{details.title}</h2>
       </header>
       <ul className={styles.cardsGrid}>
-        {resultCards.length === 0 ? (
-          <li>
-            <p>No results available.</p>
-          </li>
-        ) : (
+        {resultCards.length > 0 &&
           resultCards.map((card: CaseResultCard) => (
             <li
               key={`${card.value}-${card.label}`}
@@ -48,8 +44,7 @@ export function CaseResultsDetails() {
               <span className={styles.resultCardValue}>{card.value}</span>
               <p className={styles.resultCardLabel}>{card.label}</p>
             </li>
-          ))
-        )}
+          ))}
       </ul>
     </section>
   );

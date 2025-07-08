@@ -103,31 +103,37 @@ function CaseScreen() {
             </>
           )}
           <CaseChallengeDetails />
-          <CaseImageSection
-            images={
-              Array.isArray(caseData.images)
-                ? caseData.images
-                : caseData.images?.firstSection ?? []
-            }
-          />
+          {caseData.images && (
+            <CaseImageSection
+              images={
+                Array.isArray(caseData.images)
+                  ? caseData.images
+                  : caseData.images?.firstSection ?? []
+              }
+            />
+          )}
           <CaseSolutionDetails />
-          <HorizontalScrollGallery />
+          {caseData.scrollGalleryImages && <HorizontalScrollGallery />}
           <CaseConclusionDetails />
-          <CaseImageSection
-            images={
-              Array.isArray(caseData.images)
-                ? caseData.images
-                : caseData.images?.secondSection ?? []
-            }
-          />
+          {caseData.images && (
+            <CaseImageSection
+              images={
+                Array.isArray(caseData.images)
+                  ? caseData.images
+                  : caseData.images?.secondSection ?? []
+              }
+            />
+          )}
           <CaseResultsDetails />
-          <CaseImageSection
-            images={
-              Array.isArray(caseData.images)
-                ? caseData.images
-                : caseData.images?.thirdSection ?? []
-            }
-          />
+          {caseData.images && (
+            <CaseImageSection
+              images={
+                Array.isArray(caseData.images)
+                  ? caseData.images
+                  : caseData.images?.thirdSection ?? []
+              }
+            />
+          )}
           <Contact />
         </article>
       )}
