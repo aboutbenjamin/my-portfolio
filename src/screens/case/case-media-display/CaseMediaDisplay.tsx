@@ -11,10 +11,13 @@ export function CaseMediaDisplay({
   caseData,
   videoRef,
 }: CaseMediaDisplayProps) {
-  const assetUrl = useMemo(
-    () => new URL(`../../../assets/${caseData.mediaSrc}`, import.meta.url).href,
-    [caseData.mediaSrc]
-  );
+  const assetUrl = useMemo(() => {
+    if (caseData.mediaSrc?.startsWith("http")) {
+      return caseData.mediaSrc;
+    }
+    return new URL(`../../../assets/${caseData.mediaSrc}`, import.meta.url)
+      .href;
+  }, [caseData.mediaSrc]);
 
   return (
     <section className={styles["case-media-section"]}>

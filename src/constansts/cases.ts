@@ -196,16 +196,20 @@ export const CASES: CaseData[] = [
     id: 7,
     title: "Coming Soon",
     tags: ["-", "-", "-"],
-    image: "cover-freeluencer-1.png",
+    image: "cover-freeluencer.png",
     images: {
-      firstSection: ["freeluencer.gif", "freeluencer-image-grid-2.png"],
+      firstSection: [
+        "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer.gif?alt=media&token=160d7680-e81e-47fd-80f6-f1ff75c6e4bd",
+        "freeluencer-image-grid-2.png",
+      ],
       secondSection: ["vdf-image-grid-3.png"],
     },
     description: "",
     client: "Freeluencer",
     startProject: "2018",
     mediaType: "video",
-    mediaSrc: "freeluencer-movie-top.mp4",
+    mediaSrc:
+      "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer-movie-top.mp4?alt=media&token=04b70727-6435-4d83-8a95-3b3d4ba0526c",
     scrollGalleryImages: [
       "free-horizontal-scroll-1.png",
       "free-horizontal-scroll-2.png",

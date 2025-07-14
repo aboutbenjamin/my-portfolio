@@ -11,7 +11,11 @@ export function CaseImageSection({ images, altTexts }: Props) {
       {images.map((img, idx) => {
         const isGif = img.toLowerCase().endsWith(".gif");
         const alt = altTexts?.[idx] || `Case image ${idx + 1}`;
-        const src = new URL(`../../../assets/${img}`, import.meta.url).href;
+
+        const src = img.startsWith("http")
+          ? img
+          : new URL(`../../../assets/${img}`, import.meta.url).href;
+
         if (isGif) {
           return (
             <figure key={img} className={styles.imageGridFigure}>
