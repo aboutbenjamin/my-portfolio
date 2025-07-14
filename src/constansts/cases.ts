@@ -198,7 +198,7 @@ export const CASES: CaseData[] = [
     tags: ["-", "-", "-"],
     image: "cover-freeluencer-1.png",
     images: {
-      firstSection: ["freeluencer-2.gif", "freeluencer-image-grid-2.png"],
+      firstSection: ["freeluencer.gif", "freeluencer-image-grid-2.png"],
       secondSection: ["vdf-image-grid-3.png"],
     },
     description: "",
