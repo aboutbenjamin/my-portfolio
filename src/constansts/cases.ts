@@ -229,13 +229,23 @@ export const CASES: CaseData[] = [
     id: 8,
     title: "Coming Soon",
     tags: ["-", "-", "-"],
-    image: "test.png",
+    image: "cover-twill.png",
+    images: {
+      firstSection: ["twil-image-top.png"],
+      secondSection: ["twill-image-grid-1.png", "twill-image-grid-2.png"],
+      thirdSection: ["twill-full-image.png"],
+    },
     description: "",
     client: "Twill by Maersk",
     startProject: "2027",
-    mediaType: "",
-    mediaSrc: "",
-    scrollGalleryImages: ["", ""],
+    mediaType: "video",
+    mediaSrc:
+      "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/twill-full-video.mp4?alt=media&token=4e8cd54f-a5a8-4bef-ac42-9a50dffb6460",
+    scrollGalleryImages: [
+      "twill-horizontal-scroll-1.png",
+      "twill-horizontal-scroll-2.png",
+      "twill-horizontal-scroll-3.png",
+    ],
     results: [
       { value: "+", label: "Placeholder", delay: 100 },
       { value: "+", label: "Placeholder", delay: 150 },
@@ -316,6 +326,12 @@ export const ABOUT_DETAILS: CaseDetails[] = [
     title: "",
     description: "",
   },
+  {
+    id: 8,
+    label: "",
+    title: "",
+    description: "",
+  },
 ];
 
 export const CHALLENGE_DETAILS: CaseDetails[] = [
@@ -362,6 +378,12 @@ export const CHALLENGE_DETAILS: CaseDetails[] = [
   },
   {
     id: 7,
+    label: "",
+    title: "",
+    description: "",
+  },
+  {
+    id: 8,
     label: "",
     title: "",
     description: "",
@@ -415,6 +437,12 @@ export const SOLUTION_DETAILS: CaseDetails[] = [
     title: "",
     description: "",
   },
+  {
+    id: 8,
+    label: "",
+    title: "",
+    description: "",
+  },
 ];
 
 export const CONCLUSION_DETAILS: CaseDetails[] = [
@@ -464,6 +492,12 @@ export const CONCLUSION_DETAILS: CaseDetails[] = [
     title: "",
     description: "",
   },
+  {
+    id: 8,
+    label: "",
+    title: "",
+    description: "",
+  },
 ];
 
 export const RESULTS_DETAILS: CaseDetails[] = [
@@ -505,6 +539,12 @@ export const RESULTS_DETAILS: CaseDetails[] = [
   },
   {
     id: 7,
+    label: "",
+    title: "",
+    description: "",
+  },
+  {
+    id: 8,
     label: "",
     title: "",
     description: "",
