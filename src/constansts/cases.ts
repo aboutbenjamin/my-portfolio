@@ -173,6 +173,7 @@ export const CASES: CaseData[] = [
       secondSection: ["beach-full-image.png"],
     },
     client: "Clean Beach",
+    website: "Clean Beach App",
     startProject: "2024",
     mediaType: "image",
     mediaSrc: "beach-image-top.png",
@@ -182,15 +183,15 @@ export const CASES: CaseData[] = [
       "beach-horizontal-scroll-3.png",
     ],
     results: [
-      { value: "+", label: "Placeholder", delay: 100 },
-      { value: "+", label: "Placeholder", delay: 150 },
-      { value: "+", label: "Placeholder", delay: 200 },
+      { value: "7", label: "Continents", delay: 100 },
+      { value: "+10K", label: "Beaches", delay: 150 },
+      { value: "+1T $", label: "Economic growth opportunity", delay: 200 },
     ],
   },
   {
     id: 7,
-    title: "Coming Soon",
-    tags: ["-", "-", "-"],
+    title: "Connecting creators and clients in a unified, trusted marketplace",
+    tags: ["Design", "Development", "Web", "Mobile"],
     image: "cover-freeluencer.png",
     images: {
       firstSection: [
@@ -201,7 +202,7 @@ export const CASES: CaseData[] = [
       thirdSection: ["free-full-image.png"],
     },
     client: "Freeluencer",
-    startProject: "2018",
+    startProject: "2019",
     mediaType: "video",
     mediaSrc:
       "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer-movie-top.mp4?alt=media&token=04b70727-6435-4d83-8a95-3b3d4ba0526c",
@@ -214,15 +215,16 @@ export const CASES: CaseData[] = [
       "free-horizontal-scroll-6.png",
     ],
     results: [
-      { value: "+", label: "Placeholder", delay: 100 },
-      { value: "+", label: "Placeholder", delay: 150 },
-      { value: "+", label: "Placeholder", delay: 200 },
+      { value: "+10", label: "Services", delay: 100 },
+      { value: "+50B $", label: "Industry", delay: 150 },
+      { value: "+64M", label: "Content creators", delay: 200 },
     ],
   },
   {
     id: 8,
-    title: "Coming Soon",
-    tags: ["-", "-", "-"],
+    title:
+      "Simplifying Global Shipping Through Digital-First Experiences and End-to-End Logistics Clarity",
+    tags: ["Design", "Web", "Mobile"],
     image: "cover-twill.png",
     images: {
       firstSection: ["twil-image-top.png"],
@@ -230,7 +232,7 @@ export const CASES: CaseData[] = [
       thirdSection: ["twill-full-image.png"],
     },
     client: "Twill by Maersk",
-    startProject: "2027",
+    startProject: "2021",
     mediaType: "video",
     mediaSrc:
       "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/twill-full-video.mp4?alt=media&token=4e8cd54f-a5a8-4bef-ac42-9a50dffb6460",
@@ -240,21 +242,21 @@ export const CASES: CaseData[] = [
       "twill-horizontal-scroll-3.png",
     ],
     results: [
-      { value: "+", label: "Placeholder", delay: 100 },
-      { value: "+", label: "Placeholder", delay: 150 },
-      { value: "+", label: "Placeholder", delay: 200 },
+      { value: "+100", label: "Countries", delay: 100 },
+      { value: "+75K", label: "Active Users", delay: 150 },
+      { value: "+500", label: "Freights a day", delay: 200 },
     ],
   },
   {
     id: 9,
-    title: "Coming Soon",
-    tags: ["-", "-", "-"],
+    title: "Reinventing Mobile Parking with User-Centered Innovation",
+    tags: ["Design", "Mobile"],
     image: "cover-qpark.png",
     images: {
       firstSection: ["qp-image-grid-1.png", "qp-image-grid-2.png"],
     },
     client: "QPark",
-    startProject: "2016",
+    startProject: "2018",
     mediaType: "image",
     mediaSrc: "qp-image-top.png",
     scrollGalleryImages: [
@@ -264,9 +266,9 @@ export const CASES: CaseData[] = [
       "qp-horizontal-scroll-4.png",
     ],
     results: [
-      { value: "+", label: "Placeholder", delay: 100 },
-      { value: "+", label: "Placeholder", delay: 150 },
-      { value: "+", label: "Placeholder", delay: 200 },
+      { value: "+250K", label: "Active users", delay: 100 },
+      { value: "+3,6K", label: "Facilities", delay: 150 },
+      { value: "+7", label: "Countries", delay: 200 },
     ],
   },
 ];
@@ -316,21 +318,31 @@ export const ABOUT_DETAILS: CaseDetails[] = [
   },
   {
     id: 6,
-    label: "",
-    title: "",
-    description: "",
+    label: "About",
+    title: "Empowering Clean Beaches Globally",
+    description:
+      "This project is a native mobile app designed to motivate and support local communities in maintaining clean, welcoming beaches. By encouraging responsible tourism, the app helps boost local economies, making beach preservation both a social and economic goal. The app connects travelers with beaches worldwide, fostering community-driven environmental stewardship.",
   },
   {
     id: 7,
-    label: "",
-    title: "",
-    description: "",
+    label: "About",
+    title: "Empowering Creators through a Unified Marketplace",
+    description:
+      "Freeluencer is a web-based platform designed to help content creators monetize their skills through a seamless digital marketplace. Acting as both a marketplace and service hub, it allows users to function as buyers or sellers. Whether posting jobs, sending offers, or managing orders, the platform offers an all-in-one solution tailored to the digital creator economy.",
   },
   {
     id: 8,
-    label: "",
-    title: "",
-    description: "",
+    label: "About",
+    title: "Transforming Twill’s Digital Freight Experience",
+    description:
+      "Twill by Maersk approached with a clear goal: enhance their marketing website to better serve users across desktop and mobile. Our mission was to redesign the homepage to improve the freight discovery experience and increase user engagement, all while staying aligned with Twill’s brand values of simplicity, transparency, and trust.",
+  },
+  {
+    id: 9,
+    label: "About",
+    title: "Smarter Parking, Seamless Design",
+    description:
+      "Q-Park embarked on a mission to modernize its native mobile app, aiming to enhance the digital parking experience for its users. The goal was to transform the app into a more intuitive, intelligent tool that simplifies parking across Europe, from finding spots to managing bookings and payments.",
   },
 ];
 
@@ -372,21 +384,31 @@ export const CHALLENGE_DETAILS: CaseDetails[] = [
   },
   {
     id: 6,
-    label: "",
-    title: "",
-    description: "",
+    label: "Challenge",
+    title: "Combatting Beach Neglect",
+    description:
+      "Many coastal areas struggle with pollution due to lack of awareness, resources, and accountability. Dirty or unsafe beaches deter tourists, directly impacting local businesses and livelihoods. There was a clear need for a digital tool that could both raise awareness and actively engage travelers and locals to promote cleaner, more sustainable coastlines.",
   },
   {
     id: 7,
-    label: "",
-    title: "",
-    description: "",
+    label: "Challenge",
+    title: "Bridging Functionality with Trust and Simplicity",
+    description:
+      "The main challenge was to create a feature-rich environment that balances complexity with usability. The platform needed to support multiple transaction types, account verification, live communication, and order management, without overwhelming the user. Additionally, ensuring trust between parties (buyers and sellers) and building a scalable backend for admin oversight were critical concerns.",
   },
   {
     id: 8,
-    label: "",
-    title: "",
-    description: "",
+    label: "Challenge",
+    title: "Creating a Seamless, Scalable Freight Discovery Interface",
+    description:
+      "Twill needed more than just a homepage refresh, they needed a solution that could handle complex freight search inputs while remaining user-friendly. We faced the challenge of presenting logistics-heavy content in a digestible format, integrating real-time search elements, and maintaining a consistent, visually engaging experience across devices.",
+  },
+  {
+    id: 9,
+    label: "Challenge",
+    title: "Outdated UX, Fragmented Journeys",
+    description:
+      "The legacy app struggled with poor usability, inconsistent UI patterns, and limited user guidance. Key pain points included confusing navigation, slow performance, and lack of personalization. User expectations had outgrown the app’s original design, creating a clear need for a smarter, streamlined solution.",
   },
 ];
 
@@ -427,21 +449,31 @@ export const SOLUTION_DETAILS: CaseDetails[] = [
   },
   {
     id: 6,
-    label: "",
-    title: "",
-    description: "",
+    label: "Solution",
+    title: "A Social-Eco Tourism Platform",
+    description:
+      "The solution is a feature-rich mobile app that combines beach discovery with community engagement. Users can post reviews, upload photos and videos, and report on beach cleanliness. The app uses AI and admin moderation to verify beach conditions in real time. It also offers integrated booking options for hotels, flights, restaurants, and activities based on the user’s beach of interest. Social features like messaging and following help build a community of eco-conscious travelers.",
   },
   {
     id: 7,
-    label: "",
-    title: "",
-    description: "",
+    label: "Solution",
+    title: "Scalable Architecture with Creator-Centric Features",
+    description:
+      "Freeluencer was developed as a responsive web app using modern frameworks and scalable infrastructure. Key features include job postings, gig management, offers, direct service checkout, live messaging, social media integration, and ID-based user verification. An intuitive admin panel provides full control over platform operations, and a custom-branded marketplace reinforces the platform’s identity.",
   },
   {
     id: 8,
-    label: "",
-    title: "",
-    description: "",
+    label: "Solution",
+    title: "User-Centric Design, Built for Performance and Clarity",
+    description:
+      "We introduced a new hero section featuring a powerful freight search form on the left and a custom illustration on the right to humanize the service. Below, we crafted a layered content structure: trusted partners, an interactive country selector slider, a compelling customer testimonial, a breakdown of Twill’s benefits, informative blog articles, and a visually rich opportunity slider. Every section was designed to guide users through Twill’s offerings with clarity and engagement, ending with a step-by-step onboarding flow and performance-driven calls to action.",
+  },
+  {
+    id: 9,
+    label: "Solution",
+    title: "User-Centered Redesign with Smart Features",
+    description:
+      "Our team approached the redesign with a user-first mindset. We restructured the information architecture, introduced predictive parking suggestions based on behavior, improved the booking flow, and integrated real-time availability data. The UI was completely overhauled to align with modern mobile standards, prioritizing accessibility, clarity, and ease of use.",
   },
 ];
 
@@ -482,21 +514,31 @@ export const CONCLUSION_DETAILS: CaseDetails[] = [
   },
   {
     id: 6,
-    label: "",
-    title: "",
-    description: "",
+    label: "Conclusion",
+    title: "Tech Meets Environmental Action",
+    description:
+      "This project demonstrates how technology and tourism can work together to drive environmental and economic impact. By empowering both travelers and local communities, the app doesn’t just promote beautiful beaches ,  it helps preserve them. The platform continues to evolve, aiming to become the go-to global community for beach lovers who care about the planet.",
   },
   {
     id: 7,
-    label: "",
-    title: "",
-    description: "",
+    label: "Conclusion",
+    title: "A Foundation for the Future of Creator Commerce",
+    description:
+      "Freeluencer successfully delivers a unified digital ecosystem for content creators and buyers. With its feature-rich design, strong verification process, and scalable admin control, the platform is well-positioned for future growth. It represents a meaningful step toward a more secure, streamlined, and creator-focused digital economy.",
   },
   {
     id: 8,
-    label: "",
-    title: "",
-    description: "",
+    label: "Conclusion",
+    title: "A Freight Platform That Puts Users First",
+    description:
+      "Through strategic design and user-focused functionality, we helped Twill transform their homepage into a powerful tool for customer acquisition and engagement. The new experience doesn’t just look better, it works harder, providing value at every scroll. This project stands as a strong example of how design can make complex services feel simple, useful, and approachable.",
+  },
+  {
+    id: 9,
+    label: "Conclusion",
+    title: "A Scalable Foundation for the Future",
+    description:
+      "The Q-Park mobile app redesign not only addressed current user frustrations but also laid the groundwork for future innovations, such as EV integrations and loyalty features. The new design system ensures scalability, while the improved user experience strengthens Q-Park’s position as a digital-first mobility provider.",
   },
 ];
 
@@ -533,20 +575,26 @@ export const RESULTS_DETAILS: CaseDetails[] = [
   },
   {
     id: 6,
-    label: "",
-    title: "",
+    label: "Results",
+    title: "Global Reach, Local Impact",
     description: "",
   },
   {
     id: 7,
-    label: "",
-    title: "",
+    label: "Results",
+    title: "Robust Engagement & Monetization Tools Delivered",
     description: "",
   },
   {
     id: 8,
-    label: "",
-    title: "",
+    label: "Results",
+    title: "Boosted Engagement and Streamlined Onboarding",
+    description: "",
+  },
+  {
+    id: 9,
+    label: "Results",
+    title: "Faster, Friendlier, More Efficient",
     description: "",
   },
 ];
