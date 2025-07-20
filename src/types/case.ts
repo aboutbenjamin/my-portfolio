@@ -16,7 +16,6 @@ export type CaseData = {
         secondSection?: string[];
         thirdSection?: string[];
       };
-  description: string;
   client: string;
   website?: string;
   startProject: string;
