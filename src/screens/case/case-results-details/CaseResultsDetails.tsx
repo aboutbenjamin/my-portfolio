@@ -2,17 +2,16 @@ import { useMemo } from "react";
 import styles from "./CaseResultsDetails.module.css";
 import { CASES, RESULTS_DETAILS } from "../../../constansts/cases";
 import { useParams } from "react-router-dom";
+import { useTranslation } from "../../../i18n/useTranslation";
 import type { CaseResultCard } from "../../../types/case";
 
 export function CaseResultsDetails() {
   const { id } = useParams<{ id?: string }>();
+  const { t } = useTranslation();
   const caseId = useMemo(() => Number(id), [id]);
 
   const details = useMemo(
-    () =>
-      Number.isFinite(caseId) && caseId >= 0 && caseId < RESULTS_DETAILS.length
-        ? RESULTS_DETAILS[caseId]
-        : RESULTS_DETAILS[0],
+    () => RESULTS_DETAILS.find((detail) => detail.id === caseId + 1),
     [caseId]
   );
 
@@ -26,25 +25,28 @@ export function CaseResultsDetails() {
 
   const resultCards = caseData.results ?? [];
 
+  if (!details || resultCards.length === 0) {
+    return null;
+  }
+
   return (
     <section>
       <header className={styles.resultsGrid}>
         <p className={styles.resultsLabel} id="results-heading">
-          {details.label}
+          {t(details.labelKey)}
         </p>
-        <h2 className={styles.resultsTitle}>{details.title}</h2>
+        <h2 className={styles.resultsTitle}>{t(details.titleKey)}</h2>
       </header>
       <ul className={styles.cardsGrid}>
-        {resultCards.length > 0 &&
-          resultCards.map((card: CaseResultCard) => (
-            <li
-              key={`${card.value}-${card.label}`}
-              className={styles.resultCard}
-            >
-              <span className={styles.resultCardValue}>{card.value}</span>
-              <p className={styles.resultCardLabel}>{card.label}</p>
-            </li>
-          ))}
+        {resultCards.map((card: CaseResultCard) => (
+          <li
+            key={`${card.value}-${card.labelKey}`}
+            className={styles.resultCard}
+          >
+            <span className={styles.resultCardValue}>{card.value}</span>
+            <p className={styles.resultCardLabel}>{t(card.labelKey)}</p>
+          </li>
+        ))}
       </ul>
     </section>
   );

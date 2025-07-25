@@ -1,0 +1,16 @@
+.languageToggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--color-foreground);
+  transition: background 0.2s;
+}
+
+.languageToggle:hover,
+.languageToggle:focus {
+  background: var(--color-muted);
+}

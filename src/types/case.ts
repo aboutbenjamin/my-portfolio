@@ -1,13 +1,20 @@
 export type CaseResultCard = {
   value: string;
-  label: string;
+  labelKey: string;
   delay: number;
+};
+
+export type CaseDetailsSection = {
+  labelKey: string;
+  titleKey: string;
+  descriptionKey: string;
 };
 
 export type CaseData = {
   id: number;
-  title: string;
-  tags: string[];
+  key: string;
+  titleKey: string;
+  tags: readonly string[];
   image: string;
   images?:
     | string[]
@@ -21,8 +28,14 @@ export type CaseData = {
   startProject: string;
   mediaType?: "image" | "video" | "";
   mediaSrc?: string;
-  about?: string;
   conclustion?: string;
   scrollGalleryImages?: string[];
   results?: CaseResultCard[];
+  details?: {
+    about?: CaseDetailsSection;
+    challenge?: CaseDetailsSection;
+    solution?: CaseDetailsSection;
+    conclusion?: CaseDetailsSection;
+    results?: CaseDetailsSection;
+  };
 };

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "./Header.module.css";
 import { useTheme } from "../../theme/use-theme";
 import { ThemeToggleButton } from "../theme-toggle-button/ThemeToggleButton";
+import { LanguageToggle } from "../language-toggle/LanguageToggle";
 import { IconButton } from "../icon-button/IconButton";
 
 export function Header() {
@@ -35,7 +36,8 @@ export function Header() {
       <div>
         <img src={logoSrc} alt="Logo" className={styles.logo} />
       </div>
-      <div>
+      <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
+        <LanguageToggle />
         <ThemeToggleButton />
       </div>
     </header>

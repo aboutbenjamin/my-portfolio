@@ -1,4 +1,5 @@
 import type { CaseData } from "../../../types/case";
+import { useTranslation } from "../../../i18n/useTranslation";
 import styles from "./CaseMetaInfo.module.css";
 
 type CaseMetaInfoProps = {
@@ -6,6 +7,7 @@ type CaseMetaInfoProps = {
 };
 
 export function CaseMetaInfo({ caseData }: CaseMetaInfoProps) {
+  const { t } = useTranslation();
   return (
     <section>
       <dl className={styles.metaInfoList}>
@@ -23,7 +25,7 @@ export function CaseMetaInfo({ caseData }: CaseMetaInfoProps) {
             <ul>
               {caseData.tags.map((tag, idx) => (
                 <li key={`${tag}-${idx}`}>
-                  {tag}
+                  {t(tag)}
                   {idx < caseData.tags.length - 1 && <span>,</span>}
                 </li>
               ))}

@@ -1,6 +1,7 @@
 import { BackButton } from "../../../components/back-button/BackButton";
 import type { CaseData } from "../../../types/case";
 import styles from "./CaseHeader.module.css";
+import { useTranslation } from "../../../i18n/useTranslation";
 
 type CaseHeaderProps = {
   showHeaderContent: boolean;
@@ -13,6 +14,7 @@ export function CaseHeader({
   imgRef,
   caseData,
 }: CaseHeaderProps) {
+  const { t } = useTranslation();
   return (
     <>
       <header>
@@ -23,7 +25,7 @@ export function CaseHeader({
             src={
               new URL(`../../../assets/${caseData.image}`, import.meta.url).href
             }
-            alt={caseData.title}
+            alt={t(caseData.titleKey)}
             className={styles["case-image-bg"]}
           />
           <div
@@ -36,7 +38,9 @@ export function CaseHeader({
       </header>
       {showHeaderContent && (
         <div className={styles["case-content"]}>
-          <h1 className={styles["case-title-animated"]}>{caseData.title}</h1>
+          <h1 className={styles["case-title-animated"]}>
+            {t(caseData.titleKey)}
+          </h1>
           <span>{caseData.client}</span>
         </div>
       )}
