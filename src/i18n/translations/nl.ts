@@ -49,4 +49,14 @@ export const nl = {
     saas: "SaaS",
     rapidPrototyping: "Rapid Prototyping",
   },
+
+  resultCards: {
+    // ...existing code...
+    troublefree: {
+      modules: "Herontworpen modules",
+      users: "Tevreden gebruikers",
+      experience: "Ervaring",
+    },
+    // ...existing code...
+  },
 } as const;

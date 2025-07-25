@@ -260,9 +260,13 @@ const CASE_DEFINITIONS = {
       "tf-horizontal-scroll-4.png",
     ],
     results: [
-      { value: "+10", label: "Redesigned modules", delay: 100 },
-      { value: "+55K", label: "Satisfied users", delay: 150 },
-      { value: "+9 years", label: "Experience", delay: 200 },
+      { value: "+10", labelKey: "resultCards.troublefree.modules", delay: 100 },
+      { value: "+55K", labelKey: "resultCards.troublefree.users", delay: 150 },
+      {
+        value: "+9 years",
+        labelKey: "resultCards.troublefree.experience",
+        delay: 200,
+      },
     ],
     details: {
       about: {
@@ -377,9 +381,21 @@ const CASE_DEFINITIONS = {
       "free-horizontal-scroll-6.png",
     ],
     results: [
-      { value: "+10", label: "Services", delay: 100 },
-      { value: "+50B $", label: "Industry", delay: 150 },
-      { value: "+64M", label: "Content creators", delay: 200 },
+      {
+        value: "+10",
+        labelKey: "resultCards.freeluencer.services",
+        delay: 100,
+      },
+      {
+        value: "+50B $",
+        labelKey: "resultCards.freeluencer.industry",
+        delay: 150,
+      },
+      {
+        value: "+64M",
+        labelKey: "resultCards.freeluencer.creators",
+        delay: 200,
+      },
     ],
     details: {
       about: {
@@ -431,9 +447,9 @@ const CASE_DEFINITIONS = {
       "twill-horizontal-scroll-3.png",
     ],
     results: [
-      { value: "+100", label: "Countries", delay: 100 },
-      { value: "+75K", label: "Active Users", delay: 150 },
-      { value: "+500", label: "Freights a day", delay: 200 },
+      { value: "+100", labelKey: "resultCards.twill.countries", delay: 100 },
+      { value: "+75K", labelKey: "resultCards.twill.activeUsers", delay: 150 },
+      { value: "+500", labelKey: "resultCards.twill.freights", delay: 200 },
     ],
     details: {
       about: {
@@ -473,6 +489,7 @@ const CASE_DEFINITIONS = {
       firstSection: ["qp-image-grid-1.png", "qp-image-grid-2.png"],
     },
     client: "QPark",
+    website: "QPark App",
     startProject: "2018",
     mediaType: "image" as const,
     mediaSrc: "qp-image-top.png",
@@ -483,9 +500,13 @@ const CASE_DEFINITIONS = {
       "qp-horizontal-scroll-4.png",
     ],
     results: [
-      { value: "+250K", label: "Active users", delay: 100 },
-      { value: "+3,6K", label: "Facilities", delay: 150 },
-      { value: "+7", label: "Countries", delay: 200 },
+      { value: "+250K", labelKey: "resultCards.qpark.reduction", delay: 100 },
+      {
+        value: "+3,6K",
+        labelKey: "resultCards.qpark.satisfaction",
+        delay: 150,
+      },
+      { value: "+7", labelKey: "resultCards.qpark.engagement", delay: 200 },
     ],
     details: {
       about: {
