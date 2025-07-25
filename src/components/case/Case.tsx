@@ -11,11 +11,9 @@ type CaseProps = {
 
 const Case: React.FC<CaseProps> = ({ caseData, onClick, imgRef }) => {
   const { t } = useTranslation();
-  const { titleKey, client, image, id, tags } = caseData;
+  const { titleKey, client, image, id } = caseData;
 
-  // Translate title and tags
   const title = t(titleKey);
-  const translatedTags = tags.map((tag) => t(tag));
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter" || e.key === " ") {

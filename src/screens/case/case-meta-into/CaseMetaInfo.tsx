@@ -12,15 +12,15 @@ export function CaseMetaInfo({ caseData }: CaseMetaInfoProps) {
     <section>
       <dl className={styles.metaInfoList}>
         <div>
-          <dt>Client</dt>
+          <dt>{t("caseInfo.client")}</dt>
           <dd>{caseData.client}</dd>
         </div>
         <div>
-          <dt>Year</dt>
+          <dt>{t("caseInfo.year")}</dt>
           <dd>{caseData.startProject}</dd>
         </div>
         <div>
-          <dt>Type Case</dt>
+          <dt>{t("caseInfo.typeCase")}</dt>
           <dd>
             <ul>
               {caseData.tags.map((tag, idx) => (
@@ -33,7 +33,7 @@ export function CaseMetaInfo({ caseData }: CaseMetaInfoProps) {
           </dd>
         </div>
         <div>
-          <dt>Reference</dt>
+          <dt>{t("caseInfo.reference")}</dt>
           <dd>
             <a
               href="https://www.website.com"

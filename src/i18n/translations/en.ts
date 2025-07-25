@@ -1,4 +1,32 @@
 export const en = {
+  home: {
+    heroIntro:
+      "Hi, I am Benjamin and I am a strategic product designer and engineer.",
+    heroDescription: "I create products people",
+    love: "love",
+    heroEnd: "to use.",
+  },
+  navigation: {
+    backToOverview: "Back to overview",
+  },
+  caseInfo: {
+    client: "Client",
+    year: "Year",
+    typeCase: "Type Case",
+    reference: "Reference",
+  },
+  contact: {
+    heading: "Want to know more about this case?",
+    role: "Product Engineer",
+    form: {
+      name: "Name",
+      company: "Company name",
+      email: "Email address",
+      phone: "Phone number",
+      message: "Message",
+      submit: "Send",
+    },
+  },
   case: {
     // Vodafone - Case 1
     vodafoneTitle: "Enhancing customer experience with AI search",
@@ -45,7 +73,7 @@ export const en = {
     troublefreeTitle:
       "Optimizing logistical processes with industry-specific ERP solutions.",
     troublefreeDescription:
-      "This project presents a collection of enterprise software projects focused on enhancing user experience across various business domains.",
+      "This project presents a collection of enterprise software projects focused on enhancing user experience across various business domains. Featured work includes an Total redesign and rebranding of the software, Ticketing system for time tracking and task management, Tailored component library designed specifically for the software, Interactive dashboard for a clear overview, Order Overview system for managing business transactions, an Order Edit platform enabling dynamic order customization, a mobile app designed for drivers in transportation logistics, a Knowledge Center website aimed at streamlining customer support, and a range of reusable interface components. These projects address key areas such as order management, logistics coordination, customer service, and accessibility, delivering solutions across both web and mobile platforms.",
     troublefreeChallenge:
       "Each project tackled unique and demanding design challenges. These included developing accessible order status displays for color-blind users, solving persistent space constraints in filter systems that previous teams had struggled to address, and rethinking action menus that required managing over 20 possible user actions. The mobile driver interface required intuitive navigation optimized for on-the-go use, while the Knowledge Center involved transforming a scattered information base into a cohesive, searchable support experience. Another critical challenge was enabling greater user control through customizable sidebar navigation.",
     troublefreeSolution:
