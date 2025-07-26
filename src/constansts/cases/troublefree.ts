@@ -29,7 +29,8 @@ export const TROUBLEFREE_CASE = {
   website: "troublefree.nl",
   startProject: "2018",
   mediaType: "video" as const,
-  mediaSrc: "TF-before-after.mp4",
+  mediaSrc:
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/troublefree%2FTF-before-after.mp4?alt=media&token=da881f5b-9c5a-4bc6-8a52-08f4dbad2264",
   scrollGalleryImages: [
     "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/troublefree%2Ftf-horizontal-scroll-1.png?alt=media&token=657e0e0f-fc34-44c8-8668-508821387c48",
     "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/troublefree%2Ftf-horizontal-scroll-2.png?alt=media&token=c168e964-4055-484a-9765-fe2addf2e7f6",

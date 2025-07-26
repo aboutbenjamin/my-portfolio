@@ -23,7 +23,7 @@ export const TWILL_CASE = {
   startProject: "2021",
   mediaType: "video" as const,
   mediaSrc:
-    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/twill-full-video.mp4?alt=media&token=4e8cd54f-a5a8-4bef-ac42-9a50dffb6460",
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/twill%2Ftwill-full-video.mp4?alt=media&token=c0883f4e-ccd4-43dc-9089-70b3f2320b3a",
   scrollGalleryImages: [
     "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/twill%2Ftwill-horizontal-scroll-1.png?alt=media&token=143f0512-2015-4bc8-9531-e1b434f99ec5",
     "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/twill%2Ftwill-horizontal-scroll-2.png?alt=media&token=bddb2a09-8321-4e79-9443-c2252c242705",

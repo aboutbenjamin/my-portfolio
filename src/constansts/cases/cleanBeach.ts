@@ -20,7 +20,8 @@ export const CLEAN_BEACH_CASE = {
   website: "Clean Beach App",
   startProject: "2024",
   mediaType: "image" as const,
-  mediaSrc: "beach-image-top.png",
+  mediaSrc:
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/beach%2Fbeach-image-top.png?alt=media&token=aa05ba76-389a-42d7-9d25-6e1e5929b911",
   scrollGalleryImages: [
     "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/beach%2Fbeach-horizontal-scroll-1.png?alt=media&token=7db249aa-dc4d-4b11-a09f-5b7f3bb2bca8",
     "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/beach%2Fbeach-horizontal-scroll-2.png?alt=media&token=9d1c7b38-b185-47b4-ad82-95bc855b11b3",

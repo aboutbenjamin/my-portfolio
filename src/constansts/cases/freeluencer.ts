@@ -24,7 +24,7 @@ export const FREELUENCER_CASE = {
   startProject: "2019",
   mediaType: "video" as const,
   mediaSrc:
-    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer-movie-top.mp4?alt=media&token=04b70727-6435-4d83-8a95-3b3d4ba0526c",
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer%2Ffreeluencer-movie-top.mp4?alt=media&token=ed4a02b1-b671-4e90-b4d6-79e917eb9752",
   scrollGalleryImages: [
     "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer%2Ffree-horizontal-scroll-1.png?alt=media&token=5c8676bb-082f-4f51-bbc3-f483142c53fe",
     "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer%2Ffree-horizontal-scroll-2.png?alt=media&token=6b7185df-45b4-4063-9814-409fb79a77f6",
