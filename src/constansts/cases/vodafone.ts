@@ -20,7 +20,8 @@ export const VODAFONE_CASE = {
   website: "Vodafone app",
   startProject: "2025",
   mediaType: "image" as const,
-  mediaSrc: "vdf-image-top.png",
+  mediaSrc:
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/vodafone%2Fvdf-image-top.png?alt=media&token=ad817d34-c411-407f-add8-b33fc05af040",
   scrollGalleryImages: [
     "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/vodafone%2Fvdf-horizontal-scroll-1.png?alt=media&token=fcd8dff7-ab02-4cc6-a608-7d1504be233b",
     "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/vodafone%2Fvdf-horizontal-scroll-2.png?alt=media&token=45db26bf-5639-48ad-a1cd-262462a92995",
