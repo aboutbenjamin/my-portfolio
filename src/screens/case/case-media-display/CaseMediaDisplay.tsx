@@ -1,6 +1,7 @@
 import React, { useMemo } from "react";
 import styles from "./CaseMediaDisplay.module.css";
 import type { CaseData } from "../../../types/case";
+import { useTranslation } from "../../../i18n/useTranslation";
 
 type CaseMediaDisplayProps = {
   caseData: CaseData;
@@ -11,6 +12,8 @@ export function CaseMediaDisplay({
   caseData,
   videoRef,
 }: CaseMediaDisplayProps) {
+  const { t } = useTranslation();
+
   const assetUrl = useMemo(() => {
     if (caseData.mediaSrc?.startsWith("http")) {
       return caseData.mediaSrc;
@@ -36,7 +39,7 @@ export function CaseMediaDisplay({
         <figure>
           <img
             src={assetUrl}
-            alt={caseData.title || "Case media"}
+            alt={t(caseData.titleKey) || "Case media"}
             loading="eager"
             className={styles["case-image-media"]}
           />
