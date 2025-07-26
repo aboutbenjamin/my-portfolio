@@ -2,6 +2,7 @@ import { BackButton } from "../../../components/back-button/BackButton";
 import type { CaseData } from "../../../types/case";
 import styles from "./CaseHeader.module.css";
 import { useTranslation } from "../../../i18n/useTranslation";
+import { getImageSrc } from "../../../utils/getImageSrc";
 
 type CaseHeaderProps = {
   showHeaderContent: boolean;
@@ -15,6 +16,7 @@ export function CaseHeader({
   caseData,
 }: CaseHeaderProps) {
   const { t } = useTranslation();
+
   return (
     <>
       <header>
@@ -22,9 +24,7 @@ export function CaseHeader({
         <section className={styles["image-container"]}>
           <img
             ref={imgRef}
-            src={
-              new URL(`../../../assets/${caseData.image}`, import.meta.url).href
-            }
+            src={getImageSrc(caseData.image)}
             alt={t(caseData.titleKey)}
             className={styles["case-image-bg"]}
           />

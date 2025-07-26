@@ -5,21 +5,27 @@ export const ZIGGO_CASE = {
   key: CASE_KEYS.ZIGGO,
   titleKey: "case.ziggoTitle",
   tags: ["tags.design", "tags.development", "tags.web", "tags.mobile"],
-  image: "cover-ziggo.png",
+  image:
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/ziggo%2Fcover-ziggo.png?alt=media&token=bd2f1995-c2de-45f9-aa5e-343eb00044cf",
   images: {
-    firstSection: ["zg-image-top.png"],
-    secondSection: ["zg-image-grid-1.png"],
+    firstSection: [
+      "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/ziggo%2Fzg-image-top.png?alt=media&token=7a43628b-37a4-424f-be38-9bbde390549d",
+    ],
+    secondSection: [
+      "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/ziggo%2Fzg-image-grid-1.png?alt=media&token=f1679591-928b-4b7d-ad1e-2e71bb64c854",
+    ],
   },
   client: "Ziggo",
   website: "ziggo.nl",
   startProject: "2024",
   mediaType: "video" as const,
-  mediaSrc: "ziggo-before-after.mp4",
+  mediaSrc:
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/ziggo%2Fziggo-before-after.mp4?alt=media&token=0ba8b456-af84-483b-9fd1-b7dd5d5307cf",
   scrollGalleryImages: [
-    "zg-horizontal-scroll-1.png",
-    "zg-horizontal-scroll-2.png",
-    "zg-horizontal-scroll-3.png",
-    "zg-horizontal-scroll-4.png",
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/ziggo%2Fzg-horizontal-scroll-1.png?alt=media&token=0f31729e-9d40-4e7c-93eb-c5f68a2d0bd1",
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/ziggo%2Fzg-horizontal-scroll-2.png?alt=media&token=aa2a2ea2-cf4d-4188-87d8-ad5386963fa1",
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/ziggo%2Fzg-horizontal-scroll-3.png?alt=media&token=112693e0-b135-46cc-80b3-1466ff8693f3",
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/ziggo%2Fzg-horizontal-scroll-4.png?alt=media&token=262aae4f-38b1-418d-91a2-6dbaa3f4d8ae",
   ],
   results: [
     {

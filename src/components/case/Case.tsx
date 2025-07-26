@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Case.module.css";
 import type { CaseData } from "../../types/case";
 import { useTranslation } from "../../i18n/useTranslation";
+import { getImageSrc } from "../../utils/getImageSrc";
 
 type CaseProps = {
   caseData: CaseData;
@@ -38,7 +39,7 @@ const Case: React.FC<CaseProps> = ({ caseData, onClick, imgRef }) => {
         <figure className={styles.caseFigure}>
           <img
             ref={imgRef}
-            src={new URL(`../../assets/${image}`, import.meta.url).href}
+            src={getImageSrc(image)}
             alt={title}
             className={styles.caseImage}
             data-shared-image={`case-image-${id}`}

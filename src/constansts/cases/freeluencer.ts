@@ -5,14 +5,20 @@ export const FREELUENCER_CASE = {
   key: CASE_KEYS.FREELUENCER,
   titleKey: "case.freeluencerTitle",
   tags: ["tags.design", "tags.development", "tags.web", "tags.mobile"],
-  image: "cover-freeluencer.png",
+  image:
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer%2Fcover-freeluencer.png?alt=media&token=625958aa-b4c0-4e2e-9f33-b8df7079972e",
   images: {
     firstSection: [
-      "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer.gif?alt=media&token=160d7680-e81e-47fd-80f6-f1ff75c6e4bd",
-      "freeluencer-image-grid-2.png",
+      "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer%2Ffreeluencer.gif?alt=media&token=50cf9a3d-897c-4bf4-b30c-f881c4927a79",
+      "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer%2Ffreeluencer-image-grid-2.png?alt=media&token=f76b1344-deaf-4596-bad5-8989961dcae1",
     ],
-    secondSection: ["free-image-grid-3.png", "free-image-grid-4.png"],
-    thirdSection: ["free-full-image.png"],
+    secondSection: [
+      "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer%2Ffree-image-grid-3.png?alt=media&token=186fe998-8d8e-4afa-9520-13c6ffe47cc5",
+      "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer%2Ffree-image-grid-4.png?alt=media&token=f97ddce3-9fe0-48f9-ac40-c3ec3bab98d7",
+    ],
+    thirdSection: [
+      "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer%2Ffree-full-image.png?alt=media&token=49eaf936-41b1-4a15-a050-801fc30e50a9",
+    ],
   },
   client: "Freeluencer",
   startProject: "2019",
@@ -20,12 +26,12 @@ export const FREELUENCER_CASE = {
   mediaSrc:
     "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer-movie-top.mp4?alt=media&token=04b70727-6435-4d83-8a95-3b3d4ba0526c",
   scrollGalleryImages: [
-    "free-horizontal-scroll-1.png",
-    "free-horizontal-scroll-2.png",
-    "free-horizontal-scroll-3.png",
-    "free-horizontal-scroll-4.png",
-    "free-horizontal-scroll-5.png",
-    "free-horizontal-scroll-6.png",
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer%2Ffree-horizontal-scroll-1.png?alt=media&token=5c8676bb-082f-4f51-bbc3-f483142c53fe",
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer%2Ffree-horizontal-scroll-2.png?alt=media&token=6b7185df-45b4-4063-9814-409fb79a77f6",
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer%2Ffree-horizontal-scroll-3.png?alt=media&token=5fb5d5ad-626a-4e6d-99f3-83fd5579a69e",
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer%2Ffree-horizontal-scroll-4.png?alt=media&token=b952e262-1acd-4b9b-bbce-292e1a63b706",
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer%2Ffree-horizontal-scroll-5.png?alt=media&token=4100af5a-8b6d-42b0-8bd6-4e00170ddfba",
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer%2Ffree-horizontal-scroll-6.png?alt=media&token=a7bc055d-762f-4d99-95d0-49dfeaaa8522",
   ],
   results: [
     {

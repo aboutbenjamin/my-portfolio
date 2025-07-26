@@ -5,22 +5,32 @@ export const ILIONX_CASE = {
   key: CASE_KEYS.ILIONX,
   titleKey: "case.ilionxTitle",
   tags: ["tags.accessibility", "tags.wcag", "tags.eaa"],
-  image: "cover-wcag.png",
+  image:
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/ilionx%2Fcover-wcag.png?alt=media&token=0ea9b8f5-ecfe-452a-b9d1-50bf98a73fac",
   images: {
-    firstSection: ["wcag-image-grid-1.png", "wcag-image-grid-2.png"],
-    secondSection: ["wcag-image-grid-3.png", "wcag-image-grid-4.png"],
-    thirdSection: ["wcag-image-grid-5.png"],
+    firstSection: [
+      "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/ilionx%2Fwcag-image-grid-1.png?alt=media&token=c1c264b0-9fa2-4386-9b70-3b06a06ad350",
+      "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/ilionx%2Fwcag-image-grid-2.png?alt=media&token=6eb4f41f-bd91-43da-8e7a-3eccabf3ef3b",
+    ],
+    secondSection: [
+      "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/ilionx%2Fwcag-image-grid-3.png?alt=media&token=bd75c3e5-df2b-487f-92a1-7742545fd30e",
+      "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/ilionx%2Fwcag-image-grid-4.png?alt=media&token=d37496fc-6d16-4472-833b-de3125d7b2e8",
+    ],
+    thirdSection: [
+      "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/ilionx%2Fwcag-image-grid-5.png?alt=media&token=4b1b8279-a23b-4f41-89c3-e7c135c49301",
+    ],
   },
   client: "ilionx",
   website: "ilionx.nl",
   startProject: "2023",
   mediaType: "image" as const,
-  mediaSrc: "wcag-full-image.png",
+  mediaSrc:
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/ilionx%2Fwcag-full-image.png?alt=media&token=5e66d6a2-12b4-492c-b393-919c24600380",
   scrollGalleryImages: [
-    "wcag-scroll-1.png",
-    "wcag-scroll-2.png",
-    "wcag-scroll-3.png",
-    "wcag-scroll-4.png",
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/ilionx%2Fwcag-scroll-1.png?alt=media&token=941b5ed4-f39c-4fc7-a118-262df0a8f7d9",
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/ilionx%2Fwcag-scroll-2.png?alt=media&token=221a0c18-e976-4f8d-91a3-d784c980e705",
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/ilionx%2Fwcag-scroll-3.png?alt=media&token=2611b33c-c6d9-4a9a-8a8a-a31f2986cff4",
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/ilionx%2Fwcag-scroll-4.png?alt=media&token=81eed3bf-11a0-48f6-ada3-28661ad6589a",
   ],
   results: [
     {

@@ -2,6 +2,7 @@ import { useRef, useEffect } from "react";
 import styles from "./HorizontalScrollGallery.module.css";
 import { useParams } from "react-router-dom";
 import { CASES } from "../../../constansts/cases";
+import { getImageSrc } from "../../../utils/getImageSrc";
 
 export function HorizontalScrollGallery() {
   const { id } = useParams();
@@ -75,9 +76,7 @@ export function HorizontalScrollGallery() {
               {images.map((img, i) => (
                 <figure className={styles.galleryItem} key={img || i}>
                   <img
-                    src={
-                      new URL(`../../../assets/${img}`, import.meta.url).href
-                    }
+                    src={getImageSrc(img)}
                     alt={`Gallery ${i + 1}`}
                     className={styles.galleryImg}
                   />

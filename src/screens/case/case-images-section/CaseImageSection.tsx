@@ -1,4 +1,5 @@
 import styles from "./CaseImageSection.module.css";
+import { getImageSrc } from "../../../utils/getImageSrc";
 
 type Props = {
   images: string[];
@@ -12,9 +13,7 @@ export function CaseImageSection({ images, altTexts }: Props) {
         const isGif = img.toLowerCase().endsWith(".gif");
         const alt = altTexts?.[idx] || `Case image ${idx + 1}`;
 
-        const src = img.startsWith("http")
-          ? img
-          : new URL(`../../../assets/${img}`, import.meta.url).href;
+        const src = getImageSrc(img);
 
         if (isGif) {
           return (
