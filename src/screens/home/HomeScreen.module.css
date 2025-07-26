@@ -15,6 +15,30 @@
   line-height: 1.1em;
   margin: 0;
   color: var(--color-foreground);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+@media (max-width: 640px) {
+  .home-title h1 {
+    font-size: 2.25rem;
+    letter-spacing: -0.02em;
+    line-height: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title h1 {
+    font-size: 1.875rem;
+    letter-spacing: -0.01em;
+  }
+}
+
+@media (max-width: 375px) {
+  .home-title h1 {
+    font-size: 1.625rem;
+  }
 }
 
 .love-animate {
