@@ -6,7 +6,7 @@ export const FREELUENCER_CASE = {
   titleKey: "case.freeluencerTitle",
   tags: ["tags.design", "tags.development", "tags.web", "tags.mobile"],
   image:
-    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer%2Fcover-freeluencer.png?alt=media&token=625958aa-b4c0-4e2e-9f33-b8df7079972e",
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer%2Fcover-freeluencer(1).png?alt=media&token=c133312f-d8ae-407e-b9b7-e804e955e3f7",
   images: {
     firstSection: [
       "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer%2Ffreeluencer.gif?alt=media&token=50cf9a3d-897c-4bf4-b30c-f881c4927a79",

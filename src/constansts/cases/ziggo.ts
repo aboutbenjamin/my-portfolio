@@ -6,7 +6,7 @@ export const ZIGGO_CASE = {
   titleKey: "case.ziggoTitle",
   tags: ["tags.design", "tags.development", "tags.web", "tags.mobile"],
   image:
-    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/ziggo%2Fcover-ziggo.png?alt=media&token=bd2f1995-c2de-45f9-aa5e-343eb00044cf",
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/ziggo%2Fcover-ziggo(1).png?alt=media&token=ef81cb66-bf3d-4616-b6be-691eccfdaee2",
   images: {
     firstSection: [
       "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/ziggo%2Fzg-image-top.png?alt=media&token=7a43628b-37a4-424f-be38-9bbde390549d",

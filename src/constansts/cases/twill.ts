@@ -6,7 +6,7 @@ export const TWILL_CASE = {
   titleKey: "case.twillTitle",
   tags: ["tags.design", "tags.web", "tags.mobile"],
   image:
-    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/twill%2Fcover-twill.png?alt=media&token=a98dd8dc-3a44-4fdb-bce5-d4b4456e2f0a",
+    "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/twill%2Fcover-twill(1).png?alt=media&token=2e31fd27-42f0-423b-8cc0-c3016a08431c",
   images: {
     firstSection: [
       "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/twill%2Ftwil-image-top.png?alt=media&token=66fa0bed-c33c-4468-bf9d-1b2ce23ce420",
