@@ -1,600 +1,119 @@
 import type { CaseData } from "../types/case";
-
-export const CASES: CaseData[] = [
-  {
-    id: 1,
-    title: "Enhancing customer experience with AI search",
-    tags: ["Design", "Development", "Mobile"],
-    image: "cover-vdf.png",
-    images: {
-      firstSection: ["vdf.gif", "vdf-image-grid-2.png"],
-      secondSection: ["vdf-image-grid-3.png"],
-    },
-    client: "Vodafone",
-    website: "Vodafone app",
-    startProject: "2025",
-    mediaType: "image",
-    mediaSrc: "vdf-image-top.png",
-    scrollGalleryImages: [
-      "vdf-horizontal-scroll-1.png",
-      "vdf-horizontal-scroll-2.png",
-      "vdf-horizontal-scroll-3.png",
-    ],
-    results: [
-      {
-        value: "30%",
-        label: "reduction in live contact-support interactions.",
-        delay: 100,
-      },
-      {
-        value: "+2M",
-        label:
-          "customers reported satisfaction with the new search experience.",
-        delay: 150,
-      },
-      {
-        value: "22%",
-        label: "Increased engagement with embedded features.",
-        delay: 200,
-      },
-    ],
-  },
-  {
-    id: 2,
-    title:
-      "Empowering customers with a seamless outage and maintenance status experience.",
-    tags: ["Design", "Development", "Web", "Mobile"],
-    image: "cover-ziggo.png",
-    images: {
-      firstSection: ["zg-image-top.png"],
-      secondSection: ["zg-image-grid-1.png"],
-    },
-    client: "Ziggo",
-    website: "ziggo.nl",
-    startProject: "2024",
-    mediaType: "video",
-    mediaSrc: "ziggo-before-after.mp4",
-    scrollGalleryImages: [
-      "zg-horizontal-scroll-1.png",
-      "zg-horizontal-scroll-2.png",
-      "zg-horizontal-scroll-3.png",
-      "zg-horizontal-scroll-4.png",
-    ],
-    results: [
-      {
-        value: "+3.5M",
-        label: "Unique users per month using the outage checker",
-        delay: 100,
-      },
-      {
-        value: "28%",
-        label: "Reduction in customer support requests about outages",
-        delay: 150,
-      },
-      {
-        value: "+500K",
-        label: "Push notifications sent via native app integration",
-        delay: 200,
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "Supporting Compliance and Usability with Accessible Web Solutions",
-    tags: ["Accessibility", "WCAG", "EAA"],
-    image: "cover-wcag.png",
-    images: {
-      firstSection: ["wcag-image-grid-1.png", "wcag-image-grid-2.png"],
-      secondSection: ["wcag-image-grid-3.png", "wcag-image-grid-4.png"],
-      thirdSection: ["wcag-image-grid-5.png"],
-    },
-    client: "ilionx",
-    website: "ilionx.nl",
-    startProject: "2023",
-    mediaType: "image",
-    mediaSrc: "wcag-full-image.png",
-    scrollGalleryImages: [
-      "wcag-scroll-1.png",
-      "wcag-scroll-2.png",
-      "wcag-scroll-3.png",
-      "wcag-scroll-4.png",
-    ],
-    results: [
-      {
-        value: "86%",
-        label:
-          "Faster onboarding to accessibility best practices reported by teams",
-        delay: 100,
-      },
-      {
-        value: "12",
-        label: "Client teams actively using the accessibility toolkit",
-        delay: 150,
-      },
-      {
-        value: "44",
-        label: "WCAG guidelines translated into practical design mockups",
-        delay: 200,
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "Helping people Stay on Track with Intelligent Installment Insights",
-    tags: ["Design", "Development", "Mobile"],
-    image: "cover-termynen.png",
-    images: {
-      firstSection: ["termynen-full-image.png"],
-    },
-    client: "Termynen",
-    website: "termynen.com",
-    startProject: "2022",
-    mediaType: "image",
-    mediaSrc: "",
-    scrollGalleryImages: [],
-    results: [],
-  },
-  {
-    id: 5,
-    title:
-      "Optimizing logistical processes with industry-specific ERP solutions.",
-    tags: ["Design", "Development", "SaaS", "Rapid Prototyping"],
-    image: "cover-tf.png",
-    images: {
-      firstSection: ["tf-image-grid-1.png", "tf-image-grid-2.png"],
-      secondSection: ["tf-image-grid-3.png", "tf-image-grid-4.png"],
-      thirdSection: ["tf-full-image.png"],
-    },
-    client: "Troublefree",
-    website: "troublefree.nl",
-    startProject: "2018",
-    mediaType: "video",
-    mediaSrc: "TF-before-after.mp4",
-    scrollGalleryImages: [
-      "tf-horizontal-scroll-1.png",
-      "tf-horizontal-scroll-2.png",
-      "tf-horizontal-scroll-3.png",
-      "tf-horizontal-scroll-4.png",
-    ],
-    results: [
-      { value: "+10", label: "Redesigned modules", delay: 100 },
-      { value: "+55K", label: "Satisfied users", delay: 150 },
-      { value: "+9 years", label: "Experience", delay: 200 },
-    ],
-  },
-  {
-    id: 6,
-    title:
-      "Tackling environmental issues with community reviews and AI to boost local economies.",
-    tags: ["Design", "Development", "Mobile"],
-    image: "cover-beach.png",
-    images: {
-      firstSection: ["beach-image-grid-1.png", "beach-image-grid-2.png"],
-      secondSection: ["beach-full-image.png"],
-    },
-    client: "Clean Beach",
-    website: "Clean Beach App",
-    startProject: "2024",
-    mediaType: "image",
-    mediaSrc: "beach-image-top.png",
-    scrollGalleryImages: [
-      "beach-horizontal-scroll-1.png",
-      "beach-horizontal-scroll-2.png",
-      "beach-horizontal-scroll-3.png",
-    ],
-    results: [
-      { value: "7", label: "Continents", delay: 100 },
-      { value: "+10K", label: "Beaches", delay: 150 },
-      { value: "+1T $", label: "Economic growth opportunity", delay: 200 },
-    ],
-  },
-  {
-    id: 7,
-    title: "Connecting creators and clients in a unified, trusted marketplace",
-    tags: ["Design", "Development", "Web", "Mobile"],
-    image: "cover-freeluencer.png",
-    images: {
-      firstSection: [
-        "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer.gif?alt=media&token=160d7680-e81e-47fd-80f6-f1ff75c6e4bd",
-        "freeluencer-image-grid-2.png",
-      ],
-      secondSection: ["free-image-grid-3.png", "free-image-grid-4.png"],
-      thirdSection: ["free-full-image.png"],
-    },
-    client: "Freeluencer",
-    startProject: "2019",
-    mediaType: "video",
-    mediaSrc:
-      "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/freeluencer-movie-top.mp4?alt=media&token=04b70727-6435-4d83-8a95-3b3d4ba0526c",
-    scrollGalleryImages: [
-      "free-horizontal-scroll-1.png",
-      "free-horizontal-scroll-2.png",
-      "free-horizontal-scroll-3.png",
-      "free-horizontal-scroll-4.png",
-      "free-horizontal-scroll-5.png",
-      "free-horizontal-scroll-6.png",
-    ],
-    results: [
-      { value: "+10", label: "Services", delay: 100 },
-      { value: "+50B $", label: "Industry", delay: 150 },
-      { value: "+64M", label: "Content creators", delay: 200 },
-    ],
-  },
-  {
-    id: 8,
-    title:
-      "Simplifying Global Shipping Through Digital-First Experiences and End-to-End Logistics Clarity",
-    tags: ["Design", "Web", "Mobile"],
-    image: "cover-twill.png",
-    images: {
-      firstSection: ["twil-image-top.png"],
-      secondSection: ["twill-image-grid-1.png", "twill-image-grid-2.png"],
-      thirdSection: ["twill-full-image.png"],
-    },
-    client: "Twill by Maersk",
-    startProject: "2021",
-    mediaType: "video",
-    mediaSrc:
-      "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/twill-full-video.mp4?alt=media&token=4e8cd54f-a5a8-4bef-ac42-9a50dffb6460",
-    scrollGalleryImages: [
-      "twill-horizontal-scroll-1.png",
-      "twill-horizontal-scroll-2.png",
-      "twill-horizontal-scroll-3.png",
-    ],
-    results: [
-      { value: "+100", label: "Countries", delay: 100 },
-      { value: "+75K", label: "Active Users", delay: 150 },
-      { value: "+500", label: "Freights a day", delay: 200 },
-    ],
-  },
-  {
-    id: 9,
-    title: "Reinventing Mobile Parking with User-Centered Innovation",
-    tags: ["Design", "Mobile"],
-    image: "cover-qpark.png",
-    images: {
-      firstSection: ["qp-image-grid-1.png", "qp-image-grid-2.png"],
-    },
-    client: "QPark",
-    startProject: "2018",
-    mediaType: "image",
-    mediaSrc: "qp-image-top.png",
-    scrollGalleryImages: [
-      "qp-horizontal-scroll-1.png",
-      "qp-horizontal-scroll-2.png",
-      "qp-horizontal-scroll-3.png",
-      "qp-horizontal-scroll-4.png",
-    ],
-    results: [
-      { value: "+250K", label: "Active users", delay: 100 },
-      { value: "+3,6K", label: "Facilities", delay: 150 },
-      { value: "+7", label: "Countries", delay: 200 },
-    ],
-  },
-];
+import { CASE_KEYS } from "./caseKeys";
+import { VODAFONE_CASE } from "./cases/vodafone";
+import { ZIGGO_CASE } from "./cases/ziggo";
+import { ILIONX_CASE } from "./cases/ilionx";
+import { TERMYNEN_CASE } from "./cases/termynen";
+import { TROUBLEFREE_CASE } from "./cases/troublefree";
+import { CLEAN_BEACH_CASE } from "./cases/cleanBeach";
+import { FREELUENCER_CASE } from "./cases/freeluencer";
+import { TWILL_CASE } from "./cases/twill";
+import { QPARK_CASE } from "./cases/qpark";
 
 export type CaseDetails = {
   id: number;
-  label: string;
-  title: string;
-  description: string;
+  labelKey: string;
+  titleKey: string;
+  descriptionKey: string;
 };
 
-export const ABOUT_DETAILS: CaseDetails[] = [
-  {
-    id: 1,
-    label: "About",
-    title: "Smarter Support with AI-Powered Search",
-    description:
-      "We developed an AI-powered customer assist component integrated into the Vodafone app, enabling users to search and receive accurate answers based on the company’s extensive knowledge base. The solution leverages large language models (LLMs) to interpret user queries, provide contextual responses, and reduce dependency on live customer support. The search interface supports features like autocomplete, expandable results, popular and recent search tags, and actionable widgets (e.g., last invoice). Users can also engage in extended conversations with the AI to clarify or deepen their inquiries.",
-  },
-  {
-    id: 2,
-    label: "About",
-    title: "Improving Transparency with the Ziggo Storingschecker",
-    description:
-      "The Ziggo storingschecker project was initiated to give customers clear, real-time insights into outages and maintenance work affecting their services. By allowing users to enter their postal code and address, the tool provides accurate status updates on disruptions in their area. Our goal was to create a more accessible, user-friendly experience that reassures users and reduces unnecessary customer service contact.",
-  },
-  {
-    id: 3,
-    label: "About",
-    title: "Accessibility at the Core",
-    description:
-      "In collaboration with clients, ilionx launched a strategic initiative focused on digital accessibility, driven by the principles of the Web Content Accessibility Guidelines (WCAG) and the European Accessibility Act (EAA). The project aimed to raise awareness about the legal and usability risks of inaccessible applications and offer practical, design-first solutions that integrate accessibility from the ground up.",
-  },
-  {
-    id: 4,
-    label: "About",
-    title: "A Smarter Way to Track Installments",
-    description:
-      "Termynen is a native mobile app designed to help users manage their monthly installment payments with ease. It provides a centralized view of all active and completed installments, making financial organization simple and intuitive. Users can mark payments as completed, edit details, and access full payment histories once an installment cycle ends. With a user-first approach and carefully designed UI elements, Termynen aims to offer clarity and control in handling recurring financial obligations.",
-  },
-  {
-    id: 5,
-    label: "About",
-    title: "Designing at scale that drives enterprise impact",
-    description:
-      "This project presents a collection of enterprise software projects focused on enhancing user experience across various business domains. Featured work includes an Total redesign and rebranding of the software, Ticketing system for time tracking and task management, Tailored component library designed specifically for the software, Interactive dashboard for a clear overview, Order Overview system for managing business transactions, an Order Edit platform enabling dynamic order customization, a mobile app designed for drivers in transportation logistics, a Knowledge Center website aimed at streamlining customer support, and a range of reusable interface components. These projects address key areas such as order management, logistics coordination, customer service, and accessibility, delivering solutions across both web and mobile platforms.",
-  },
-  {
-    id: 6,
-    label: "About",
-    title: "Empowering Clean Beaches Globally",
-    description:
-      "This project is a native mobile app designed to motivate and support local communities in maintaining clean, welcoming beaches. By encouraging responsible tourism, the app helps boost local economies, making beach preservation both a social and economic goal. The app connects travelers with beaches worldwide, fostering community-driven environmental stewardship.",
-  },
-  {
-    id: 7,
-    label: "About",
-    title: "Empowering Creators through a Unified Marketplace",
-    description:
-      "Freeluencer is a web-based platform designed to help content creators monetize their skills through a seamless digital marketplace. Acting as both a marketplace and service hub, it allows users to function as buyers or sellers. Whether posting jobs, sending offers, or managing orders, the platform offers an all-in-one solution tailored to the digital creator economy.",
-  },
-  {
-    id: 8,
-    label: "About",
-    title: "Transforming Twill’s Digital Freight Experience",
-    description:
-      "Twill by Maersk approached with a clear goal: enhance their marketing website to better serve users across desktop and mobile. Our mission was to redesign the homepage to improve the freight discovery experience and increase user engagement, all while staying aligned with Twill’s brand values of simplicity, transparency, and trust.",
-  },
-  {
-    id: 9,
-    label: "About",
-    title: "Smarter Parking, Seamless Design",
-    description:
-      "Q-Park embarked on a mission to modernize its native mobile app, aiming to enhance the digital parking experience for its users. The goal was to transform the app into a more intuitive, intelligent tool that simplifies parking across Europe, from finding spots to managing bookings and payments.",
-  },
-];
+const CASE_DEFINITIONS = {
+  [CASE_KEYS.VODAFONE]: VODAFONE_CASE,
+  [CASE_KEYS.ZIGGO]: ZIGGO_CASE,
+  [CASE_KEYS.ILIONX]: ILIONX_CASE,
+  [CASE_KEYS.TERMYNEN]: TERMYNEN_CASE,
+  [CASE_KEYS.TROUBLEFREE]: TROUBLEFREE_CASE,
+  [CASE_KEYS.CLEAN_BEACH]: CLEAN_BEACH_CASE,
+  [CASE_KEYS.FREELUENCER]: FREELUENCER_CASE,
+  [CASE_KEYS.TWILL]: TWILL_CASE,
+  [CASE_KEYS.QPARK]: QPARK_CASE,
+} as const;
 
-export const CHALLENGE_DETAILS: CaseDetails[] = [
-  {
-    id: 1,
-    label: "Challenge",
-    title: "Reducing Pressure on Live Support While Improving Self-Service",
-    description:
-      "Vodafone faced increasing pressure on its customer support teams, with a high volume of inquiries overwhelming traditional contact channels. Users struggled to quickly find relevant information through static help articles, leading to low self-service satisfaction. The challenge was to deliver a more intuitive, conversational, and effective self-help solution that could handle a wide range of user intents and reduce support center strain without compromising on quality or trust.",
-  },
-  {
-    id: 2,
-    label: "Challenge",
-    title: "Understanding and Resolving Key User Frustrations",
-    description:
-      "Users previously experienced confusion and dissatisfaction due to a lack of transparency regarding service outages. The existing tools were limited in functionality, often failing to communicate the scope or resolution status of service disruptions. There was also a need for better accessibility, clarity in iconography, and more granular insight into the individual components of each Ziggo product, such as routers, cables, or third-party services like Netflix and HBO.",
-  },
-  {
-    id: 3,
-    label: "Challenge",
-    title: "Turning Guidelines into Action",
-    description:
-      "One of the main challenges was translating the often abstract and technical WCAG criteria into actionable insights that designers, developers, and product owners could easily understand and implement. The goal was to bridge the gap between legal compliance and user-centered design by visually representing each WCAG point through annotated mockups and real-time wireframes.",
-  },
-  {
-    id: 4,
-    label: "About",
-    title: "A Smarter Way to Track Installments",
-    description:
-      "Termynen is a native mobile app designed to help users manage their monthly installment payments with ease. It provides a centralized view of all active and completed installments, making financial organization simple and intuitive. Users can mark payments as completed, edit details, and access full payment histories once an installment cycle ends. With a user-first approach and carefully designed UI elements, Termynen aims to offer clarity and control in handling recurring financial obligations.",
-  },
-  {
-    id: 5,
-    label: "Challenge",
-    title: "Complex Design architecture Across Multiple Projects",
-    description:
-      "Each project tackled unique and demanding design challenges. These included developing accessible order status displays for color-blind users, solving persistent space constraints in filter systems that previous teams had struggled to address, and rethinking action menus that required managing over 20 possible user actions. The mobile driver interface required intuitive navigation optimized for on-the-go use, while the Knowledge Center involved transforming a scattered information base into a cohesive, searchable support experience. Another critical challenge was enabling greater user control through customizable sidebar navigation.",
-  },
-  {
-    id: 6,
-    label: "Challenge",
-    title: "Combatting Beach Neglect",
-    description:
-      "Many coastal areas struggle with pollution due to lack of awareness, resources, and accountability. Dirty or unsafe beaches deter tourists, directly impacting local businesses and livelihoods. There was a clear need for a digital tool that could both raise awareness and actively engage travelers and locals to promote cleaner, more sustainable coastlines.",
-  },
-  {
-    id: 7,
-    label: "Challenge",
-    title: "Bridging Functionality with Trust and Simplicity",
-    description:
-      "The main challenge was to create a feature-rich environment that balances complexity with usability. The platform needed to support multiple transaction types, account verification, live communication, and order management, without overwhelming the user. Additionally, ensuring trust between parties (buyers and sellers) and building a scalable backend for admin oversight were critical concerns.",
-  },
-  {
-    id: 8,
-    label: "Challenge",
-    title: "Creating a Seamless, Scalable Freight Discovery Interface",
-    description:
-      "Twill needed more than just a homepage refresh, they needed a solution that could handle complex freight search inputs while remaining user-friendly. We faced the challenge of presenting logistics-heavy content in a digestible format, integrating real-time search elements, and maintaining a consistent, visually engaging experience across devices.",
-  },
-  {
-    id: 9,
-    label: "Challenge",
-    title: "Outdated UX, Fragmented Journeys",
-    description:
-      "The legacy app struggled with poor usability, inconsistent UI patterns, and limited user guidance. Key pain points included confusing navigation, slow performance, and lack of personalization. User expectations had outgrown the app’s original design, creating a clear need for a smarter, streamlined solution.",
-  },
-];
+export const CASES: CaseData[] = Object.values(CASE_DEFINITIONS).map(
+  (caseData) => caseData as unknown as CaseData
+);
 
-export const SOLUTION_DETAILS: CaseDetails[] = [
-  {
-    id: 1,
-    label: "Solution",
-    title: "Conversational, Intelligent, and Actionable Search Experience",
-    description:
-      "We implemented a dynamic, LLM-powered search results experience embedded within the Vodafone app. Users can search from various entry points (such as the header or service page) and are presented with interactive search cards that display concise, expandable answers. On expansion, users are shown a detailed dialog containing the full response and an option to continue the conversation with the AI for deeper support. Features like autocomplete suggestions, popular/recent searches, and personalized widgets further enhance the user journey. Feedback options allow continuous improvement of result quality.",
-  },
-  {
-    id: 2,
-    label: "Solution",
-    title: "Building a User-Centric, Data-Rich Experience",
-    description:
-      "We developed a new, intuitive web-based and in-app storingschecker with several key features: A visual history bar displaying the number of outages or maintenance events in the past 90 days to demonstrate reliability over time. A legend explaining each icon (e.g., checkmark for operational, warning sign for degradation) for improved accessibility. A comprehensive list of Ziggo services and their specific components (e.g., modem, Wi-Fi signal, streaming services) with real-time status updates. A clearly displayed current outage or maintenance section with a “Help me solve it” button to guide users toward self-resolution or support. A future maintenance overview so users are aware of upcoming service interruptions.Native app integration to deliver consistent, real-time updates across platforms.",
-  },
-  {
-    id: 3,
-    label: "Solution",
-    title: "Visual Guidelines & Practical Tools",
-    description:
-      "To address this challenge, we developed a comprehensive toolkit that transforms complex accessibility requirements into intuitive design examples. This included: A series of wireframes and mockups illustrating both poor and optimal practices. Clear notes and contextual explanations for each WCAG guideline. A companion web app acting as a checklist and scan tool for clients to assess the accessibility of their applications. This visual-first approach made accessibility actionable, not abstract.",
-  },
-  {
-    id: 4,
-    label: "",
-    title: "",
-    description: "",
-  },
-  {
-    id: 5,
-    label: "Solution",
-    title: "Design in motion delivering for complex interfaces",
-    description:
-      "A range of targeted solutions was implemented to meet these challenges. Accessibility was improved through the use of alternative visual indicators beyond color alone. Space optimization was achieved using dropdown-based filter systems. Complex action menus were replaced with a wizard-style popup approach that guided users through tasks. The mobile driver app followed a responsive, mobile-first design with large touch targets to support use in the field. A centralized search function with product-specific filtering brought clarity to the Knowledge Center, while drag-and-drop functionality was introduced in the sidebar to allow users to personalize their workspace. Accordion-style content organization helped structure knowledge articles in a way that’s easy to navigate and digest.",
-  },
-  {
-    id: 6,
-    label: "Solution",
-    title: "A Social-Eco Tourism Platform",
-    description:
-      "The solution is a feature-rich mobile app that combines beach discovery with community engagement. Users can post reviews, upload photos and videos, and report on beach cleanliness. The app uses AI and admin moderation to verify beach conditions in real time. It also offers integrated booking options for hotels, flights, restaurants, and activities based on the user’s beach of interest. Social features like messaging and following help build a community of eco-conscious travelers.",
-  },
-  {
-    id: 7,
-    label: "Solution",
-    title: "Scalable Architecture with Creator-Centric Features",
-    description:
-      "Freeluencer was developed as a responsive web app using modern frameworks and scalable infrastructure. Key features include job postings, gig management, offers, direct service checkout, live messaging, social media integration, and ID-based user verification. An intuitive admin panel provides full control over platform operations, and a custom-branded marketplace reinforces the platform’s identity.",
-  },
-  {
-    id: 8,
-    label: "Solution",
-    title: "User-Centric Design, Built for Performance and Clarity",
-    description:
-      "We introduced a new hero section featuring a powerful freight search form on the left and a custom illustration on the right to humanize the service. Below, we crafted a layered content structure: trusted partners, an interactive country selector slider, a compelling customer testimonial, a breakdown of Twill’s benefits, informative blog articles, and a visually rich opportunity slider. Every section was designed to guide users through Twill’s offerings with clarity and engagement, ending with a step-by-step onboarding flow and performance-driven calls to action.",
-  },
-  {
-    id: 9,
-    label: "Solution",
-    title: "User-Centered Redesign with Smart Features",
-    description:
-      "Our team approached the redesign with a user-first mindset. We restructured the information architecture, introduced predictive parking suggestions based on behavior, improved the booking flow, and integrated real-time availability data. The UI was completely overhauled to align with modern mobile standards, prioritizing accessibility, clarity, and ease of use.",
-  },
-];
+export const getCaseDetails = (
+  caseId: number,
+  detailType: keyof NonNullable<
+    (typeof CASE_DEFINITIONS)[keyof typeof CASE_DEFINITIONS]["details"]
+  >
+): CaseDetails | null => {
+  const caseDefinition = Object.values(CASE_DEFINITIONS).find(
+    (def) => def.id === caseId + 1
+  );
 
-export const CONCLUSION_DETAILS: CaseDetails[] = [
-  {
-    id: 1,
-    label: "Conclusion",
-    title: "A Scalable Foundation for AI-Powered Customer Service",
-    description:
-      "The LLM-powered customer assist feature successfully transformed Vodafone’s in-app support experience. It provided users with fast, accurate, and conversational help while reducing pressure on live agents. The intelligent search system has proven to be scalable, user-friendly, and continuously learnable through feedback. This innovation not only improved satisfaction but also laid a foundation for expanding AI-driven support across other customer journeys within the Vodafone ecosystem.",
-  },
-  {
-    id: 2,
-    label: "Conclusion",
-    title: "Empowering Users with Clarity and Control",
-    description:
-      "The Ziggo storingschecker project successfully bridged the gap between technical backend data and customer-facing clarity. By prioritizing transparency, accessibility, and detailed service-level insights, we’ve equipped users with the tools they need to feel informed and in control. This transformation not only meets modern digital expectations but strengthens Ziggo’s relationship with its customers through honest, proactive communication.",
-  },
-  {
-    id: 3,
-    label: "Conclusion",
-    title: "Designing for Everyone, By Default",
-    description:
-      "By embedding WCAG principles into tangible design tools and workflows, ilionx turned accessibility into a standard practice, not an afterthought. This project not only helped clients mitigate legal risks, but also contributed to more inclusive digital experiences for all users. It showcased the power of clear visual communication in solving complex IT challenges and reinforced ilionx’s role as a strategic accessibility partner.",
-  },
-  {
-    id: 4,
-    label: "",
-    title: "",
-    description: "",
-  },
-  {
-    id: 5,
-    label: "Conclusion",
-    title: "Designing with purpose to create human-centered systems that scale",
-    description:
-      "The design improvements led to a variety of measurable outcomes. Accessibility compliance was significantly enhanced, and user satisfaction scores saw notable increases. Long-standing usability issues were resolved, streamlining user workflows and improving productivity. The redesigned Knowledge Center reduced the workload on support teams by enabling more effective self-service. Drivers benefited from a faster, more intuitive mobile interface, while enterprise stakeholders praised the overall usability and polish of the redesigned systems. User engagement and task completion rates also improved as a direct result of these design interventions.",
-  },
-  {
-    id: 6,
-    label: "Conclusion",
-    title: "Tech Meets Environmental Action",
-    description:
-      "This project demonstrates how technology and tourism can work together to drive environmental and economic impact. By empowering both travelers and local communities, the app doesn’t just promote beautiful beaches ,  it helps preserve them. The platform continues to evolve, aiming to become the go-to global community for beach lovers who care about the planet.",
-  },
-  {
-    id: 7,
-    label: "Conclusion",
-    title: "A Foundation for the Future of Creator Commerce",
-    description:
-      "Freeluencer successfully delivers a unified digital ecosystem for content creators and buyers. With its feature-rich design, strong verification process, and scalable admin control, the platform is well-positioned for future growth. It represents a meaningful step toward a more secure, streamlined, and creator-focused digital economy.",
-  },
-  {
-    id: 8,
-    label: "Conclusion",
-    title: "A Freight Platform That Puts Users First",
-    description:
-      "Through strategic design and user-focused functionality, we helped Twill transform their homepage into a powerful tool for customer acquisition and engagement. The new experience doesn’t just look better, it works harder, providing value at every scroll. This project stands as a strong example of how design can make complex services feel simple, useful, and approachable.",
-  },
-  {
-    id: 9,
-    label: "Conclusion",
-    title: "A Scalable Foundation for the Future",
-    description:
-      "The Q-Park mobile app redesign not only addressed current user frustrations but also laid the groundwork for future innovations, such as EV integrations and loyalty features. The new design system ensures scalability, while the improved user experience strengthens Q-Park’s position as a digital-first mobility provider.",
-  },
-];
+  if (!caseDefinition || !caseDefinition.details[detailType]) {
+    return null;
+  }
 
-export const RESULTS_DETAILS: CaseDetails[] = [
-  {
-    id: 1,
-    label: "Results",
-    title: "Increased Satisfaction and Reduced Support Load",
-    description: "",
-  },
-  {
-    id: 2,
-    label: "Results",
-    title: "Enhanced Trust and Reduced Support Load",
-    description: "",
-  },
-  {
-    id: 3,
-    label: "Results",
-    title: "Clarity, Adoption, and Accessibility",
-    description: "",
-  },
-  {
-    id: 4,
-    label: "",
-    title: "",
-    description: "",
-  },
-  {
-    id: 5,
-    label: "Results",
-    title: "Achieving through measurable gains and meaningful feedback",
-    description: "",
-  },
-  {
-    id: 6,
-    label: "Results",
-    title: "Global Reach, Local Impact",
-    description: "",
-  },
-  {
-    id: 7,
-    label: "Results",
-    title: "Robust Engagement & Monetization Tools Delivered",
-    description: "",
-  },
-  {
-    id: 8,
-    label: "Results",
-    title: "Boosted Engagement and Streamlined Onboarding",
-    description: "",
-  },
-  {
-    id: 9,
-    label: "Results",
-    title: "Faster, Friendlier, More Efficient",
-    description: "",
-  },
-];
+  const details = caseDefinition.details[detailType];
+  if (!details) return null;
+
+  return {
+    id: caseDefinition.id,
+    labelKey: details.labelKey,
+    titleKey: details.titleKey,
+    descriptionKey: details.descriptionKey,
+  };
+};
+
+export const ABOUT_DETAILS: CaseDetails[] = Object.values(CASE_DEFINITIONS)
+  .map((def) => {
+    if (!def.details.about) return null;
+    return {
+      id: def.id,
+      labelKey: def.details.about.labelKey,
+      titleKey: def.details.about.titleKey,
+      descriptionKey: def.details.about.descriptionKey,
+    } as CaseDetails;
+  })
+  .filter((item): item is CaseDetails => item !== null);
+
+export const CHALLENGE_DETAILS: CaseDetails[] = Object.values(CASE_DEFINITIONS)
+  .map((def) => {
+    if (!def.details.challenge) return null;
+    return {
+      id: def.id,
+      labelKey: def.details.challenge.labelKey,
+      titleKey: def.details.challenge.titleKey,
+      descriptionKey: def.details.challenge.descriptionKey,
+    } as CaseDetails;
+  })
+  .filter((item): item is CaseDetails => item !== null);
+
+export const SOLUTION_DETAILS: CaseDetails[] = Object.values(CASE_DEFINITIONS)
+  .map((def) => {
+    if (!def.details.solution) return null;
+    return {
+      id: def.id,
+      labelKey: def.details.solution.labelKey,
+      titleKey: def.details.solution.titleKey,
+      descriptionKey: def.details.solution.descriptionKey,
+    } as CaseDetails;
+  })
+  .filter((item): item is CaseDetails => item !== null);
+
+export const CONCLUSION_DETAILS: CaseDetails[] = Object.values(CASE_DEFINITIONS)
+  .map((def) => {
+    if (!def.details.conclusion) return null;
+    return {
+      id: def.id,
+      labelKey: def.details.conclusion.labelKey,
+      titleKey: def.details.conclusion.titleKey,
+      descriptionKey: def.details.conclusion.descriptionKey,
+    } as CaseDetails;
+  })
+  .filter((item): item is CaseDetails => item !== null);
+
+export const RESULTS_DETAILS: CaseDetails[] = Object.values(CASE_DEFINITIONS)
+  .map((def) => {
+    if (!def.details.results) return null;
+    return {
+      id: def.id,
+      labelKey: def.details.results.labelKey,
+      titleKey: def.details.results.titleKey,
+      descriptionKey: def.details.results.descriptionKey,
+    } as CaseDetails;
+  })
+  .filter((item): item is CaseDetails => item !== null);

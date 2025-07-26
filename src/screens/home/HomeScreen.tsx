@@ -4,9 +4,12 @@ import Case from "../../components/case/Case";
 import { CASES } from "../../constansts/cases";
 import styles from "./HomeScreen.module.css";
 import { useTransitionContext } from "../../hooks/use-transition";
+import { useTranslation } from "../../i18n/useTranslation";
 import { Header } from "../../components/header-navigation/Header";
 
 function HomeScreen() {
+  const { t } = useTranslation();
+
   useEffect(() => {
     document.body.classList.add("home-body");
     return () => {
@@ -42,9 +45,10 @@ function HomeScreen() {
       <Header />
       <section className={styles["home-title"]}>
         <h1>
-          Hi, I am Benjamin and I am a strategic product designer and engineer.{" "}
-          <br />I create products people{" "}
-          <span className={styles["love-animate"]}>love</span> to use.
+          {t("home.heroIntro")} <br />
+          {t("home.heroDescription")}{" "}
+          <span className={styles["love-animate"]}>{t("home.love")}</span>{" "}
+          {t("home.heroEnd")}
         </h1>
       </section>
       <section className={styles["cases-section"]}>

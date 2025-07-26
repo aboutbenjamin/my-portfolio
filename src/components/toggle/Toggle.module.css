@@ -1,0 +1,127 @@
+.languageToggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--color-foreground);
+  transition: background 0.2s;
+}
+
+.languageToggle:hover,
+.languageToggle:focus {
+  background: var(--color-muted);
+}
+
+.toggleButton {
+  position: relative;
+  z-index: 2;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  background: transparent;
+  border: none;
+}
+
+.toggleButton.active {
+  opacity: 1;
+}
+
+.toggleButton.active .flagIcon {
+  transform: scale(1.1);
+}
+
+.toggleSwitch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  outline: none;
+  padding: 0.125rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.toggleSlider {
+  position: absolute;
+  top: 0.125rem;
+  left: 0.125rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--color-primary);
+  border-radius: 100%;
+  transition: transform 0.3s ease;
+  display: block;
+  z-index: 1;
+}
+
+.toggleSwitch[aria-checked="true"] .toggleSlider {
+  transform: translateX(1.75rem);
+}
+
+.toggleSwitch[aria-checked="true"] {
+  background: transparent;
+}
+
+.toggleSwitch[aria-checked="true"]:hover {
+  background: rgba(240, 76, 255, 0.15);
+}
+
+[data-theme="dark"] .toggleSwitch {
+  background: transparent;
+}
+
+[data-theme="dark"] .toggleSwitch:hover {
+  background: rgba(128, 244, 255, 0.15);
+}
+
+[data-theme="dark"] .toggleSwitch:focus {
+  background: rgba(128, 244, 255, 0.15);
+}
+
+@media (min-width: 768px) {
+  .toggleSlider {
+    top: 0.1875rem;
+    left: 0.1875rem;
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+
+  .toggleSwitch[aria-checked="true"] .toggleSlider {
+    transform: translateX(2.25rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .toggleSwitch {
+    padding: 0.25rem;
+  }
+
+  .toggleButton {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .toggleSlider {
+    top: 0.25rem;
+    left: 0.25rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .toggleSwitch[aria-checked="true"] .toggleSlider {
+    transform: translateX(2.5rem);
+  }
+}

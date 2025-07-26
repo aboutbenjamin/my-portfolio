@@ -1,4 +1,4 @@
-type IconName = "left-arrow" | "bars" | "sun" | "moon";
+type IconName = "left-arrow" | "bars" | "sun" | "moon" | "english" | "dutch";
 
 type IconProps = {
   name: IconName;
@@ -7,13 +7,13 @@ type IconProps = {
 };
 
 const icons = {
-  "left-arrow": (color?: string) => (
+  "left-arrow": (color?: string, className?: string) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      className="icon-svg"
+      className={className || "icon-svg"}
     >
       <path
         d="M15.7071068,6.29289322 L21.4142136,12 L15.7071068,17.7071068 L14.2928932,16.2928932 L17.584,12.9998932 L3,13 L3,11 L17.584,10.9998932 L14.2928932,7.70710678 L15.7071068,6.29289322 Z"
@@ -21,13 +21,13 @@ const icons = {
       ></path>
     </svg>
   ),
-  bars: (color?: string) => (
+  bars: (color?: string, className?: string) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      className="icon-svg"
+      className={className || "icon-svg"}
     >
       <rect
         x="3"
@@ -55,13 +55,13 @@ const icons = {
       />
     </svg>
   ),
-  sun: (color?: string) => (
+  sun: (color?: string, className?: string) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      className="icon-svg"
+      className={className || "icon-svg"}
       fill="none"
       stroke={color || "currentColor"}
       strokeWidth="2"
@@ -87,13 +87,13 @@ const icons = {
       </g>
     </svg>
   ),
-  moon: (color?: string) => (
+  moon: (color?: string, className?: string) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      className="icon-svg"
+      className={className || "icon-svg"}
       fill="none"
       stroke={color || "currentColor"}
       strokeWidth="2"
@@ -106,8 +106,68 @@ const icons = {
       />
     </svg>
   ),
+  english: (className?: string) => (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      style={{ borderRadius: "50%" }}
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <circle
+        cx="12"
+        cy="12"
+        r="10"
+        fill="#fff"
+        stroke="#ddd"
+        strokeWidth="1"
+      />
+      <defs>
+        <clipPath id="gb-clip">
+          <circle cx="12" cy="12" r="10" />
+        </clipPath>
+      </defs>
+      <g clipPath="url(#gb-clip)">
+        <rect x="2" y="2" width="20" height="20" fill="#012169" />
+        <path d="M2 2l20 20M22 2L2 22" stroke="#fff" strokeWidth="2" />
+        <path d="M2 2l20 20M22 2L2 22" stroke="#c8102e" strokeWidth="1" />
+        <path d="M12 2v20M2 12h20" stroke="#fff" strokeWidth="3" />
+        <path d="M12 2v20M2 12h20" stroke="#c8102e" strokeWidth="2" />
+      </g>
+    </svg>
+  ),
+  dutch: (className?: string) => (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      style={{ borderRadius: "50%" }}
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <circle
+        cx="12"
+        cy="12"
+        r="10"
+        fill="#fff"
+        stroke="#ddd"
+        strokeWidth="1"
+      />
+      <defs>
+        <clipPath id="nl-clip">
+          <circle cx="12" cy="12" r="10" />
+        </clipPath>
+      </defs>
+      <g clipPath="url(#nl-clip)">
+        <rect x="2" y="2" width="20" height="6.67" fill="#ae1c28" />
+        <rect x="2" y="8.67" width="20" height="6.67" fill="#fff" />
+        <rect x="2" y="15.33" width="20" height="6.67" fill="#21468b" />
+      </g>
+    </svg>
+  ),
 };
 
 export function Icon({ name, className, color }: IconProps) {
-  return <span className={className}>{icons[name](color)}</span>;
+  return icons[name](color, className);
 }

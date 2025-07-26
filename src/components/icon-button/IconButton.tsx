@@ -1,6 +1,5 @@
 import React from "react";
 import { Icon } from "../icons/Icon";
-import styles from "./IconButton.module.css";
 
 type IconButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   icon: React.ComponentProps<typeof Icon>["name"];
@@ -11,7 +10,7 @@ type IconButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 
 export function IconButton({ icon, iconColor, ...props }: IconButtonProps) {
   return (
-    <button type="button" className={styles.iconButton} {...props}>
+    <button type="button" {...props}>
       <Icon name={icon} color={iconColor} />
     </button>
   );

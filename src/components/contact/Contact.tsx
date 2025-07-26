@@ -1,6 +1,9 @@
 import styles from "./Contact.module.css";
+import { useTranslation } from "../../i18n/useTranslation";
 
 export function Contact() {
+  const { t } = useTranslation();
+
   return (
     <section
       className={styles.contactWrapper}
@@ -8,7 +11,7 @@ export function Contact() {
     >
       <header>
         <h2 id="contact-heading" className={styles.heading}>
-          Want to know more about this case?
+          {t("contact.heading")}
         </h2>
       </header>
       <article className={styles.contactCard}>
@@ -21,7 +24,7 @@ export function Contact() {
             />
             <figcaption>
               <h3 className={styles.name}>Benjamin Ziahi</h3>
-              <p className={styles.role}>Product Engineer</p>
+              <p className={styles.role}>{t("contact.role")}</p>
             </figcaption>
           </figure>
         </header>
@@ -37,50 +40,50 @@ export function Contact() {
                 <input
                   type="text"
                   name="name"
-                  placeholder="Naam"
+                  placeholder={t("contact.form.name")}
                   required
                   className={styles.input}
-                  aria-label="Naam"
+                  aria-label={t("contact.form.name")}
                 />
                 <input
                   type="text"
                   name="companyName"
-                  placeholder="Bedrijfsnaam"
+                  placeholder={t("contact.form.company")}
                   required
                   className={styles.input}
-                  aria-label="Bedrijfsnaam"
+                  aria-label={t("contact.form.company")}
                 />
               </div>
               <div className={styles.row}>
                 <input
                   type="email"
                   name="email"
-                  placeholder="E-mailadres"
+                  placeholder={t("contact.form.email")}
                   required
                   className={styles.input}
-                  aria-label="E-mailadres"
+                  aria-label={t("contact.form.email")}
                 />
                 <input
                   type="tel"
                   name="phone"
-                  placeholder="Telefoonnummer"
+                  placeholder={t("contact.form.phone")}
                   className={styles.input}
-                  aria-label="Telefoonnummer"
+                  aria-label={t("contact.form.phone")}
                 />
               </div>
               <div>
                 <textarea
                   name="message"
-                  placeholder="Bericht"
+                  placeholder={t("contact.form.message")}
                   className={styles.textarea}
                   rows={4}
-                  aria-label="Bericht"
+                  aria-label={t("contact.form.message")}
                 />
               </div>
             </div>
             <div className={styles.submitRow}>
               <button type="submit" className={styles.submitBtn}>
-                Verzenden
+                {t("contact.form.submit")}
               </button>
             </div>
           </form>

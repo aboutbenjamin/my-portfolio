@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Case.module.css";
 import type { CaseData } from "../../types/case";
+import { useTranslation } from "../../i18n/useTranslation";
 
 type CaseProps = {
   caseData: CaseData;
@@ -9,7 +10,10 @@ type CaseProps = {
 };
 
 const Case: React.FC<CaseProps> = ({ caseData, onClick, imgRef }) => {
-  const { title, client, image, id } = caseData;
+  const { t } = useTranslation();
+  const { titleKey, client, image, id } = caseData;
+
+  const title = t(titleKey);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter" || e.key === " ") {
@@ -42,7 +46,7 @@ const Case: React.FC<CaseProps> = ({ caseData, onClick, imgRef }) => {
         </figure>
         <h3 className={styles.caseTitle}>{title}</h3>
         <span className={styles.caseTags}>
-          <span key={caseData.client}>{client}</span>
+          <span key={client}>{client}</span>
         </span>
       </article>
     </section>
