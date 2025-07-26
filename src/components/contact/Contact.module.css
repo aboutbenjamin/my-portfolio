@@ -162,7 +162,7 @@
   height: 3.5rem;
   border-radius: 9999px;
   background: var(--color-primary);
-  color: #1a0d0d;
+  color: var(--color-foreground);
   font-size: 1rem;
   font-weight: 600;
   border: none;

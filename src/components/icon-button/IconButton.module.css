@@ -3,11 +3,13 @@
   border: none;
   cursor: pointer;
   padding: 0.5rem;
-  border-radius: 9999px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background 0.2s;
+  width: 2.688rem;
+  height: 2.688rem;
 }
 
 .iconButton:hover,

@@ -3,13 +3,10 @@ import styles from "./Header.module.css";
 import { useTheme } from "../../theme/use-theme";
 import { ThemeToggleButton } from "../theme-toggle-button/ThemeToggleButton";
 import { LanguageToggle } from "../language-toggle/LanguageToggle";
-import { IconButton } from "../icon-button/IconButton";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const { mode } = useTheme();
-
-  const barsColor = mode === "dark" ? "#fff" : "#000";
 
   useEffect(() => {
     const onScroll = () => {
@@ -27,17 +24,20 @@ export function Header() {
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
       <div>
-        <IconButton
-          icon="bars"
-          iconColor={barsColor}
-          aria-label="Open navigation"
-        />
+        <LanguageToggle />
       </div>
       <div>
         <img src={logoSrc} alt="Logo" className={styles.logo} />
       </div>
-      <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
-        <LanguageToggle />
+      <div
+        style={{
+          display: "flex",
+          gap: "0.5rem",
+          alignItems: "center",
+          width: "5rem",
+          justifyContent: "flex-end",
+        }}
+      >
         <ThemeToggleButton />
       </div>
     </header>
