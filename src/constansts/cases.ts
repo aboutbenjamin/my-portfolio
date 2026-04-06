@@ -8,6 +8,7 @@ import { TROUBLEFREE_CASE } from "./cases/troublefree";
 import { CLEAN_BEACH_CASE } from "./cases/cleanBeach";
 import { FREELUENCER_CASE } from "./cases/freeluencer";
 import { TWILL_CASE } from "./cases/twill";
+import { MIJNDIAD_CASE } from "./cases/mijndiad";
 import { QPARK_CASE } from "./cases/qpark";
 
 export type CaseDetails = {
@@ -18,6 +19,7 @@ export type CaseDetails = {
 };
 
 const CASE_DEFINITIONS = {
+  [CASE_KEYS.MIJNDIAD]: MIJNDIAD_CASE,
   [CASE_KEYS.VODAFONE]: VODAFONE_CASE,
   [CASE_KEYS.ZIGGO]: ZIGGO_CASE,
   [CASE_KEYS.ILIONX]: ILIONX_CASE,
@@ -30,17 +32,17 @@ const CASE_DEFINITIONS = {
 } as const;
 
 export const CASES: CaseData[] = Object.values(CASE_DEFINITIONS).map(
-  (caseData) => caseData as unknown as CaseData
+  (caseData) => caseData as unknown as CaseData,
 );
 
 export const getCaseDetails = (
   caseId: number,
   detailType: keyof NonNullable<
     (typeof CASE_DEFINITIONS)[keyof typeof CASE_DEFINITIONS]["details"]
-  >
+  >,
 ): CaseDetails | null => {
   const caseDefinition = Object.values(CASE_DEFINITIONS).find(
-    (def) => def.id === caseId + 1
+    (def) => def.id === caseId + 1,
   );
 
   if (!caseDefinition || !caseDefinition.details[detailType]) {

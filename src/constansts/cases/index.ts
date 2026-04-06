@@ -1,3 +1,4 @@
+export { MIJNDIAD_CASE } from "./mijndiad";
 export { VODAFONE_CASE } from "./vodafone";
 export { ZIGGO_CASE } from "./ziggo";
 export { ILIONX_CASE } from "./ilionx";
