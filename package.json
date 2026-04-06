@@ -9,7 +9,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "rm -rf node_modules/.cache/gh-pages && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.1.0",
