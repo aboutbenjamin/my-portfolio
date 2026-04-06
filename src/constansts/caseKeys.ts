@@ -1,4 +1,5 @@
 export const CASE_KEYS = {
+  MIJNDIAD: "mijnDiad",
   VODAFONE: "vodafone",
   ZIGGO: "ziggo",
   ILIONX: "ilionx",
