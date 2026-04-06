@@ -29,7 +29,7 @@ export const MIJNDIAD_CASE = {
     "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/mijnDiad%2Fmd-horizontal-scroll-3(1).png?alt=media&token=48a540a5-0b5a-4fc1-8a83-587774110a5d",
   ],
   results: [
-    { value: "+10", labelKey: "resultCards.mijnDiad.modules", delay: 100 },
+    { value: "+1011", labelKey: "resultCards.mijnDiad.modules", delay: 100 },
     { value: "+55K", labelKey: "resultCards.mijnDiad.users", delay: 150 },
     {
       value: "+9 years",
