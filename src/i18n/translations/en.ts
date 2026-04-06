@@ -28,6 +28,19 @@ export const en = {
     },
   },
   case: {
+    // MijnDiAd - Case 0
+    mijnDiadTitle: "Redesigning practice software for clarity and ease of use",
+    mijnDiadDescription:
+      "For MijnDiAd, we redesigned the full product experience of an existing practice administration platform. We modernized the outdated interface, improved the usability of every core flow, and created a complete component library from scratch with colors, typography, and consistent UI patterns to support a scalable product.",
+    mijnDiadChallenge:
+      "The existing software supported many critical administrative tasks, but the experience felt visually outdated and placed too much cognitive load on users. The challenge was to translate scheduling, client records, invoicing, and reporting into a clear, accessible, and professional experience for both small practices and larger health centers.",
+    mijnDiadSolution:
+      "We redesigned the key screens, user flows, and components across the platform using UI and UX best practices. Alongside that, we built a scalable design system with reusable components, stronger hierarchy, improved navigation, and a modern visual language focused on simplicity, reliability, and ease of use.",
+    mijnDiadConclusion:
+      "The redesign gave MijnDiAd a cohesive and future-ready product experience that better fits the daily reality of therapists and healthcare professionals. By putting usability first, the platform now helps users manage administration with less friction and more focus on their clients.",
+    mijnDiadResults:
+      "The renewed UX and UI create more clarity, a more professional appearance, and a stronger foundation for future product growth. With a fully redesigned component library and consistent screen logic, MijnDiAd is better positioned for faster iteration, stronger adoption, and an experience that matches the trust healthcare software needs to earn.",
+
     // Vodafone - Case 1
     vodafoneTitle: "Enhancing customer experience with AI search",
     vodafoneDescription:
@@ -132,6 +145,7 @@ export const en = {
   },
 
   about: {
+    mijnDiad: "From a dated interface to modern practice software",
     vodafone: "Smarter Support with AI-Powered Search",
     ziggo: "Improving Transparency with the Ziggo Storingschecker",
     ilionx: "Accessibility at the Core",
@@ -144,6 +158,7 @@ export const en = {
   },
 
   challenge: {
+    mijnDiad: "Making complex practice administration easier to use",
     vodafone: "Reducing Pressure on Live Support While Improving Self-Service",
     ziggo: "Understanding and Resolving Key User Frustrations",
     ilionx: "Turning Guidelines into Action",
@@ -155,6 +170,7 @@ export const en = {
   },
 
   solution: {
+    mijnDiad: "A full redesign backed by a scalable design system",
     vodafone: "Conversational, Intelligent, and Actionable Search Experience",
     ziggo: "Building a User-Centric, Data-Rich Experience",
     ilionx: "Visual Guidelines & Practical Tools",
@@ -166,6 +182,7 @@ export const en = {
   },
 
   conclusion: {
+    mijnDiad: "A future-ready foundation for daily practice operations",
     vodafone: "A Scalable Foundation for AI-Powered Customer Service",
     ziggo: "Empowering Users with Clarity and Control",
     ilionx: "Designing for Everyone, By Default",
@@ -178,6 +195,7 @@ export const en = {
   },
 
   results: {
+    mijnDiad: "More consistency, trust, and ease of use",
     vodafone: "Increased Satisfaction and Reduced Support Load",
     ziggo: "Enhanced Trust and Reduced Support Load",
     ilionx: "Clarity, Adoption, and Accessibility",
@@ -209,6 +227,11 @@ export const en = {
   },
 
   resultCards: {
+    mijnDiad: {
+      modules: "Product redesign across the full platform",
+      users: "Component library built from scratch",
+      experience: "Core flows, screens, and interactions redesigned",
+    },
     vodafone: {
       reduction: "reduction in live contact-support interactions.",
       satisfaction:

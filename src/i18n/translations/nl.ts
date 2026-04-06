@@ -28,6 +28,19 @@ export const nl = {
     },
   },
   case: {
+    // MijnDiAd - Case 0
+    mijnDiadTitle: "Praktijksoftware herontwerpen voor rust en overzicht",
+    mijnDiadDescription:
+      "Voor MijnDiAd hebben we de volledige productervaring van een bestaand praktijkadministratieplatform opnieuw ontworpen. We moderniseerden de verouderde interface, verbeterden de gebruiksvriendelijkheid van alle kernflows en ontwikkelden vanaf de basis een complete componentbibliotheek met kleuren, typografie en consistente UI-patronen voor een schaalbaar product.",
+    mijnDiadChallenge:
+      "De bestaande software ondersteunde veel belangrijke administratieve taken, maar voelde visueel verouderd en vroeg onnodig veel mentale inspanning van gebruikers. De uitdaging was om agenda, cliëntendossiers, facturatie en rapportages te vertalen naar een heldere, toegankelijke en professionele ervaring voor zowel kleine praktijken als grotere gezondheidscentra.",
+    mijnDiadSolution:
+      "We hebben alle belangrijke schermen, gebruikersflows en componenten opnieuw ontworpen vanuit UX- en UI-best practices. Daarbij bouwden we een schaalbaar designsysteem met herbruikbare componenten, duidelijke hiërarchie, verbeterde navigatie en een moderne visuele stijl die eenvoud, betrouwbaarheid en gebruiksgemak centraal zet.",
+    mijnDiadConclusion:
+      "De redesign gaf MijnDiAd een samenhangende en toekomstbestendige productervaring die beter aansluit op de dagelijkse praktijk van therapeuten en zorgprofessionals. Door gebruiksgemak centraal te zetten, helpt de software gebruikers nu met minder frictie hun administratie te beheren en meer aandacht te houden voor hun cliënten.",
+    mijnDiadResults:
+      "De vernieuwde UX en UI zorgen voor meer overzicht, een professionelere uitstraling en een sterkere basis voor verdere productontwikkeling. Met een volledig herontworpen component library en consistente schermlogica is MijnDiAd klaar voor efficiëntere iteratie, betere adoptie en een ervaring die past bij het vertrouwen dat zorgsoftware moet uitstralen.",
+
     // Vodafone - Case 1
     vodafoneTitle: "Klantenervaring verbeteren met AI-zoekfunctie",
     vodafoneDescription:
@@ -133,6 +146,7 @@ export const nl = {
   },
 
   about: {
+    mijnDiad: "Van verouderde interface naar moderne praktijksoftware",
     vodafone: "Slimmere support met AI-zoekfunctie",
     ziggo: "Transparantie verbeteren met de Ziggo storingschecker",
     ilionx: "Toegankelijkheid als kernwaarde",
@@ -145,6 +159,7 @@ export const nl = {
   },
 
   challenge: {
+    mijnDiad: "Complexe praktijkadministratie eenvoudiger en prettiger maken",
     vodafone: "Druk op live support verminderen en selfservice verbeteren",
     ziggo: "Belangrijkste gebruikersfrustraties begrijpen en oplossen",
     ilionx: "Richtlijnen omzetten in actie",
@@ -156,6 +171,7 @@ export const nl = {
   },
 
   solution: {
+    mijnDiad: "Een volledig redesign met een schaalbaar design system",
     vodafone: "Conversational, Intelligent en Actiegerichte Zoekervaring",
     ziggo: "Een gebruiksgerichte, data-rijke ervaring bouwen",
     ilionx: "Visuele richtlijnen & praktische tools",
@@ -167,6 +183,7 @@ export const nl = {
   },
 
   conclusion: {
+    mijnDiad: "Een toekomstbestendig fundament voor dagelijkse praktijkvoering",
     vodafone: "Een schaalbare basis voor AI-gedreven klantenservice",
     ziggo: "Gebruikers versterken met helderheid en controle",
     ilionx: "Ontwerpen voor iedereen, standaard",
@@ -179,6 +196,7 @@ export const nl = {
   },
 
   results: {
+    mijnDiad: "Meer consistentie, vertrouwen en gebruiksgemak",
     vodafone: "Hogere tevredenheid en minder druk op support",
     ziggo: "Meer vertrouwen en minder supportverzoeken",
     ilionx: "Duidelijkheid, adoptie en toegankelijkheid",
@@ -210,6 +228,11 @@ export const nl = {
   },
 
   resultCards: {
+    mijnDiad: {
+      modules: "Productredesign over het volledige platform",
+      users: "Component library vanaf de basis opgebouwd",
+      experience: "Kernflows, schermen en interacties opnieuw ontworpen",
+    },
     vodafone: {
       reduction: "reductie in live contact-support interacties.",
       satisfaction:

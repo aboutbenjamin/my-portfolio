@@ -1,5 +1,5 @@
 import styles from "../CaseScreen.module.css";
-import { ABOUT_DETAILS } from "../../../constansts/cases";
+import { getCaseDetails } from "../../../constansts/cases";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "../../../i18n/useTranslation";
 
@@ -7,7 +7,7 @@ export function CaseAboutDetails() {
   const { id } = useParams();
   const { t } = useTranslation();
   const caseId = Number(id);
-  const details = ABOUT_DETAILS.find((detail) => detail.id === caseId + 1);
+  const details = getCaseDetails(caseId, "about");
 
   if (!details) {
     return null;

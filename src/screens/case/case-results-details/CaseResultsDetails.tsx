@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import styles from "./CaseResultsDetails.module.css";
-import { CASES, RESULTS_DETAILS } from "../../../constansts/cases";
+import { CASES, getCaseDetails } from "../../../constansts/cases";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "../../../i18n/useTranslation";
 import type { CaseResultCard } from "../../../types/case";
@@ -10,17 +10,14 @@ export function CaseResultsDetails() {
   const { t } = useTranslation();
   const caseId = useMemo(() => Number(id), [id]);
 
-  const details = useMemo(
-    () => RESULTS_DETAILS.find((detail) => detail.id === caseId + 1),
-    [caseId]
-  );
+  const details = useMemo(() => getCaseDetails(caseId, "results"), [caseId]);
 
   const caseData = useMemo(
     () =>
       Number.isFinite(caseId) && caseId >= 0 && caseId < CASES.length
         ? CASES[caseId]
         : CASES[0],
-    [caseId]
+    [caseId],
   );
 
   const resultCards = caseData.results ?? [];

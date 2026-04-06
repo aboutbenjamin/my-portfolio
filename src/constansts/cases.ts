@@ -41,15 +41,14 @@ export const getCaseDetails = (
     (typeof CASE_DEFINITIONS)[keyof typeof CASE_DEFINITIONS]["details"]
   >,
 ): CaseDetails | null => {
-  const caseDefinition = Object.values(CASE_DEFINITIONS).find(
-    (def) => def.id === caseId + 1,
-  );
+  const caseDefinition = CASES[caseId];
+  const caseDetails = caseDefinition?.details;
 
-  if (!caseDefinition || !caseDefinition.details[detailType]) {
+  if (!caseDefinition || !caseDetails || !caseDetails[detailType]) {
     return null;
   }
 
-  const details = caseDefinition.details[detailType];
+  const details = caseDetails[detailType];
   if (!details) return null;
 
   return {

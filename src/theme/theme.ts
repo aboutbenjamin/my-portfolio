@@ -5,6 +5,7 @@ export type Theme = {
     background: string;
     foreground: string;
     primary: string;
+    primaryForeground: string;
     secondary: string;
     accent: string;
     muted: string;
@@ -27,6 +28,7 @@ export const lightTheme: Theme = {
     background: "#fff",
     foreground: "#0E0E0E",
     primary: "#f04cff",
+    primaryForeground: "#0e0e0e",
     secondary: "#80f4ff",
     accent: "#ffb347",
     muted: "#757575",
@@ -49,6 +51,7 @@ export const darkTheme: Theme = {
     background: "#0E0E0E",
     foreground: "#f4f4f5",
     primary: "#80f4ff",
+    primaryForeground: "#0e0e0e",
     secondary: "#f04cff",
     accent: "#ffb347",
     muted: "#D4D4D4",

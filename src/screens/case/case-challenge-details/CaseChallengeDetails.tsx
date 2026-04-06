@@ -1,5 +1,5 @@
 import styles from "../CaseScreen.module.css";
-import { CHALLENGE_DETAILS } from "../../../constansts/cases";
+import { getCaseDetails } from "../../../constansts/cases";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "../../../i18n/useTranslation";
 
@@ -7,7 +7,7 @@ export function CaseChallengeDetails() {
   const { id } = useParams();
   const { t } = useTranslation();
   const caseId = Number(id);
-  const details = CHALLENGE_DETAILS.find((detail) => detail.id === caseId + 1);
+  const details = getCaseDetails(caseId, "challenge");
 
   if (!details) {
     return null;
