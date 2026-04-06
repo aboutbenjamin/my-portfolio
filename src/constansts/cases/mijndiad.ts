@@ -14,7 +14,7 @@ export const MIJNDIAD_CASE = {
     ],
     secondSection: [
       "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/mijnDiad%2Fmd-image-grid-3(1).png?alt=media&token=d863e685-2c32-40a5-9434-bd1e24e9850f",
-      "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/mijnDiad%2Ftf-image-grid-4.png?alt=media&token=d6c3bc21-0d80-4a25-9b70-dfff5c38432d",
+      "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/mijnDiad%2Fmd-image-grid-4(1).png?alt=media&token=3c6c5a8a-a7aa-48f4-8e64-c201c16d0f69",
     ],
   },
   client: "MijnDiad",
