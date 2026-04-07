@@ -21,8 +21,8 @@ export const MIJNDIAD_CASE = {
     ],
   },
   client: "MijnDiad",
-  website: "mijnDiad.nl",
-  startProject: "2018",
+  website: "mijndiad.nl",
+  startProject: "2025",
   scrollGalleryImages: [
     "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/mijnDiad%2Fmd-horizontal-scroll-1(1).png?alt=media&token=a0795d81-2439-41fd-8555-4d7a5123f0cb",
     "https://firebasestorage.googleapis.com/v0/b/marketplace-696bf.appspot.com/o/mijnDiad%2Fmd-horizontal-scroll-2(1).png?alt=media&token=f1d9d6f9-dbcd-4091-9dc5-c4bfe4a816cf",
